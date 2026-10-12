@@ -1,0 +1,6 @@
+>balanced Sample only; forward, reverse, overlapping, and ambiguous windows
+acgtacGGGTACGTAAANNNAAAATATATACGCGCG
+>at_rich Sample only; composition differs between records
+AAAAAAAATTTTATATATAAAANRAAAAAATTATATA
+>no_concrete Sample only; ambiguous bases never match
+NNRYSWKMBDHVN

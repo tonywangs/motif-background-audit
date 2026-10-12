@@ -1,0 +1,3464 @@
+{
+  "datasets": [
+    {
+      "control_seed": 2027101200,
+      "generator_seed": 2026101200,
+      "input_sha256": "554c86495677b9b6137dec04d19c5397909b409e9a39e870ac71605cd8529af3",
+      "motifs": [
+        {
+          "control_mean": 0.8793969849246231,
+          "difference": -0.8793969849246231,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.9698492462311558,
+          "difference": 2.030150753768844,
+          "exceedances": 20,
+          "fold": 3.093264248704663,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 3,
+          "p_denominator": 200,
+          "p_holm": 0.42,
+          "p_holm_study": 1.0,
+          "p_numerator": 21,
+          "p_upper": 0.105,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.6080402010050251,
+          "difference": -0.6080402010050251,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 1.864321608040201,
+          "difference": -1.864321608040201,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "independent-00",
+      "planted_sites": [],
+      "regime": "independent",
+      "repetition": 0
+    },
+    {
+      "control_seed": 2027101201,
+      "generator_seed": 2026101201,
+      "input_sha256": "89b201942c887833c991dffb64ed0cce96cc4354e877ba58d624176e6a2879da",
+      "motifs": [
+        {
+          "control_mean": 1.1407035175879396,
+          "difference": 0.8592964824120604,
+          "exceedances": 59,
+          "fold": 1.7533039647577093,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 2,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 60,
+          "p_upper": 0.3,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 1.0402010050251256,
+          "difference": -1.0402010050251256,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.46733668341708545,
+          "difference": -0.46733668341708545,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.201005025125628,
+          "difference": -1.2010050251256281,
+          "exceedances": 159,
+          "fold": 0.454337899543379,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 160,
+          "p_upper": 0.8,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "independent-01",
+      "planted_sites": [],
+      "regime": "independent",
+      "repetition": 1
+    },
+    {
+      "control_seed": 2027101202,
+      "generator_seed": 2026101202,
+      "input_sha256": "333777102c1f83e420f5c7865f6e78f4a0478de27bdaddb3f9110c60737941b1",
+      "motifs": [
+        {
+          "control_mean": 0.7839195979899497,
+          "difference": -0.7839195979899497,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.9246231155778895,
+          "difference": -0.9246231155778895,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.6381909547738693,
+          "difference": 0.36180904522613067,
+          "exceedances": 89,
+          "fold": 1.5669291338582678,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 90,
+          "p_upper": 0.45,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 1.6281407035175879,
+          "difference": 1.3718592964824121,
+          "exceedances": 50,
+          "fold": 1.8425925925925926,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 3,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 51,
+          "p_upper": 0.255,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "independent-02",
+      "planted_sites": [],
+      "regime": "independent",
+      "repetition": 2
+    },
+    {
+      "control_seed": 2027101203,
+      "generator_seed": 2026101203,
+      "input_sha256": "d1b1c79814491522dc749acb8a37f314f8e9a45684b67331f86c95b3d6af6394",
+      "motifs": [
+        {
+          "control_mean": 1.015075376884422,
+          "difference": -0.015075376884422065,
+          "exceedances": 105,
+          "fold": 0.9851485148514852,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 106,
+          "p_upper": 0.53,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 1.1809045226130652,
+          "difference": -1.1809045226130652,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.542713567839196,
+          "difference": 0.457286432160804,
+          "exceedances": 78,
+          "fold": 1.8425925925925926,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 79,
+          "p_upper": 0.395,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.2663316582914574,
+          "difference": 2.7336683417085426,
+          "exceedances": 26,
+          "fold": 2.2062084257206207,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 5,
+          "p_denominator": 200,
+          "p_holm": 0.54,
+          "p_holm_study": 1.0,
+          "p_numerator": 27,
+          "p_upper": 0.135,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "independent-03",
+      "planted_sites": [],
+      "regime": "independent",
+      "repetition": 3
+    },
+    {
+      "control_seed": 2027101204,
+      "generator_seed": 2026101204,
+      "input_sha256": "8f0a991ec0d2ac8cf49d5851d1d95af2b7c28556d4be01470d8f42e44d035619",
+      "motifs": [
+        {
+          "control_mean": 1.07035175879397,
+          "difference": -0.07035175879396993,
+          "exceedances": 104,
+          "fold": 0.9342723004694835,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 105,
+          "p_upper": 0.525,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.9447236180904522,
+          "difference": -0.9447236180904522,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.457286432160804,
+          "difference": 0.542713567839196,
+          "exceedances": 74,
+          "fold": 2.186813186813187,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 75,
+          "p_upper": 0.375,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.1105527638190953,
+          "difference": -0.11055276381909529,
+          "exceedances": 107,
+          "fold": 0.9476190476190477,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 2,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 108,
+          "p_upper": 0.54,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "independent-04",
+      "planted_sites": [],
+      "regime": "independent",
+      "repetition": 4
+    },
+    {
+      "control_seed": 2027101205,
+      "generator_seed": 2026101205,
+      "input_sha256": "527b14ec6fc422c51b71baa4989d8b1bc718d0ccf26d59689727c1317b4b6a3b",
+      "motifs": [
+        {
+          "control_mean": 0.9396984924623115,
+          "difference": 0.06030150753768848,
+          "exceedances": 98,
+          "fold": 1.0641711229946524,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 99,
+          "p_upper": 0.495,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 1.050251256281407,
+          "difference": -0.05025125628140703,
+          "exceedances": 124,
+          "fold": 0.9521531100478469,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 125,
+          "p_upper": 0.625,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.5678391959798995,
+          "difference": -0.5678391959798995,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 1.5879396984924623,
+          "difference": -1.5879396984924623,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "independent-05",
+      "planted_sites": [],
+      "regime": "independent",
+      "repetition": 5
+    },
+    {
+      "control_seed": 2027101206,
+      "generator_seed": 2026101206,
+      "input_sha256": "7f00e0bb4305039676ba44fde3bf7a9d22c6bdbaef50b151eb30b6b83e14169a",
+      "motifs": [
+        {
+          "control_mean": 1.2311557788944723,
+          "difference": 5.768844221105528,
+          "exceedances": 1,
+          "fold": 5.685714285714286,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 7,
+          "p_denominator": 200,
+          "p_holm": 0.04,
+          "p_holm_study": 1.0,
+          "p_numerator": 2,
+          "p_upper": 0.01,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.9195979899497487,
+          "difference": -0.9195979899497487,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.38190954773869346,
+          "difference": -0.38190954773869346,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.6683417085427137,
+          "difference": 1.3316582914572863,
+          "exceedances": 61,
+          "fold": 1.4990583804143125,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 4,
+          "p_denominator": 200,
+          "p_holm": 0.9299999999999999,
+          "p_holm_study": 1.0,
+          "p_numerator": 62,
+          "p_upper": 0.31,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "independent-06",
+      "planted_sites": [],
+      "regime": "independent",
+      "repetition": 6
+    },
+    {
+      "control_seed": 2027101207,
+      "generator_seed": 2026101207,
+      "input_sha256": "4ac2e22a5b4607fbf66acd39bf48517f91c4f8d7328520e1a5a6e08d02bd6c11",
+      "motifs": [
+        {
+          "control_mean": 0.8542713567839196,
+          "difference": 0.14572864321608037,
+          "exceedances": 101,
+          "fold": 1.1705882352941177,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 102,
+          "p_upper": 0.51,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 1.0050251256281406,
+          "difference": -0.005025125628140614,
+          "exceedances": 124,
+          "fold": 0.9950000000000001,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 125,
+          "p_upper": 0.625,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.4371859296482412,
+          "difference": 0.5628140703517588,
+          "exceedances": 70,
+          "fold": 2.28735632183908,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 71,
+          "p_upper": 0.355,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.3316582914572863,
+          "difference": 1.6683417085427137,
+          "exceedances": 48,
+          "fold": 1.7155172413793105,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 4,
+          "p_denominator": 200,
+          "p_holm": 0.98,
+          "p_holm_study": 1.0,
+          "p_numerator": 49,
+          "p_upper": 0.245,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "independent-07",
+      "planted_sites": [],
+      "regime": "independent",
+      "repetition": 7
+    },
+    {
+      "control_seed": 2027101300,
+      "generator_seed": 2026101300,
+      "input_sha256": "f142b0f0a8dc52e2bcfcd46cadbb931b17a9b188e347ac8a3a49a7c29db31f71",
+      "motifs": [
+        {
+          "control_mean": 126.0251256281407,
+          "difference": 5.9748743718593005,
+          "exceedances": 72,
+          "fold": 1.0474101838191316,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 132,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 73,
+          "p_upper": 0.365,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.08040201005025126,
+          "difference": -0.08040201005025126,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.2864321608040201,
+          "difference": -0.2864321608040201,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 3.492462311557789,
+          "difference": -0.4924623115577891,
+          "exceedances": 124,
+          "fold": 0.8589928057553956,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 3,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 125,
+          "p_upper": 0.625,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "composition_biased-00",
+      "planted_sites": [],
+      "regime": "composition_biased",
+      "repetition": 0
+    },
+    {
+      "control_seed": 2027101301,
+      "generator_seed": 2026101301,
+      "input_sha256": "694eb870c6aae646b5679f4f443cd2e7ac232185f169c307c04e4d02fd96e84e",
+      "motifs": [
+        {
+          "control_mean": 125.05025125628141,
+          "difference": 30.949748743718587,
+          "exceedances": 8,
+          "fold": 1.2474984930681132,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 156,
+          "p_denominator": 200,
+          "p_holm": 0.18,
+          "p_holm_study": 1.0,
+          "p_numerator": 9,
+          "p_upper": 0.045,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.08040201005025126,
+          "difference": -0.08040201005025126,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.38190954773869346,
+          "difference": -0.38190954773869346,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 4.236180904522613,
+          "difference": 0.7638190954773867,
+          "exceedances": 84,
+          "fold": 1.1803084223013047,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 5,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 85,
+          "p_upper": 0.425,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "composition_biased-01",
+      "planted_sites": [],
+      "regime": "composition_biased",
+      "repetition": 1
+    },
+    {
+      "control_seed": 2027101302,
+      "generator_seed": 2026101302,
+      "input_sha256": "4d96f69cfab78f7bb09568f16f0ea3412efc10ba61675cc3543a8a102dab37f4",
+      "motifs": [
+        {
+          "control_mean": 134.96984924623115,
+          "difference": -7.969849246231149,
+          "exceedances": 142,
+          "fold": 0.9409508916936595,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 127,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 143,
+          "p_upper": 0.715,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.10050251256281408,
+          "difference": -0.10050251256281408,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.4321608040201005,
+          "difference": -0.4321608040201005,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.909547738693467,
+          "difference": 5.090452261306533,
+          "exceedances": 7,
+          "fold": 2.749568221070812,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 8,
+          "p_denominator": 200,
+          "p_holm": 0.16,
+          "p_holm_study": 1.0,
+          "p_numerator": 8,
+          "p_upper": 0.04,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "composition_biased-02",
+      "planted_sites": [],
+      "regime": "composition_biased",
+      "repetition": 2
+    },
+    {
+      "control_seed": 2027101303,
+      "generator_seed": 2026101303,
+      "input_sha256": "8f91bddbedcda87d2ba92e94127d136601d51153c092070e0d674421ae9cc1c2",
+      "motifs": [
+        {
+          "control_mean": 126.52763819095478,
+          "difference": -17.527638190954775,
+          "exceedances": 176,
+          "fold": 0.8614718614718615,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 109,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 177,
+          "p_upper": 0.885,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.11557788944723618,
+          "difference": -0.11557788944723618,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.31155778894472363,
+          "difference": -0.31155778894472363,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 3.2663316582914574,
+          "difference": 1.7336683417085426,
+          "exceedances": 51,
+          "fold": 1.5307692307692307,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 5,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 52,
+          "p_upper": 0.26,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "composition_biased-03",
+      "planted_sites": [],
+      "regime": "composition_biased",
+      "repetition": 3
+    },
+    {
+      "control_seed": 2027101304,
+      "generator_seed": 2026101304,
+      "input_sha256": "fd869bce58afe8c99c954fc1e6970473d97f58d7d7d2dd03d206238e16576634",
+      "motifs": [
+        {
+          "control_mean": 93.46231155778895,
+          "difference": 9.53768844221105,
+          "exceedances": 53,
+          "fold": 1.1020484972310338,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 103,
+          "p_denominator": 200,
+          "p_holm": 0.81,
+          "p_holm_study": 1.0,
+          "p_numerator": 54,
+          "p_upper": 0.27,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.09547738693467336,
+          "difference": -0.09547738693467336,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.36683417085427134,
+          "difference": -0.36683417085427134,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 3.849246231155779,
+          "difference": 3.150753768844221,
+          "exceedances": 16,
+          "fold": 1.818537859007833,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 7,
+          "p_denominator": 200,
+          "p_holm": 0.34,
+          "p_holm_study": 1.0,
+          "p_numerator": 17,
+          "p_upper": 0.085,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "composition_biased-04",
+      "planted_sites": [],
+      "regime": "composition_biased",
+      "repetition": 4
+    },
+    {
+      "control_seed": 2027101305,
+      "generator_seed": 2026101305,
+      "input_sha256": "863129e7043a9f0575b78ef019d0715cfd9912a008992cfed8971dc6e3660fe1",
+      "motifs": [
+        {
+          "control_mean": 118.50251256281408,
+          "difference": 18.497487437185924,
+          "exceedances": 20,
+          "fold": 1.1560936307353065,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 137,
+          "p_denominator": 200,
+          "p_holm": 0.42,
+          "p_holm_study": 1.0,
+          "p_numerator": 21,
+          "p_upper": 0.105,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.06532663316582915,
+          "difference": -0.06532663316582915,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.35175879396984927,
+          "difference": -0.35175879396984927,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 3.5477386934673367,
+          "difference": 1.4522613065326633,
+          "exceedances": 59,
+          "fold": 1.4093484419263456,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 5,
+          "p_denominator": 200,
+          "p_holm": 0.8999999999999999,
+          "p_holm_study": 1.0,
+          "p_numerator": 60,
+          "p_upper": 0.3,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "composition_biased-05",
+      "planted_sites": [],
+      "regime": "composition_biased",
+      "repetition": 5
+    },
+    {
+      "control_seed": 2027101306,
+      "generator_seed": 2026101306,
+      "input_sha256": "c66d384f80de7af4a54a4d857665f4ac2fc44d5895af1b8612d9a0f15fc40e38",
+      "motifs": [
+        {
+          "control_mean": 107.95477386934674,
+          "difference": 18.045226130653262,
+          "exceedances": 21,
+          "fold": 1.1671554252199412,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 126,
+          "p_denominator": 200,
+          "p_holm": 0.44,
+          "p_holm_study": 1.0,
+          "p_numerator": 22,
+          "p_upper": 0.11,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.10050251256281408,
+          "difference": -0.10050251256281408,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.35678391959798994,
+          "difference": -0.35678391959798994,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.693467336683417,
+          "difference": 2.306532663316583,
+          "exceedances": 36,
+          "fold": 1.8563432835820894,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 5,
+          "p_denominator": 200,
+          "p_holm": 0.5549999999999999,
+          "p_holm_study": 1.0,
+          "p_numerator": 37,
+          "p_upper": 0.185,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "composition_biased-06",
+      "planted_sites": [],
+      "regime": "composition_biased",
+      "repetition": 6
+    },
+    {
+      "control_seed": 2027101307,
+      "generator_seed": 2026101307,
+      "input_sha256": "a492b051c205370e318207b6d4bfc06331b4be12e71fc7747d08cccaae17e57f",
+      "motifs": [
+        {
+          "control_mean": 127.27638190954774,
+          "difference": -5.276381909547737,
+          "exceedances": 133,
+          "fold": 0.9585439039797853,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 122,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 134,
+          "p_upper": 0.67,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.12060301507537688,
+          "difference": -0.12060301507537688,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.2562814070351759,
+          "difference": 0.7437185929648241,
+          "exceedances": 44,
+          "fold": 3.9019607843137254,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 0.9,
+          "p_holm_study": 1.0,
+          "p_numerator": 45,
+          "p_upper": 0.225,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.663316582914573,
+          "difference": -2.663316582914573,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "composition_biased-07",
+      "planted_sites": [],
+      "regime": "composition_biased",
+      "repetition": 7
+    },
+    {
+      "control_seed": 2027101400,
+      "generator_seed": 2026101400,
+      "input_sha256": "e7f006e49dc878f710e68c8b10d6cad99d6bca5709d7d823e905fee76096bdf5",
+      "motifs": [
+        {
+          "control_mean": 1.2010050251256281,
+          "difference": 591.7989949748744,
+          "exceedances": 0,
+          "fold": 493.7531380753138,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 593,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.9849246231155779,
+          "difference": -0.9849246231155779,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.47738693467336685,
+          "difference": -0.47738693467336685,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 1.728643216080402,
+          "difference": -1.728643216080402,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "locally_structured-00",
+      "planted_sites": [],
+      "regime": "locally_structured",
+      "repetition": 0
+    },
+    {
+      "control_seed": 2027101401,
+      "generator_seed": 2026101401,
+      "input_sha256": "879e8dd5acdcd8b2dd92d8eb7c2414b5a698a71f280ce49a5946acb6eb94e667",
+      "motifs": [
+        {
+          "control_mean": 2.6834170854271355,
+          "difference": 678.3165829145729,
+          "exceedances": 0,
+          "fold": 253.7808988764045,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 681,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 1.0251256281407035,
+          "difference": -1.0251256281407035,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.1708542713567839,
+          "difference": -0.1708542713567839,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 4.130653266331659,
+          "difference": -4.130653266331659,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "locally_structured-01",
+      "planted_sites": [],
+      "regime": "locally_structured",
+      "repetition": 1
+    },
+    {
+      "control_seed": 2027101402,
+      "generator_seed": 2026101402,
+      "input_sha256": "11395817102c936eb8a6d18b4e8522dfd887d75ac62f84c6d3b0dada176e5e6b",
+      "motifs": [
+        {
+          "control_mean": 1.3015075376884422,
+          "difference": 572.6984924623116,
+          "exceedances": 0,
+          "fold": 441.02702702702703,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 574,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.8442211055276382,
+          "difference": -0.8442211055276382,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 1.100502512562814,
+          "difference": -1.100502512562814,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.3668341708542715,
+          "difference": -2.3668341708542715,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "locally_structured-02",
+      "planted_sites": [],
+      "regime": "locally_structured",
+      "repetition": 2
+    },
+    {
+      "control_seed": 2027101403,
+      "generator_seed": 2026101403,
+      "input_sha256": "297a7740bda3de620340538565d2bc8e1653f344d618a13eda9104f7ec697148",
+      "motifs": [
+        {
+          "control_mean": 1.256281407035176,
+          "difference": 565.7437185929648,
+          "exceedances": 0,
+          "fold": 451.33199999999994,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 567,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 1.0,
+          "difference": -1.0,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.4623115577889447,
+          "difference": -0.4623115577889447,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 1.6582914572864322,
+          "difference": -1.6582914572864322,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "locally_structured-03",
+      "planted_sites": [],
+      "regime": "locally_structured",
+      "repetition": 3
+    },
+    {
+      "control_seed": 2027101404,
+      "generator_seed": 2026101404,
+      "input_sha256": "906c76a62491273dcff9e4b9e15db826c58036b2ec22061da1a576f2ac84cdea",
+      "motifs": [
+        {
+          "control_mean": 2.0603015075376883,
+          "difference": 580.9396984924623,
+          "exceedances": 0,
+          "fold": 282.96829268292686,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 583,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.8241206030150754,
+          "difference": -0.8241206030150754,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.44221105527638194,
+          "difference": -0.44221105527638194,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 1.6180904522613064,
+          "difference": -1.6180904522613064,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "locally_structured-04",
+      "planted_sites": [],
+      "regime": "locally_structured",
+      "repetition": 4
+    },
+    {
+      "control_seed": 2027101405,
+      "generator_seed": 2026101405,
+      "input_sha256": "7e8c95bb62ff680a90c1c6e2efaeeef9926352d41b3da5488c028f2657bd0aa7",
+      "motifs": [
+        {
+          "control_mean": 3.185929648241206,
+          "difference": 675.8140703517588,
+          "exceedances": 0,
+          "fold": 213.12460567823345,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 679,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.8944723618090452,
+          "difference": -0.8944723618090452,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.24623115577889448,
+          "difference": -0.24623115577889448,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 3.0753768844221105,
+          "difference": -3.0753768844221105,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "locally_structured-05",
+      "planted_sites": [],
+      "regime": "locally_structured",
+      "repetition": 5
+    },
+    {
+      "control_seed": 2027101406,
+      "generator_seed": 2026101406,
+      "input_sha256": "9635aada5be82eea9b5822e00a1b07335aba3218dc5a53ca56855dda9ee81281",
+      "motifs": [
+        {
+          "control_mean": 1.5728643216080402,
+          "difference": 561.427135678392,
+          "exceedances": 0,
+          "fold": 357.94568690095844,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 563,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.8793969849246231,
+          "difference": -0.8793969849246231,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.5778894472361809,
+          "difference": -0.5778894472361809,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.507537688442211,
+          "difference": -2.507537688442211,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "locally_structured-06",
+      "planted_sites": [],
+      "regime": "locally_structured",
+      "repetition": 6
+    },
+    {
+      "control_seed": 2027101407,
+      "generator_seed": 2026101407,
+      "input_sha256": "3d74a4fdf98147f070db16ec7d1fbd1b5b66dcd1297aaef0a76ed2e84212f459",
+      "motifs": [
+        {
+          "control_mean": 2.2562814070351758,
+          "difference": 662.7437185929648,
+          "exceedances": 0,
+          "fold": 294.73273942093545,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 665,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.8693467336683417,
+          "difference": -0.8693467336683417,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.25125628140703515,
+          "difference": -0.25125628140703515,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.7185929648241207,
+          "difference": -2.7185929648241207,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "locally_structured-07",
+      "planted_sites": [],
+      "regime": "locally_structured",
+      "repetition": 7
+    },
+    {
+      "control_seed": 2027101500,
+      "generator_seed": 2026101500,
+      "input_sha256": "56a88da9aa3d579c745d46a8c36502c93994267fce9ed13e4f9664014fad9e27",
+      "motifs": [
+        {
+          "control_mean": 1.0753768844221105,
+          "difference": -0.07537688442211055,
+          "exceedances": 116,
+          "fold": 0.9299065420560748,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 117,
+          "p_upper": 0.585,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 1.1909547738693467,
+          "difference": 25.809045226130653,
+          "exceedances": 0,
+          "fold": 22.67088607594937,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 27,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.47738693467336685,
+          "difference": 0.5226130653266332,
+          "exceedances": 71,
+          "fold": 2.094736842105263,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 72,
+          "p_upper": 0.36,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 1.934673366834171,
+          "difference": -1.934673366834171,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "planted-00",
+      "planted_sites": [
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 896
+        },
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 896
+        }
+      ],
+      "regime": "planted",
+      "repetition": 0
+    },
+    {
+      "control_seed": 2027101501,
+      "generator_seed": 2026101501,
+      "input_sha256": "73754c0fefaaa97acbc4b85c9f0ed4861366283c2e2b8d761c332e81174c3ae4",
+      "motifs": [
+        {
+          "control_mean": 0.8391959798994975,
+          "difference": 0.16080402010050254,
+          "exceedances": 91,
+          "fold": 1.1916167664670658,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 0.83,
+          "p_holm_study": 1.0,
+          "p_numerator": 92,
+          "p_upper": 0.46,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.9949748743718593,
+          "difference": 29.00502512562814,
+          "exceedances": 0,
+          "fold": 30.151515151515152,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 30,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.6080402010050251,
+          "difference": 0.3919597989949749,
+          "exceedances": 82,
+          "fold": 1.6446280991735538,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 0.83,
+          "p_holm_study": 1.0,
+          "p_numerator": 83,
+          "p_upper": 0.415,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 1.7839195979899498,
+          "difference": 2.21608040201005,
+          "exceedances": 28,
+          "fold": 2.2422535211267607,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 4,
+          "p_denominator": 200,
+          "p_holm": 0.43499999999999994,
+          "p_holm_study": 1.0,
+          "p_numerator": 29,
+          "p_upper": 0.145,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "planted-01",
+      "planted_sites": [
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 896
+        },
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 896
+        }
+      ],
+      "regime": "planted",
+      "repetition": 1
+    },
+    {
+      "control_seed": 2027101502,
+      "generator_seed": 2026101502,
+      "input_sha256": "db3f19d6669dd6bf481c49439c3b0240df4ea44bceb42f2dfb2466a4370fd619",
+      "motifs": [
+        {
+          "control_mean": 0.8542713567839196,
+          "difference": -0.8542713567839196,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.9597989949748744,
+          "difference": 28.040201005025125,
+          "exceedances": 0,
+          "fold": 30.21465968586387,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 29,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.507537688442211,
+          "difference": -0.507537688442211,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 1.814070351758794,
+          "difference": 0.18592964824120606,
+          "exceedances": 99,
+          "fold": 1.1024930747922437,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 2,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 100,
+          "p_upper": 0.5,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "planted-02",
+      "planted_sites": [
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 896
+        },
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 896
+        }
+      ],
+      "regime": "planted",
+      "repetition": 2
+    },
+    {
+      "control_seed": 2027101503,
+      "generator_seed": 2026101503,
+      "input_sha256": "3a2b7bf30c229f3259d044c2f23ee928091946634e1f5ec8a72f4a6d827341fa",
+      "motifs": [
+        {
+          "control_mean": 0.9045226130653267,
+          "difference": -0.9045226130653267,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.9296482412060302,
+          "difference": 28.07035175879397,
+          "exceedances": 0,
+          "fold": 31.194594594594594,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 29,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.507537688442211,
+          "difference": -0.507537688442211,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.100502512562814,
+          "difference": 1.899497487437186,
+          "exceedances": 46,
+          "fold": 1.9043062200956937,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 4,
+          "p_denominator": 200,
+          "p_holm": 0.705,
+          "p_holm_study": 1.0,
+          "p_numerator": 47,
+          "p_upper": 0.235,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "planted-03",
+      "planted_sites": [
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 896
+        },
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 896
+        }
+      ],
+      "regime": "planted",
+      "repetition": 3
+    },
+    {
+      "control_seed": 2027101504,
+      "generator_seed": 2026101504,
+      "input_sha256": "1fad84f4d14a376b9dbedd2d06e17348c0758d1f507ad62dbf96728e87cf8ed3",
+      "motifs": [
+        {
+          "control_mean": 1.1608040201005025,
+          "difference": -1.1608040201005025,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 1.0,
+          "difference": 27.0,
+          "exceedances": 0,
+          "fold": 28.0,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 28,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.34673366834170855,
+          "difference": -0.34673366834170855,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 2.4321608040201004,
+          "difference": -1.4321608040201004,
+          "exceedances": 169,
+          "fold": 0.41115702479338845,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 170,
+          "p_upper": 0.85,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "planted-04",
+      "planted_sites": [
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 896
+        },
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 896
+        }
+      ],
+      "regime": "planted",
+      "repetition": 4
+    },
+    {
+      "control_seed": 2027101505,
+      "generator_seed": 2026101505,
+      "input_sha256": "d3f0a7ebd2970c058b17ad69779eaa5a9aa0031d18c0388e74ca440491571d69",
+      "motifs": [
+        {
+          "control_mean": 0.9748743718592965,
+          "difference": -0.9748743718592965,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 1.07035175879397,
+          "difference": 26.92964824120603,
+          "exceedances": 0,
+          "fold": 26.159624413145536,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 28,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.47738693467336685,
+          "difference": 0.5226130653266332,
+          "exceedances": 73,
+          "fold": 2.094736842105263,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 0.74,
+          "p_holm_study": 1.0,
+          "p_numerator": 74,
+          "p_upper": 0.37,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 1.8944723618090453,
+          "difference": 3.1055276381909547,
+          "exceedances": 19,
+          "fold": 2.639257294429708,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 5,
+          "p_denominator": 200,
+          "p_holm": 0.30000000000000004,
+          "p_holm_study": 1.0,
+          "p_numerator": 20,
+          "p_upper": 0.1,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "planted-05",
+      "planted_sites": [
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 896
+        },
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 896
+        }
+      ],
+      "regime": "planted",
+      "repetition": 5
+    },
+    {
+      "control_seed": 2027101506,
+      "generator_seed": 2026101506,
+      "input_sha256": "6bd472b04d188b644b38980ede69d8a4e7254f6c7304c10723a480223eed8277",
+      "motifs": [
+        {
+          "control_mean": 0.628140703517588,
+          "difference": 0.371859296482412,
+          "exceedances": 71,
+          "fold": 1.5919999999999999,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 72,
+          "p_upper": 0.36,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.9597989949748744,
+          "difference": 29.040201005025125,
+          "exceedances": 0,
+          "fold": 31.2565445026178,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 30,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.7336683417085427,
+          "difference": -0.7336683417085427,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 1.4422110552763818,
+          "difference": -0.4422110552763818,
+          "exceedances": 126,
+          "fold": 0.6933797909407666,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 127,
+          "p_upper": 0.635,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "planted-06",
+      "planted_sites": [
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 896
+        },
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 896
+        }
+      ],
+      "regime": "planted",
+      "repetition": 6
+    },
+    {
+      "control_seed": 2027101507,
+      "generator_seed": 2026101507,
+      "input_sha256": "702918d833fcfd655aefbe65aac2b751a3cc0de0ca994c2305b1ff550cd9120b",
+      "motifs": [
+        {
+          "control_mean": 0.8743718592964824,
+          "difference": 0.12562814070351758,
+          "exceedances": 95,
+          "fold": 1.14367816091954,
+          "fold_note": null,
+          "id": "A_run",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 96,
+          "p_upper": 0.48,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.914572864321608,
+          "difference": 26.08542713567839,
+          "exceedances": 0,
+          "fold": 29.521978021978022,
+          "fold_note": null,
+          "id": "planted_target",
+          "observed": 27,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_study": 0.64,
+          "p_numerator": 1,
+          "p_upper": 0.005,
+          "uniform_expected": 0.9951171875
+        },
+        {
+          "control_mean": 0.5979899497487438,
+          "difference": -0.5979899497487438,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "id": "CG_palindrome",
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0,
+          "uniform_expected": 0.49755859375
+        },
+        {
+          "control_mean": 1.5728643216080402,
+          "difference": -0.5728643216080402,
+          "exceedances": 130,
+          "fold": 0.6357827476038338,
+          "fold_note": null,
+          "id": "degenerate_AT",
+          "observed": 1,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_study": 1.0,
+          "p_numerator": 131,
+          "p_upper": 0.655,
+          "uniform_expected": 1.990234375
+        }
+      ],
+      "name": "planted-07",
+      "planted_sites": [
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 896
+        },
+        {
+          "end": 22,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 16
+        },
+        {
+          "end": 102,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 96
+        },
+        {
+          "end": 182,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 176
+        },
+        {
+          "end": 262,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 256
+        },
+        {
+          "end": 342,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 336
+        },
+        {
+          "end": 422,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 416
+        },
+        {
+          "end": 502,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 496
+        },
+        {
+          "end": 582,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 576
+        },
+        {
+          "end": 662,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 656
+        },
+        {
+          "end": 742,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 736
+        },
+        {
+          "end": 822,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 816
+        },
+        {
+          "end": 902,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 896
+        }
+      ],
+      "regime": "planted",
+      "repetition": 7
+    }
+  ],
+  "protocol_sha256": "6fd2a6efd1cb9e4d468fd3ad88bacc14a2caf5b100f6343b0cc66910f2096ad6",
+  "rejection_counts": {
+    "composition_biased": {
+      "A_run": 0,
+      "CG_palindrome": 0,
+      "degenerate_AT": 0,
+      "planted_target": 0
+    },
+    "independent": {
+      "A_run": 1,
+      "CG_palindrome": 0,
+      "degenerate_AT": 0,
+      "planted_target": 0
+    },
+    "locally_structured": {
+      "A_run": 8,
+      "CG_palindrome": 0,
+      "degenerate_AT": 0,
+      "planted_target": 0
+    },
+    "planted": {
+      "A_run": 0,
+      "CG_palindrome": 0,
+      "degenerate_AT": 0,
+      "planted_target": 8
+    }
+  },
+  "runner_sha256": "40ea4083639b66cd0d0db9de10a8d280e4d25aa6e9d0c7911382712a8568f7cf"
+}

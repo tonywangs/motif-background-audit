@@ -1,0 +1,122 @@
+{
+  "browser": {
+    "checks": [
+      "all matches reachable with at most 75 mounted rows",
+      "keyboard context activation, forward context and reverse orientation",
+      "sequence, motif, and strand filters compose without changing statistics",
+      "page entry, last page, keyboard paging, and clamped invalid pages",
+      "context navigation crosses a page boundary",
+      "hostile imported descriptions remain text and never execute",
+      "full JSON download and spreadsheet-safe TSV export match CLI content",
+      "375px viewport fits document; tables scroll locally and controls remain usable",
+      "empty results render and export a header-only TSV",
+      "sample report renders at desktop size",
+      "no JavaScript errors, CSP violations, or external requests"
+    ],
+    "chromium": "141.0.7390.37",
+    "complete": true,
+    "csp_violations": [],
+    "errors": [],
+    "external_requests": [],
+    "fixture_occurrences": 2599,
+    "max_mounted_match_rows": 75,
+    "node": "v24.20.0",
+    "offline": true,
+    "playwright": "1.56.1",
+    "viewports": [
+      [
+        1280,
+        950
+      ],
+      [
+        375,
+        812
+      ]
+    ]
+  },
+  "complete": true,
+  "elapsed_seconds": 48.646217313129455,
+  "experiment_audit": {
+    "complete": true,
+    "control_motif_checks": 25472,
+    "datasets": 32,
+    "elapsed_seconds": 20.301343262195587,
+    "independent_matcher": "concrete-word expansion and literal search on both reference orientations",
+    "independent_statistics": "Fraction arithmetic and rank-based Holm; no production imports",
+    "observed_motif_checks": 128,
+    "reproduced_deterministic_files": 66,
+    "reproduction_metrics": {
+      "complete": true,
+      "datasets": 32,
+      "elapsed_seconds": 14.850751065649092,
+      "peak_process_rss_kib": 22656,
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "shuffles_per_dataset": 199
+    },
+    "shuffle_invariant_checks": 12736
+  },
+  "installed_cli": {
+    "artifact_metadata": {
+      "analysis.json": {
+        "bytes": 35545,
+        "sha256": "e4b9b8ebe8487e997d8ea7b648f19b1c0d95f767cd23a4011bbb71cb8b674035"
+      },
+      "completion.json": {
+        "bytes": 495,
+        "sha256": "21bd261e1357dd857dd212d26c484dea2ddd247edb10510d12b3057ea853e31c"
+      },
+      "matches.tsv": {
+        "bytes": 1133,
+        "sha256": "29c645db13d39cdbc13c6f41bca17ccf7e4cda7d1af85595409bed9c5a301999"
+      },
+      "report.html": {
+        "bytes": 54624,
+        "sha256": "53ad5989d3ce063ba6f818942a0883d2005a18b5c2dc971b9a7fc429f7155443"
+      }
+    },
+    "complete": true,
+    "elapsed_seconds": 0.22,
+    "identical_repeated_outputs": true,
+    "installed_zipapp_bytes": 15796,
+    "isolated_cwd": true,
+    "offline_socket_audit_hook": true,
+    "peak_process_rss_kib": 20992,
+    "unchanged_input_hashes": {
+      "motifs.json": "433611f04e3723434b075b55e1af175b026a58d486fb393e6c14038c61d31765",
+      "sequences.fasta": "48cd4ed5ec7a6f5224c72bf02bf11b67518773f1e22ec94402ad6fbed03cfed3"
+    }
+  },
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "runtime_dependencies": "Python standard library only",
+  "source_sha256": {
+    ".gitignore": "c0b95d29947f86467f0dbdc9bf7e94657417150d9217030cc36b302dc6c59115",
+    "README.md": "1551818de0144e6f8e9ecbb32dcaa6b54075adccceca15e8c5263101837798ae",
+    "docs/contracts.md": "1b286f26bb9e4190aafdb6fe53ccc12a3ef85d966f0ac894cf39585c6df056c2",
+    "docs/methods.md": "d049c35a4c99ea02a623b6e4b409a7b7beb6ed5cfa8bca34c36ea5845ac0e7da",
+    "docs/results.md": "840f9f7bc48260667e4ae2271d30ce40b691fcb1da2a5fb5eef6812db0ad75c1",
+    "examples/motifs.json": "433611f04e3723434b075b55e1af175b026a58d486fb393e6c14038c61d31765",
+    "examples/sequences.fasta": "48cd4ed5ec7a6f5224c72bf02bf11b67518773f1e22ec94402ad6fbed03cfed3",
+    "experiments/frozen.json": "841da8845bc2867acddf1782fdf4b879f2d49eb1d4ae1dd4b1653f0f76e9887a",
+    "experiments/protocol.json": "6fd2a6efd1cb9e4d468fd3ad88bacc14a2caf5b100f6343b0cc66910f2096ad6",
+    "motif_audit/__init__.py": "ba090f6654ecfd57d0ccb3ad310b8e301d28bfba9b9bfb082b9ef7ff5b013a9f",
+    "motif_audit/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "motif_audit/assets/report.css": "c0ddfa3332cff39f469533941ed167b536f1d23945a27fd25e8a27a3e11142a2",
+    "motif_audit/assets/report.html": "db895179b830b614f2579d736cd0b19cc46b4f0ba097b0eee2c415a52fc026d4",
+    "motif_audit/assets/report.js": "d16bbed11d9187b27cb262a016cd5bc8c3a25099a883510472ff05e5db046d53",
+    "motif_audit/cli.py": "27b1bf2fad37c1b3759171fa2e5cd6583d4503b126a88de7e26e1688bf2e84ab",
+    "motif_audit/core.py": "17011a96ee2569e466e8c6a7c3db09c94018b39e7bf99c2bc3ff999feb4e033b",
+    "motif_audit/report.py": "6734bf9097b019f8b2bbe241513c2dac3575bb429496aea58df36dbf7d35be72",
+    "package-lock.json": "a8ab359cc145315efb158087ce1d06ad7874aefed986c6bad72dda28dfd487f8",
+    "package.json": "34479b6856da69421a3da1270da88541537e90aee3f73cf227777bbe2d49753c",
+    "scripts/audit_experiment.py": "4fcd5046021d5ee038197f236d5815deb70e76e1855723c0ede1cd065fcf37e9",
+    "scripts/browser.cjs": "b007c0bfa201572a5ce97a649b9fab5960bd05a2a857a4d6954711bd267dd95e",
+    "scripts/check_tree.py": "aa93b239a78dc7896678c299cc7ad85bb189f586d8bb3ad11ee675ef847adab7",
+    "scripts/experiment.py": "40ea4083639b66cd0d0db9de10a8d280e4d25aa6e9d0c7911382712a8568f7cf",
+    "scripts/install.py": "20bd7d058e8f1f0a8fd19643eeec32b2e8c5a586b5f07cc1f94e8cca4aa4ef2e",
+    "scripts/verify.py": "ed8bfccfcebe9198b7b4eaf498586d147f494dc7ea16deff8433fe67b297d197",
+    "tests/test_core.py": "4292071141eb91602efa5790ca2c7184d6cc7680295cde0d52a9155a17bad5dd",
+    "tests/test_io.py": "9aedefb068799ac1254b2f662e1f34ad3998cda854e89b7da84360007836cc5a"
+  },
+  "unit_tests": "passed; see results/tests.log for repository evidence"
+}

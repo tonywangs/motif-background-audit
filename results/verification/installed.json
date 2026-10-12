@@ -1,0 +1,31 @@
+{
+  "artifact_metadata": {
+    "analysis.json": {
+      "bytes": 35545,
+      "sha256": "e4b9b8ebe8487e997d8ea7b648f19b1c0d95f767cd23a4011bbb71cb8b674035"
+    },
+    "completion.json": {
+      "bytes": 495,
+      "sha256": "21bd261e1357dd857dd212d26c484dea2ddd247edb10510d12b3057ea853e31c"
+    },
+    "matches.tsv": {
+      "bytes": 1133,
+      "sha256": "29c645db13d39cdbc13c6f41bca17ccf7e4cda7d1af85595409bed9c5a301999"
+    },
+    "report.html": {
+      "bytes": 54624,
+      "sha256": "53ad5989d3ce063ba6f818942a0883d2005a18b5c2dc971b9a7fc429f7155443"
+    }
+  },
+  "complete": true,
+  "elapsed_seconds": 0.22,
+  "identical_repeated_outputs": true,
+  "installed_zipapp_bytes": 15796,
+  "isolated_cwd": true,
+  "offline_socket_audit_hook": true,
+  "peak_process_rss_kib": 20992,
+  "unchanged_input_hashes": {
+    "motifs.json": "433611f04e3723434b075b55e1af175b026a58d486fb393e6c14038c61d31765",
+    "sequences.fasta": "48cd4ed5ec7a6f5224c72bf02bf11b67518773f1e22ec94402ad6fbed03cfed3"
+  }
+}

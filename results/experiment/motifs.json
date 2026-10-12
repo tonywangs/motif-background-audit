@@ -1,0 +1,20 @@
+{
+  "motifs": [
+    {
+      "id": "A_run",
+      "pattern": "AAAAAA"
+    },
+    {
+      "id": "planted_target",
+      "pattern": "ACGTAC"
+    },
+    {
+      "id": "CG_palindrome",
+      "pattern": "CGCGCG"
+    },
+    {
+      "id": "degenerate_AT",
+      "pattern": "TATAWA"
+    }
+  ]
+}

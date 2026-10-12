@@ -1,0 +1,7 @@
+{
+  "name": "motif-background-audit-verification",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Optional Chromium test tooling; the CLI and report have no runtime dependencies.",
+  "devDependencies": {"playwright": "1.56.1"}
+}

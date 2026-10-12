@@ -1,0 +1,35 @@
+{
+  "complete": true,
+  "chromium": "141.0.7390.37",
+  "playwright": "1.56.1",
+  "node": "v24.20.0",
+  "offline": true,
+  "external_requests": [],
+  "errors": [],
+  "csp_violations": [],
+  "checks": [
+    "all matches reachable with at most 75 mounted rows",
+    "keyboard context activation, forward context and reverse orientation",
+    "sequence, motif, and strand filters compose without changing statistics",
+    "page entry, last page, keyboard paging, and clamped invalid pages",
+    "context navigation crosses a page boundary",
+    "hostile imported descriptions remain text and never execute",
+    "full JSON download and spreadsheet-safe TSV export match CLI content",
+    "375px viewport fits document; tables scroll locally and controls remain usable",
+    "empty results render and export a header-only TSV",
+    "sample report renders at desktop size",
+    "no JavaScript errors, CSP violations, or external requests"
+  ],
+  "max_mounted_match_rows": 75,
+  "fixture_occurrences": 2599,
+  "viewports": [
+    [
+      1280,
+      950
+    ],
+    [
+      375,
+      812
+    ]
+  ]
+}

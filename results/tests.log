@@ -1,0 +1,24 @@
+test_all_iupac_complements (test_core.MatchingTests.test_all_iupac_complements) ... ok
+test_boundaries_overlaps_palindromes_reverse_and_empty (test_core.MatchingTests.test_boundaries_overlaps_palindromes_reverse_and_empty) ... ok
+test_control_overflow_is_an_error_not_a_truncated_null (test_core.MatchingTests.test_control_overflow_is_an_error_not_a_truncated_null) ... ok
+test_independent_oracle_500_seeded_cases (test_core.MatchingTests.test_independent_oracle_500_seeded_cases) ... ok
+test_invalid_fasta (test_core.ParsingTests.test_invalid_fasta) ... ok
+test_invalid_manifest (test_core.ParsingTests.test_invalid_manifest) ... ok
+test_limits (test_core.ParsingTests.test_limits) ... ok
+test_normalization (test_core.ParsingTests.test_normalization) ... ok
+test_unicode_case_expansion_is_not_DNA (test_core.ParsingTests.test_unicode_case_expansion_is_not_DNA) ... ok
+test_end_to_end_control_counts_against_oracle (test_core.ShuffleStatisticsTests.test_end_to_end_control_counts_against_oracle) ... ok
+test_independent_shuffle_invariants_500 (test_core.ShuffleStatisticsTests.test_independent_shuffle_invariants_500) ... ok
+test_statistical_arithmetic_independent (test_core.ShuffleStatisticsTests.test_statistical_arithmetic_independent) ... ok
+test_actual_signals_cleanup (test_io.OutputTests.test_actual_signals_cleanup) ... ok
+test_cli_validation_and_deadline (test_io.OutputTests.test_cli_validation_and_deadline) ... ok
+test_collision_keeps_existing_data (test_io.OutputTests.test_collision_keeps_existing_data) ... ok
+test_complete_artifact_hashes_and_inert_html (test_io.OutputTests.test_complete_artifact_hashes_and_inert_html) ... ok
+test_empty_results_export (test_io.OutputTests.test_empty_results_export) ... ok
+test_serialization_size_cancellation_and_write_cleanup (test_io.OutputTests.test_serialization_size_cancellation_and_write_cleanup) ... ok
+test_special_file_and_read_byte_limit (test_io.OutputTests.test_special_file_and_read_byte_limit) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 2.456s
+
+OK

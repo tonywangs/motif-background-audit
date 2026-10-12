@@ -1,0 +1,36 @@
+{
+  "schema": "motif-audit-protocol/1",
+  "title": "When composition-preserving controls answer the wrong question",
+  "hypotheses": [
+    "Independent uniform and composition-biased sequences will usually be compatible with within-record permutation controls; uniform-background expected counts can mislead on biased sequences.",
+    "Locally persistent sequences can appear enriched for homopolymers under mononucleotide controls despite having no planted functional motifs.",
+    "A periodically planted exact motif in independent sequence will be more frequent than in shuffled controls."
+  ],
+  "regimes": ["independent", "composition_biased", "locally_structured", "planted"],
+  "repetitions": 8,
+  "records_per_dataset": 2,
+  "length_per_record": 1024,
+  "generator_seed_base": 2026101200,
+  "seed_rule": "generator_seed_base + regime_index*100 + repetition; control master seed = generator seed + 1000000",
+  "generator": {
+    "independent": "Python Random.choices A,C,G,T equal weights, independently for each position",
+    "composition_biased": "record 0 weights A=.7 C=.1 G=.1 T=.1; record 1 A=.1 C=.7 G=.1 T=.1; positions independent",
+    "locally_structured": "start with uniform base; each next position repeats previous with probability .9, otherwise chooses uniformly from the other three; no planting",
+    "planted": "independent uniform bases then overwrite ACGTAC at starts 16+80*j for j=0..11 in each record; retain input and planted coordinates"
+  },
+  "motifs": [
+    {"id": "A_run", "pattern": "AAAAAA"},
+    {"id": "planted_target", "pattern": "ACGTAC"},
+    {"id": "CG_palindrome", "pattern": "CGCGCG"},
+    {"id": "degenerate_AT", "pattern": "TATAWA"}
+  ],
+  "shuffles": 199,
+  "null_model": "independent Fisher-Yates permutation of concrete bases within each record, ambiguous-base positions fixed",
+  "statistics": "pooled strand-occurrence counts; every shuffled count; control mean; observed-minus-mean; observed/mean (null if mean=0); upper-tail p=(1+number controls >= observed)/(B+1)",
+  "baseline": "expected strand-occurrence counts for an independent uniform DNA generator: sum over motif orientations of (valid windows)*(product of IUPAC set sizes)/4^motif_length; palindromes counted once",
+  "multiplicity": "Holm across four prespecified motifs per dataset, alpha=.05. Fractions of rejections across repetitions are descriptive, not biological discovery claims. Also show Holm across all 128 tests; resolution .005 precludes study-wide .05 rejection. No adaptive motif selection or extra shuffles.",
+  "maximum_elapsed_seconds": 1800,
+  "maximum_dataset_seconds": 120,
+  "interpretation": "Synthetic-only software and null-model diagnostic. No biological function, binding, regulatory activity, Evo2 inference, or experimental validation. Report all results including null outcomes; no rerun or seed selection based on results.",
+  "preserve": ["protocol and runner hash frozen before evaluation", "FASTA bytes", "motif manifest", "generator seeds", "plant coordinates", "input hashes", "observed and every control count", "control seeds", "effect sizes", "tail numerators and denominators", "uniform expected baseline", "runtime and peak process RSS"]
+}

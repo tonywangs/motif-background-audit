@@ -1,0 +1,8 @@
+{
+  "motifs": [
+    {"id": "ACGTAC", "pattern": "ACGTAC"},
+    {"id": "A_run", "pattern": "AAAA"},
+    {"id": "AT_palindrome", "pattern": "ATAT"},
+    {"id": "degenerate", "pattern": "TATAWA"}
+  ]
+}

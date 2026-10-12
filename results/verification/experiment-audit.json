@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "control_motif_checks": 25472,
+  "datasets": 32,
+  "elapsed_seconds": 20.301343262195587,
+  "independent_matcher": "concrete-word expansion and literal search on both reference orientations",
+  "independent_statistics": "Fraction arithmetic and rank-based Holm; no production imports",
+  "observed_motif_checks": 128,
+  "reproduced_deterministic_files": 66,
+  "reproduction_metrics": {
+    "complete": true,
+    "datasets": 32,
+    "elapsed_seconds": 14.850751065649092,
+    "peak_process_rss_kib": 22656,
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "shuffles_per_dataset": 199
+  },
+  "shuffle_invariant_checks": 12736
+}

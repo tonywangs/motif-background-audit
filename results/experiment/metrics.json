@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "datasets": 32,
+  "elapsed_seconds": 14.436189589090645,
+  "peak_process_rss_kib": 20992,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "shuffles_per_dataset": 199
+}
