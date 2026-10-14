@@ -26,6 +26,33 @@ async function main() {
   try {
     await page.goto(pathToFileURL(path.join(fixture,'report.html')).href);
     await page.waitForFunction(() => document.getElementById('match-status').textContent.includes('occurrences'));
+    if (data.backgrounds) {
+      await check('both backgrounds, exact histogram frequencies, keyboard selection, and fixed matches', async () => {
+        const matches = await page.locator('#match-status').textContent();
+        assert.deepEqual(await page.locator('#background-select option').evaluateAll(xs=>xs.map(x=>x.value)), ['mononucleotide','dinucleotide']);
+        for (const name of ['dinucleotide','mononucleotide']) {
+          await page.locator('#background-select').selectOption(name);
+          for (let mi=0; mi<data.motifs.length; mi++) {
+            await page.locator('#distribution-motif').selectOption(String(mi));
+            const s=data.backgrounds[name].statistics[mi];
+            const lo=Math.min(...s.control_counts), hi=Math.max(...s.control_counts);
+            const width=Math.max(1,Math.ceil((hi-lo+1)/40));
+            const expected=Array(Math.floor((hi-lo)/width)+1).fill(0);
+            for (const n of s.control_counts) expected[Math.floor((n-lo)/width)]++;
+            const frequencies=await page.locator('#distribution-rows tr').evaluateAll(xs=>xs.map(x=>Number(x.cells[1].textContent)));
+            assert.deepEqual(frequencies,expected); assert(frequencies.length<=40);
+            const row=page.locator('#summary tbody tr').nth(mi);
+            assert.equal(await row.locator('td').nth(2).textContent(),s.control_mean.toFixed(3));
+            assert.equal(await row.locator('td').last().textContent(),s.p_holm_comparison.toFixed(4));
+          }
+          assert.equal(await page.locator('#match-status').textContent(),matches);
+        }
+        await page.locator('#background-select').focus();
+        await page.keyboard.press('ArrowDown'); await page.keyboard.press('Tab');
+        assert.equal(await page.locator('#background-select').inputValue(),'dinucleotide');
+        assert((await page.locator('#background-description').textContent()).startsWith('dinucleotide:'));
+      });
+    }
     await check('all matches reachable with at most 75 mounted rows', async () => {
       const pages = Math.ceil(data.matches.length/75);
       let reachable = 0;

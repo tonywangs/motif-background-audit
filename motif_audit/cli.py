@@ -9,7 +9,7 @@ import signal
 import stat
 import sys
 from . import __version__
-from .core import AuditError, Budget, DEFAULT_LIMITS, analyze, canonical, digest
+from .core import AuditError, Budget, DEFAULT_LIMITS, analyze, compare, canonical, digest
 from .report import match_tsv, render
 
 
@@ -95,6 +95,7 @@ def main(argv=None):
     parser.add_argument("--fasta", type=Path, required=True, help="local DNA FASTA, UTF-8")
     parser.add_argument("--motifs", type=Path, required=True, help="explicit JSON motif manifest")
     parser.add_argument("--out", type=Path, required=True, help="new output directory; parent must exist")
+    parser.add_argument("--background", choices=["mononucleotide", "dinucleotide", "both"], default="mononucleotide")
     parser.add_argument("--seed", type=int, default=1729)
     parser.add_argument("--shuffles", type=int, default=199)
     parser.add_argument("--seconds", type=float, default=DEFAULT_LIMITS.seconds,
@@ -111,8 +112,10 @@ def main(argv=None):
                 raise AuditError("output already exists; choose a new directory")
             fasta = read_bounded(args.fasta, limits.input_bytes)
             manifest = read_bounded(args.motifs, limits.manifest_bytes)
-            result = analyze(fasta, manifest, seed=args.seed, shuffles=args.shuffles,
-                             limits=limits, budget=budget)
+            function = compare if args.background == "both" else analyze
+            options = {} if args.background == "both" else {"background": args.background}
+            result = function(fasta, manifest, seed=args.seed, shuffles=args.shuffles,
+                              limits=limits, budget=budget, **options)
             write_output(args.out, result, budget)
     except KeyboardInterrupt:
         print("cancelled; no completed output was published", file=sys.stderr)

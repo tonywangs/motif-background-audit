@@ -1,0 +1,9 @@
+{
+  "cpu_seconds": 8.848934704000001,
+  "datasets": 16,
+  "elapsed_seconds": 17.330672529991716,
+  "peak_process_rss_kib": 23292,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "runtime_dependencies": "Python standard library",
+  "tests": 128
+}

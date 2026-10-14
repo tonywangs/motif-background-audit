@@ -1,0 +1,26 @@
+{
+  "schema": "motif-background-audit/comparison-protocol/1",
+  "conditions": ["independent", "first_order", "longer_range", "planted"],
+  "datasets_per_condition": 4,
+  "records_per_dataset": 3,
+  "bases_per_record": 240,
+  "generation_seed": 2026101301,
+  "control_seed": 2026101302,
+  "shuffles": 199,
+  "motifs": ["AAA", "ACG", "ATAT", "ACGTAC"],
+  "backgrounds": ["mononucleotide", "dinucleotide"],
+  "statistics": ["observed", "all_control_counts", "mean", "difference", "fold", "plus_one_upper_tail"],
+  "families": ["within each dataset and background: 4 motifs", "within each dataset: 8 motif/background tests", "study-wide: all 128 tests"],
+  "alpha": 0.05,
+  "adjustment": "Holm",
+  "cpu_budget_seconds": 1800,
+  "sampling_check": {
+    "enumeration": "all binary A/C strings length 1 through 8 grouped by endpoints and adjacent-pair counts; 16 draws per source",
+    "distribution_sequences": ["AACAC", "AACGAC", "ACACAA", "AACAACAA", "ACGTACGTA"],
+    "draws_per_sequence": 20000,
+    "seed_start": 700000,
+    "threshold": "every outcome frequency within sqrt(n/2 * log(2*K/0.001)) of n/K; union bound across all K outcomes in all five spaces",
+    "interpretation": "fixed diagnostic threshold, empirical evidence only, no proof of uniformity"
+  },
+  "policy": "Freeze input bytes, motifs, protocol, generator, implementation and seeds before evaluation; never select background based on significance. No tuning to results. Report all conditions and failures."
+}

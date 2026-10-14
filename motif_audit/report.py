@@ -39,9 +39,12 @@ def render(result):
     for m, s in zip(result["motifs"], result["statistics"]):
         vals = [m["id"], m["pattern"], s["observed"], f'{s["control_mean"]:.3f}',
                 f'{s["difference"]:+.3f}', "undefined" if s["fold"] is None else f'{s["fold"]:.3f}',
-                f'{s["p_numerator"]}/{s["p_denominator"]}', f'{s["p_upper"]:.4f}', f'{s["p_holm"]:.4f}']
+                f'{s["p_numerator"]}/{s["p_denominator"]}', f'{s["p_upper"]:.4f}', f'{s["p_holm"]:.4f}',
+                f'{s["p_holm_comparison"]:.4f}' if 'p_holm_comparison' in s else '—']
         rows.append("<tr>" + "".join(f'<{("th scope=\"row\"" if i == 0 else "td")}>{html.escape(str(v))}</{("th" if i == 0 else "td")}>' for i, v in enumerate(vals)) + "</tr>")
-    replacements = {"CSS": css, "JS": js, "DATA": data,
+    backgrounds = result.get("backgrounds", {result["settings"].get("background", "mononucleotide"): result})
+    options = "".join(f'<option value="{html.escape(name)}">{html.escape(name)}</option>' for name in backgrounds)
+    replacements = {"BACKGROUND_OPTIONS": options, "CSS": css, "JS": js, "DATA": data,
                     "CSP": f"default-src 'none'; script-src {_csp_hash(js)}; style-src {_csp_hash(css)}; connect-src 'none'; img-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'",
                     "SUMMARY": "".join(rows), "N_RECORDS": str(len(result["records"])),
                     "N_BASES": f'{sum(r["length"] for r in result["records"]):,}',

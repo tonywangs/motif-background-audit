@@ -88,5 +88,41 @@
     download("filtered-matches.tsv", rows.join("\n")+"\n", "text/tab-separated-values;charset=utf-8");
   });
   byId("export-json").addEventListener("click", () => download("analysis.json", JSON.stringify(data, null, 2)+"\n", "application/json"));
+  const backgrounds = data.backgrounds || {[data.settings.background || "mononucleotide"]: data};
+  data.motifs.forEach((m, i) => {
+    const option = document.createElement("option"); option.value = String(i); option.textContent = m.id;
+    byId("distribution-motif").append(option);
+  });
+  function distribution() {
+    const stats = backgrounds[byId("background-select").value].statistics;
+    const s = stats[Number(byId("distribution-motif").value)];
+    const lo = Math.min(...s.control_counts), hi = Math.max(...s.control_counts);
+    const width = Math.max(1, Math.ceil((hi-lo+1)/40));
+    const bins = Array(Math.floor((hi-lo)/width)+1).fill(0);
+    s.control_counts.forEach(n => bins[Math.floor((n-lo)/width)]++);
+    byId("distribution-rows").replaceChildren();
+    bins.forEach((n, i) => {
+      const row = document.createElement("tr"), a = lo+i*width, b = Math.min(hi,a+width-1);
+      cell(row, a===b ? a : `${a}–${b}`); cell(row,n); byId("distribution-rows").append(row);
+    });
+    byId("distribution-description").textContent = `Observed: ${s.observed}; ${s.control_counts.length} controls; range ${lo}–${hi}. Identity and repeated controls are retained.`;
+  }
+  function background() {
+    const name = byId("background-select").value, analysis = backgrounds[name];
+    byId("background-description").textContent = `${name}: ${analysis.settings.null}. Background choice is an assumption, not a significance filter.`;
+    const body = byId("summary").querySelector("tbody"); body.replaceChildren();
+    analysis.statistics.forEach((s,i) => {
+      const row = document.createElement("tr"), motif = data.motifs[i];
+      const th = document.createElement("th"); th.scope = "row"; th.textContent = motif.id; row.append(th);
+      [motif.pattern,s.observed,s.control_mean.toFixed(3),s.difference.toFixed(3),s.fold===null ? "undefined" : s.fold.toFixed(3),
+       `${s.p_numerator}/${s.p_denominator}`,s.p_upper.toFixed(4),s.p_holm.toFixed(4),
+       s.p_holm_comparison===undefined ? "—" : s.p_holm_comparison.toFixed(4)].forEach(v => cell(row,v));
+      body.append(row);
+    });
+    distribution();
+  }
+  byId("background-select").addEventListener("change", background);
+  byId("distribution-motif").addEventListener("change", distribution);
+  background();
   filter();
 })();

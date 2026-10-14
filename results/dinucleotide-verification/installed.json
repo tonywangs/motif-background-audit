@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "elapsed_seconds": 0.35,
+  "failures": [
+    {
+      "arguments": [],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "--background",
+        "bad"
+      ],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "--shuffles",
+        "0"
+      ],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "--seconds",
+        "0.000001"
+      ],
+      "exit_code": 2
+    }
+  ],
+  "isolated_cwd": true,
+  "license_included": true,
+  "offline_socket_audit_hook": true,
+  "peak_process_rss_kib": 21632,
+  "repeated_outputs": {
+    "analysis.json": {
+      "bytes": 112952,
+      "sha256": "0b3d1cd1531751df9d9776332a9785806fb71ef5b34086e13e0b8631e17540e5"
+    },
+    "completion.json": {
+      "bytes": 497,
+      "sha256": "aeee35f436928f0ed0897a29dc294c19bc85afc6f61c6cc8a25147ea40a1ed96"
+    },
+    "matches.tsv": {
+      "bytes": 1133,
+      "sha256": "29c645db13d39cdbc13c6f41bca17ccf7e4cda7d1af85595409bed9c5a301999"
+    },
+    "report.html": {
+      "bytes": 135455,
+      "sha256": "27a2a2e5845a849456c11842b1fc941d48cdaf47dacf2f2d836ecf44707d0caa"
+    }
+  },
+  "unchanged_inputs": {
+    "input.fasta": "48cd4ed5ec7a6f5224c72bf02bf11b67518773f1e22ec94402ad6fbed03cfed3",
+    "motifs.json": "433611f04e3723434b075b55e1af175b026a58d486fb393e6c14038c61d31765"
+  }
+}

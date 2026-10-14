@@ -1,0 +1,8 @@
+{
+  "all_adjustments_recomputed": true,
+  "complete": true,
+  "independent_control_counts": 25472,
+  "independent_observed_counts": 128,
+  "limitation": "Replay uses production shufflers; invariants, enumeration, matching and arithmetic are independently checked.",
+  "summary_rows": 128
+}

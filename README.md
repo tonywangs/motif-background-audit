@@ -74,3 +74,54 @@ All 32 original inputs, 199 controls per dataset, seeds, hashes, and results are
 This is a modest local workbench, not a genome-scale scanner. It refuses over-budget input or output; it never presents truncated matches as a complete analysis. Default hard ceilings include 1 MiB FASTA, 100,000 bases per record, 200,000 total bases, 32 motifs, 30,000 occurrences in either observed or any control scan, 999 shuffles, a conservative 120-million-work-unit bound, 120 seconds per CLI call, and 8 MiB per report/artifact. Details and failure semantics are in [contracts](docs/contracts.md).
 
 Published evidence uses synthetic data. A locally generated report embeds the full normalized sequences and descriptions, so sharing the report shares those inputs. The browser uses native HTML tables and controls; Chromium desktop and a 375px viewport were exercised, but screen-reader and cross-browser validation remain unperformed.
+
+## Compare background assumptions
+
+The default mononucleotide analysis and historical experiment remain available.
+To compare it with dinucleotide-preserving controls on exactly the same inputs:
+
+```sh
+python3 -m motif_audit --fasta examples/sequences.fasta --motifs examples/motifs.json --background both --seed 1729 --shuffles 199 --out /tmp/motif-comparison
+```
+
+Choose a new output directory. Open its self-contained `report.html` locally;
+select a background and a motif to inspect the control count distribution.
+`analysis.json` preserves both sets of counts, effects, exact empirical tail
+fractions, within-background Holm results and Holm across both backgrounds.
+`--background dinucleotide` runs only that prespecified background.
+Filtering matches never changes statistics. Do not choose the background that
+produces significance.
+
+Dinucleotide controls preserve each contiguous concrete run's endpoints and
+mono/dinucleotide counts. Ambiguous symbols stay at their exact positions.
+Runs do not exchange bases across ambiguity gaps. This differs deliberately
+from the original mononucleotide permutation across a whole record. Identity
+controls and repeated outputs are legitimate. See [sampling assumptions and
+related work](docs/dinucleotide-methods.md) and [paired experiment results](docs/dinucleotide-results.md).
+The Python implementation includes its upstream BSD-3-Clause license and needs
+no external runtime packages. The existing offline zipapp installer includes it.
+
+Reproduce and independently verify the frozen paired experiment, historical
+regressions, installed comparison CLI and all deterministic artifacts with one
+command (Python 3.12 on POSIX):
+
+```sh
+python3 scripts/verify_comparison.py
+```
+
+For Chromium acceptance checks, install the pinned development dependency from
+`package-lock.json` with `npm ci`, install its Chromium using
+`npx playwright install chromium`, then run:
+
+```sh
+python3 scripts/verify_comparison.py --browser
+```
+
+Dependency setup needs networking; all report and installed-CLI checks run
+offline. Existing installations can be supplied using `--playwright-module`
+and `--browsers-path`. `--record DIRECTORY` saves fresh verification evidence;
+historical evidence under `results/verification` is not overwritten.
+To reproduce just the paired benchmark into a new directory:
+`python3 scripts/comparison.py --out /tmp/motif-benchmark`.
+Do not refreeze the protocol to fit results. The recorded inputs, seeds, source
+hashes and 1,800-second CPU budget are under `experiments/dinucleotide-*`.

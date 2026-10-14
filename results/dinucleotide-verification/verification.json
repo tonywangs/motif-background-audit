@@ -1,0 +1,167 @@
+{
+  "browser": {
+    "checks": [
+      "both backgrounds, exact histogram frequencies, keyboard selection, and fixed matches",
+      "all matches reachable with at most 75 mounted rows",
+      "keyboard context activation, forward context and reverse orientation",
+      "sequence, motif, and strand filters compose without changing statistics",
+      "page entry, last page, keyboard paging, and clamped invalid pages",
+      "context navigation crosses a page boundary",
+      "hostile imported descriptions remain text and never execute",
+      "full JSON download and spreadsheet-safe TSV export match CLI content",
+      "375px viewport fits document; tables scroll locally and controls remain usable",
+      "empty results render and export a header-only TSV",
+      "sample report renders at desktop size",
+      "no JavaScript errors, CSP violations, or external requests"
+    ],
+    "chromium": "141.0.7390.37",
+    "complete": true,
+    "csp_violations": [],
+    "errors": [],
+    "external_requests": [],
+    "fixture_occurrences": 2599,
+    "max_mounted_match_rows": 75,
+    "node": "v24.20.0",
+    "offline": true,
+    "playwright": "1.56.1",
+    "viewports": [
+      [
+        1280,
+        950
+      ],
+      [
+        375,
+        812
+      ]
+    ]
+  },
+  "complete": true,
+  "elapsed_seconds": 134.5545290838927,
+  "independent_audit": {
+    "all_adjustments_recomputed": true,
+    "complete": true,
+    "independent_control_counts": 25472,
+    "independent_observed_counts": 128,
+    "limitation": "Replay uses production shufflers; invariants, enumeration, matching and arithmetic are independently checked.",
+    "summary_rows": 128
+  },
+  "installed": {
+    "complete": true,
+    "elapsed_seconds": 0.35,
+    "failures": [
+      {
+        "arguments": [],
+        "exit_code": 2
+      },
+      {
+        "arguments": [
+          "--background",
+          "bad"
+        ],
+        "exit_code": 2
+      },
+      {
+        "arguments": [
+          "--shuffles",
+          "0"
+        ],
+        "exit_code": 2
+      },
+      {
+        "arguments": [
+          "--seconds",
+          "0.000001"
+        ],
+        "exit_code": 2
+      }
+    ],
+    "isolated_cwd": true,
+    "license_included": true,
+    "offline_socket_audit_hook": true,
+    "peak_process_rss_kib": 21632,
+    "repeated_outputs": {
+      "analysis.json": {
+        "bytes": 112952,
+        "sha256": "0b3d1cd1531751df9d9776332a9785806fb71ef5b34086e13e0b8631e17540e5"
+      },
+      "completion.json": {
+        "bytes": 497,
+        "sha256": "aeee35f436928f0ed0897a29dc294c19bc85afc6f61c6cc8a25147ea40a1ed96"
+      },
+      "matches.tsv": {
+        "bytes": 1133,
+        "sha256": "29c645db13d39cdbc13c6f41bca17ccf7e4cda7d1af85595409bed9c5a301999"
+      },
+      "report.html": {
+        "bytes": 135455,
+        "sha256": "27a2a2e5845a849456c11842b1fc941d48cdaf47dacf2f2d836ecf44707d0caa"
+      }
+    },
+    "unchanged_inputs": {
+      "input.fasta": "48cd4ed5ec7a6f5224c72bf02bf11b67518773f1e22ec94402ad6fbed03cfed3",
+      "motifs.json": "433611f04e3723434b075b55e1af175b026a58d486fb393e6c14038c61d31765"
+    }
+  },
+  "legacy_complete": true,
+  "reproduced_files": 65,
+  "sampling_passed": true,
+  "source_sha256": {
+    ".gitignore": "c0b95d29947f86467f0dbdc9bf7e94657417150d9217030cc36b302dc6c59115",
+    "README.md": "18651523531b9ac5d8f5186b70d0a5913c95068ec87cfebb7428bbe6e71ccd2c",
+    "docs/contracts.md": "1b286f26bb9e4190aafdb6fe53ccc12a3ef85d966f0ac894cf39585c6df056c2",
+    "docs/dinucleotide-methods.md": "4e6bee3d988eebb285535a44f2034d8515c6a0640db3c451b6befb03bcb8cc2a",
+    "docs/dinucleotide-results.md": "f7c485f62dd187aeafe29c5bba690e7ba5c76d36636f8d8956d3f785464d1d0b",
+    "docs/licenses/ushuffle.txt": "d2d735ce4507fc823f19836a95457199bc54071c538cc48f18c5181a1a5d523c",
+    "docs/methods.md": "d049c35a4c99ea02a623b6e4b409a7b7beb6ed5cfa8bca34c36ea5845ac0e7da",
+    "docs/results.md": "840f9f7bc48260667e4ae2271d30ce40b691fcb1da2a5fb5eef6812db0ad75c1",
+    "examples/motifs.json": "433611f04e3723434b075b55e1af175b026a58d486fb393e6c14038c61d31765",
+    "examples/sequences.fasta": "48cd4ed5ec7a6f5224c72bf02bf11b67518773f1e22ec94402ad6fbed03cfed3",
+    "experiments/dinucleotide-frozen.json": "0592a139adc02df64c3a576f7815fd380bce27bf9567cb4776b358fd382d61de",
+    "experiments/dinucleotide-inputs/first_order-00.fasta": "4e6fe414ba828639a44547c46efb6715b9f677aaca23bc2d38348cb9b27319fe",
+    "experiments/dinucleotide-inputs/first_order-01.fasta": "84bac6eb3c63b6b061e58c50eed698ca5e91c9ea49aeed4912f24b0172ad28a6",
+    "experiments/dinucleotide-inputs/first_order-02.fasta": "e331311e3f04d5caa436c6e5285a14a432eab93c586d3b8fbd78a74b9e975b42",
+    "experiments/dinucleotide-inputs/first_order-03.fasta": "16840f60b8aac40eafae56b7f3509ba9030b2d0bd3c2f6013416fad24236e13e",
+    "experiments/dinucleotide-inputs/independent-00.fasta": "2e1af7de0c2d2d29a180ba95f395c6a21368b487318bf8a45199f034c6a82011",
+    "experiments/dinucleotide-inputs/independent-01.fasta": "4d8259591809e6272192c3caf673e2b7200c864d22cc3717af1ef439ce304f1b",
+    "experiments/dinucleotide-inputs/independent-02.fasta": "bafbf4788c8f43ae06c4c0ab9ca6a65f9ce066dacbddc1135dd320e490a5d374",
+    "experiments/dinucleotide-inputs/independent-03.fasta": "ebcb8990d0f3b8b10cf25b740eafc93678d7745510d26808201383b758d41f94",
+    "experiments/dinucleotide-inputs/longer_range-00.fasta": "a3fe553db5ee0561a28f3db72a648f8c8ddeff3e7aca380dcbf524e97e6178cc",
+    "experiments/dinucleotide-inputs/longer_range-01.fasta": "53052ec1e43a085ad36dd4b68f78d9057d7e82015e4f3deb8a2bc5c4c7963ec8",
+    "experiments/dinucleotide-inputs/longer_range-02.fasta": "b9d316eeede1a14308fa60bb8f59ebcfec8d224068ddcf9935849c5a7a9f2d43",
+    "experiments/dinucleotide-inputs/longer_range-03.fasta": "b30ea347f0047d1e4c17664ea396b6cf82cf41e137e48cad56d290dd5d5f5f6c",
+    "experiments/dinucleotide-inputs/motifs.json": "f2466c5ca99ae629b384dfcd5dc52f7948cb0e95958ea35a83f6fa6d401322be",
+    "experiments/dinucleotide-inputs/planted-00.fasta": "2dccd7d5e42c5f3b11cc93b1257386125422986ca4086ac8c589f25e097eb11a",
+    "experiments/dinucleotide-inputs/planted-01.fasta": "1ea89f08c882c2097798fc1e395b072abc0aa6f96070d960c661f94c245363cf",
+    "experiments/dinucleotide-inputs/planted-02.fasta": "a048e73b128f4dd65a0ea941b50c5be427203cb7957cee00d70fcc2c07381e93",
+    "experiments/dinucleotide-inputs/planted-03.fasta": "9383b86a2493732b07edb9159d83282e7287127f7c7a92e26ca17a651f13176a",
+    "experiments/dinucleotide-protocol.json": "ded2ae267fa02776bd24ae425575624b2e88fe999349f18af6e716083725eb76",
+    "experiments/frozen.json": "841da8845bc2867acddf1782fdf4b879f2d49eb1d4ae1dd4b1653f0f76e9887a",
+    "experiments/protocol.json": "6fd2a6efd1cb9e4d468fd3ad88bacc14a2caf5b100f6343b0cc66910f2096ad6",
+    "motif_audit/USHUFFLE_LICENSE.txt": "d2d735ce4507fc823f19836a95457199bc54071c538cc48f18c5181a1a5d523c",
+    "motif_audit/__init__.py": "ba090f6654ecfd57d0ccb3ad310b8e301d28bfba9b9bfb082b9ef7ff5b013a9f",
+    "motif_audit/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "motif_audit/assets/report.css": "c0ddfa3332cff39f469533941ed167b536f1d23945a27fd25e8a27a3e11142a2",
+    "motif_audit/assets/report.html": "1867913ce1b2ab8e42f0a512985441272442fa3a083fe57001d131d14addbbee",
+    "motif_audit/assets/report.js": "46f6bf6a343077fa44232a5203e22a3e7f4859d0438ebc31700f9d08ec633576",
+    "motif_audit/cli.py": "d1aac927be3c5d32de992620b58b2acfc80fe72c0c4533166f9225345584b3be",
+    "motif_audit/core.py": "826804139dc3b6bb4bc3ef82704e72672ea0eacb3637775710057236e2174fc7",
+    "motif_audit/dinucleotide.py": "11c78a6613ac22db44dbcdb085bb1f76e9d8cc7c02f07d550dc3626aad09283e",
+    "motif_audit/report.py": "70c069de4edee6cf849f611277e9cea4e7ce417b299af3f0192d12d7c5b686ca",
+    "package-lock.json": "a8ab359cc145315efb158087ce1d06ad7874aefed986c6bad72dda28dfd487f8",
+    "package.json": "34479b6856da69421a3da1270da88541537e90aee3f73cf227777bbe2d49753c",
+    "scripts/audit_comparison.py": "a78e3b145634358722c2a9469e7c64369297b14b4966e9a4100a7acaf8bcb7fa",
+    "scripts/audit_experiment.py": "4fcd5046021d5ee038197f236d5815deb70e76e1855723c0ede1cd065fcf37e9",
+    "scripts/browser.cjs": "239552e11793c3f6737df41e04d0a4b5495c849ce7a25e8c6587982827f0835b",
+    "scripts/check_tree.py": "aa93b239a78dc7896678c299cc7ad85bb189f586d8bb3ad11ee675ef847adab7",
+    "scripts/comparison.py": "aa1ae37898ac34712c25d39e6790a815f9a27adddb954cc6463ba059298776cd",
+    "scripts/comparison_inputs.py": "ef3c4df514e0274531d9b6fa4cbe91850606137ad73d2abc4958f7910df70859",
+    "scripts/experiment.py": "40ea4083639b66cd0d0db9de10a8d280e4d25aa6e9d0c7911382712a8568f7cf",
+    "scripts/install.py": "20bd7d058e8f1f0a8fd19643eeec32b2e8c5a586b5f07cc1f94e8cca4aa4ef2e",
+    "scripts/sampling_check.py": "13b4bf6b10e5937f5edee682fa01b5fc4cca826139d7d252984edef439bfc81b",
+    "scripts/verify.py": "ed8bfccfcebe9198b7b4eaf498586d147f494dc7ea16deff8433fe67b297d197",
+    "scripts/verify_comparison.py": "0a0998bd944ab42eb920f439c452dab36a368fc45c43aa77aeb3a4f610db7c99",
+    "tests/test_core.py": "4292071141eb91602efa5790ca2c7184d6cc7680295cde0d52a9155a17bad5dd",
+    "tests/test_dinucleotide.py": "15899dc12e321c10356e2798bc1c8e1aedc803a6a2b1848e1845f06656434245",
+    "tests/test_io.py": "9aedefb068799ac1254b2f662e1f34ad3998cda854e89b7da84360007836cc5a"
+  }
+}

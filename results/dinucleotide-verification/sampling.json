@@ -1,0 +1,76 @@
+{
+  "checks": [
+    {
+      "absolute_deviation_limit": 323.90236518800305,
+      "draws": 20000,
+      "expected_per_outcome": 10000.0,
+      "maximum_absolute_deviation": 48.0,
+      "outcomes": {
+        "AACAC": 10048,
+        "ACAAC": 9952
+      },
+      "passed": true,
+      "sequence": "AACAC"
+    },
+    {
+      "absolute_deviation_limit": 323.90236518800305,
+      "draws": 20000,
+      "expected_per_outcome": 10000.0,
+      "maximum_absolute_deviation": 125.0,
+      "outcomes": {
+        "AACGAC": 10125,
+        "ACGAAC": 9875
+      },
+      "passed": true,
+      "sequence": "AACGAC"
+    },
+    {
+      "absolute_deviation_limit": 323.90236518800305,
+      "draws": 20000,
+      "expected_per_outcome": 6666.666666666667,
+      "maximum_absolute_deviation": 37.33333333333303,
+      "outcomes": {
+        "AACACA": 6641,
+        "ACAACA": 6655,
+        "ACACAA": 6704
+      },
+      "passed": true,
+      "sequence": "ACACAA"
+    },
+    {
+      "absolute_deviation_limit": 323.90236518800305,
+      "draws": 20000,
+      "expected_per_outcome": 2000.0,
+      "maximum_absolute_deviation": 81.0,
+      "outcomes": {
+        "AAAACACA": 2004,
+        "AAACAACA": 1960,
+        "AAACACAA": 2034,
+        "AACAAACA": 2001,
+        "AACAACAA": 1991,
+        "AACACAAA": 2050,
+        "ACAAAACA": 2081,
+        "ACAAACAA": 1920,
+        "ACAACAAA": 1949,
+        "ACACAAAA": 2010
+      },
+      "passed": true,
+      "sequence": "AACAACAA"
+    },
+    {
+      "absolute_deviation_limit": 323.90236518800305,
+      "draws": 20000,
+      "expected_per_outcome": 20000.0,
+      "maximum_absolute_deviation": 0.0,
+      "outcomes": {
+        "ACGTACGTA": 20000
+      },
+      "passed": true,
+      "sequence": "ACGTACGTA"
+    }
+  ],
+  "complete": true,
+  "interpretation": "Empirical check only, not a proof of uniformity. Fixed seed streams are pseudorandom.",
+  "passed": true,
+  "protocol_sha256": "ded2ae267fa02776bd24ae425575624b2e88fe999349f18af6e716083725eb76"
+}

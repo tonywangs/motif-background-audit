@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "analysis.json": {
+      "bytes": 117932,
+      "sha256": "f401df8c082bb218f42edb9b4c9cf931b288c2218b7325b0aa47e2ff0850819a"
+    },
+    "matches.tsv": {
+      "bytes": 2345,
+      "sha256": "771826c8ce2fb5bf7e665952ee406921cf6d6a4685943c27af5cf910c61847d7"
+    },
+    "report.html": {
+      "bytes": 140425,
+      "sha256": "cce4acc7bfa3fe3f2f48ab2e2f50ac3bcb8b8f97fc65f4eb36ab138f82bff4c9"
+    }
+  },
+  "complete": true,
+  "schema": "motif-background-audit/completion/1"
+}

@@ -1,0 +1,6420 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Rva/ajQwd/pEIypSA+IqPn9IWdBDjrwxcA+dCOxjNXY='; style-src 'sha256-wN36MzLP859GlTOUHtFntTbx0jlFon/SXoono+ERQqI='; connect-src 'none'; img-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'"><title>Motif background audit · Local report</title><style>:root{color-scheme:light;--ink:#182d36;--muted:#52646b;--paper:#f5f5ef;--line:#d7dfd9;--accent:#106655;--wash:#e8eee6}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,sans-serif}header,main,footer{max-width:1200px;margin:auto;padding:32px 40px}header{padding-top:54px;padding-bottom:24px;border-bottom:1px solid var(--line)}.eyebrow{font:700 11px/1.5 ui-monospace,monospace;letter-spacing:.12em;color:var(--accent)}header .eyebrow{display:flex;justify-content:space-between;gap:16px}header .eyebrow span{color:var(--muted)}h1{font-size:clamp(34px,5vw,60px);line-height:1.12;letter-spacing:-.05em;margin:28px 0 18px;max-width:950px}.dot{color:var(--accent)}h2{font-size:29px;letter-spacing:-.03em;line-height:1.3;margin:7px 0 0}h3{font-size:17px;margin:0 0 8px}p{margin:12px 0;color:var(--muted)}.lede{font-size:21px;color:var(--ink)}.metrics{display:grid;grid-template-columns:repeat(4,1fr);margin:0 0 28px}.metrics div{border-right:1px solid var(--line);padding:0 24px}.metrics div:first-child{padding-left:0}.metrics div:last-child{border:0}.metrics strong{display:block;font:500 34px/1.4 ui-monospace,monospace;letter-spacing:-.04em}.metrics span{color:var(--muted);font-size:13px}.notice{border-left:4px solid var(--accent);background:var(--wash);padding:18px 22px;margin-bottom:44px;font-size:14px}.notice strong{display:block}section{margin-bottom:42px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:18px}.tag{font-size:12px;border:1px solid var(--line);border-radius:20px;padding:4px 12px;white-space:nowrap}.table-wrap{overflow:auto;max-width:100%;border:1px solid var(--line);border-radius:8px;background:#fff}table{width:100%;border-collapse:collapse;font-size:13px;text-align:left;font-variant-numeric:tabular-nums}caption{text-align:left;padding:12px 16px;background:var(--wash);font-size:12px;color:var(--muted)}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:middle}thead th{white-space:nowrap;font-size:11px;text-transform:uppercase;letter-spacing:.03em}tbody th{font-weight:600}tr:last-child td,tr:last-child th{border-bottom:0}tbody tr:hover{background:#f3f7f3}td:first-child,tbody th{overflow-wrap:anywhere;max-width:260px}.filters{display:flex;flex-wrap:wrap;align-items:end;gap:14px;background:var(--wash);padding:18px;border-radius:8px}.filters label{flex:1;min-width:145px}label{font-size:12px;font-weight:600}select,input,button{font:inherit;color:inherit;border:1px solid #9aaaa3;border-radius:5px;background:#fff;padding:9px 12px}select{display:block;width:100%;margin-top:5px;max-width:100%}button{font-size:13px;font-weight:600;cursor:pointer}button:hover:not(:disabled){background:var(--wash);border-color:var(--accent)}button:disabled{opacity:.45;cursor:default}:focus-visible{outline:3px solid #147eac;outline-offset:3px}.pager{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;margin:18px 0}.pager input{width:75px;font-size:14px;margin-left:5px}.hint{font-size:12px}.context{padding:22px;border-radius:8px;background:#e8eeed;margin-top:22px}.context .section-head{flex-wrap:wrap}pre{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all;font:17px/1.9 ui-monospace,monospace;margin:18px 0}mark{background:#fcdf88;color:#172d36;border-radius:3px;padding:4px 0}#context-info,#description{overflow-wrap:anywhere}#match-status{font-size:13px}.exports{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:20px}.exports button:first-child{background:var(--accent);color:#fff;border-color:var(--accent)}.exports button:first-child:hover{background:#084c3e}.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin:24px 0;font-size:14px}details{padding:16px 0;border-top:1px solid var(--line);font-size:13px}summary{cursor:pointer;font-weight:600}dt{font-weight:600}dd{margin:0 0 10px;overflow-wrap:anywhere;font-family:ui-monospace,monospace}footer{font-size:12px;color:var(--muted);border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px}.skip{position:absolute;left:10px;top:-100px;background:white;padding:8px;z-index:10}.skip:focus{top:10px}.empty{text-align:center;color:var(--muted)}@media(max-width:650px){header,main,footer{padding:24px 18px}header .eyebrow{flex-direction:column;gap:5px}.metrics{grid-template-columns:1fr 1fr;gap:20px}.metrics div{padding:0;border:0}.metrics strong{font-size:29px}.section-head{align-items:start;flex-direction:column;gap:10px}.method-grid{grid-template-columns:1fr;gap:18px}.context{padding:16px}.pager{justify-content:start;gap:7px}footer{flex-direction:column}.tag{white-space:normal}}@media print{button,.filters,.pager,.exports,.hint{display:none}header,main,footer{padding:15px}.table-wrap{overflow:visible}body{background:white}section{break-inside:avoid}}
+</style></head>
+<body><a class="skip" href="#explorer">Skip to match explorer</a>
+<header><div class="eyebrow">SEQUENCE WORKBENCH <span>OFFLINE / EXACT MATCHES</span></div><h1>Motif background audit<span class="dot">.</span></h1><p class="lede">A match is an observation. Its background is an assumption.</p><p>Inspect exact DNA patterns, then compare their counts with composition-preserving controls.</p></header>
+<main><section class="metrics" aria-label="Analysis totals"><div><strong>3</strong><span>Sequences</span></div><div><strong>720</strong><span>Bases</span></div><div><strong>78</strong><span>Strand occurrences</span></div><div><strong>199</strong><span>Shuffled controls</span></div></section>
+<section class="notice"><strong>Read the null model first.</strong> Mononucleotide controls shuffle A/C/G/T across each record. Dinucleotide controls independently shuffle concrete runs, preserving their endpoints and adjacent-pair counts. Both fix ambiguity positions; neither models all local structure. Small tail probabilities can reflect this mismatch, not biological function. This workbench has synthetic validation only.</section>
+<section aria-labelledby="summary-heading"><div class="section-head"><div><div class="eyebrow">01 / BACKGROUND COMPARISON</div><h2 id="summary-heading">Counts in context</h2></div><span class="tag">All motifs · pooled records</span></div>
+<p>Upper-tail probability = (1 + controls ≥ observed) / (1 + controls). Holm adjusts across every motif within a background. In comparison mode, “Holm · both” adjusts across both backgrounds and all motifs. Backgrounds are prespecified, never selected by significance. Fold is observed / control mean; it is undefined when that mean is zero.</p>
+<div class="filters"><label>Background<select id="background-select"><option value="mononucleotide">mononucleotide</option><option value="dinucleotide">dinucleotide</option></select></label><label>Distribution motif<select id="distribution-motif"></select></label></div>
+<p id="background-description" role="status"></p>
+<details><summary>Control count distribution (at most 40 bins)</summary><p id="distribution-description"></p><div class="table-wrap"><table><caption>Control count frequencies; all individual counts are in JSON</caption><thead><tr><th>Count range</th><th>Frequency</th></tr></thead><tbody id="distribution-rows"></tbody></table></div></details>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Motif statistics, scroll horizontally if needed"><table id="summary"><caption>Exact motif counts and Monte Carlo comparisons</caption><thead><tr><th scope="col">Motif</th><th scope="col">Pattern</th><th scope="col">Observed</th><th scope="col">Control mean</th><th scope="col">Difference</th><th scope="col">Fold</th><th scope="col">Tail fraction</th><th scope="col">p upper</th><th scope="col">p Holm</th><th scope="col">p Holm · both</th></tr></thead><tbody><tr><th scope="row">AAA</th><td>AAA</td><td>15</td><td>21.764</td><td>-6.764</td><td>0.689</td><td>191/200</td><td>0.9550</td><td>1.0000</td><td>1.0000</td></tr><tr><th scope="row">ACG</th><td>ACG</td><td>47</td><td>23.156</td><td>+23.844</td><td>2.030</td><td>1/200</td><td>0.0050</td><td>0.0200</td><td>0.0400</td></tr><tr><th scope="row">ATAT</th><td>ATAT</td><td>0</td><td>2.603</td><td>-2.603</td><td>0.000</td><td>200/200</td><td>1.0000</td><td>1.0000</td><td>1.0000</td></tr><tr><th scope="row">ACGTAC</th><td>ACGTAC</td><td>16</td><td>0.397</td><td>+15.603</td><td>40.304</td><td>1/200</td><td>0.0050</td><td>0.0200</td><td>0.0400</td></tr></tbody></table></div></section>
+<section id="explorer" aria-labelledby="explorer-heading"><div class="section-head"><div><div class="eyebrow">02 / MATCH EXPLORER</div><h2 id="explorer-heading">Follow the sequence</h2></div><span class="tag">0-based · half-open</span></div><noscript><p>Enable JavaScript for local filtering and context. Full results remain in analysis.json and matches.tsv; statistics above work without JavaScript.</p></noscript>
+<div class="filters"><label>Sequence<select id="sequence-filter"><option value="">All sequences</option></select></label><label>Motif<select id="motif-filter"><option value="">All motifs</option></select></label><label>Strand<select id="strand-filter"><option value="">All strands</option><option value="+">+ forward</option><option value="-">− reverse</option><option value="both">Both · palindrome</option></select></label><button id="reset" type="button">Reset filters</button></div>
+<p id="match-status" role="status" aria-live="polite"></p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Matches, scroll horizontally if needed"><table id="matches"><caption>Filtered strand occurrences, 75 per page</caption><thead><tr><th scope="col">Sequence</th><th scope="col">Motif</th><th scope="col">Start</th><th scope="col">End</th><th scope="col">Strand</th><th scope="col">Inspect</th></tr></thead><tbody id="match-rows"></tbody></table></div>
+<nav class="pager" aria-label="Match pages"><button id="first" type="button">First</button><button id="previous" type="button">Previous</button><label>Page <input id="page-number" type="number" min="1" value="1" aria-label="Page number"></label><span id="pages"></span><button id="next" type="button">Next</button><button id="last" type="button">Last</button></nav>
+<p class="hint">Keyboard: Tab to a context button and press Enter. Alt + ← / → changes pages. Page entry reaches any result without mounting every row.</p>
+<aside class="context" aria-labelledby="context-heading"><div class="section-head"><h3 id="context-heading">Local sequence context</h3><div><button id="context-previous" type="button" disabled>Previous match</button> <button id="context-next" type="button" disabled>Next match</button></div></div><p id="context-info">Choose a match to inspect 24 flanking bases on each side.</p><pre id="context-bases" tabindex="0" aria-label="Forward reference sequence with highlighted match"></pre><p id="oriented" class="hint"></p><p id="description" class="hint"></p></aside>
+<div class="exports"><button id="export-tsv" type="button">Export filtered matches · TSV</button><button id="export-json" type="button">Export complete analysis · JSON</button><span id="export-status" role="status"></span></div><p class="hint">TSV escapes tabs and newlines; cells starting with =, +, − (ASCII -), or @ receive an apostrophe for spreadsheet safety. JSON preserves original text.</p></section>
+<section aria-labelledby="method-heading"><div class="eyebrow">03 / REPRODUCIBILITY</div><h2 id="method-heading">An explicit set of assumptions</h2><div class="method-grid"><div><h3>Exact means exact</h3><p>IUPAC motif letters expand to sets of concrete DNA bases. Ambiguous sequence bases never match, even motif N. Overlaps are counted. Reverse-strand coordinates refer to the original forward sequence. Reverse-complement palindromes count once, with strand “both”; other motifs can count at the same position on both strands.</p></div><div><h3>Conditioned on composition</h3><p>Mononucleotide treats concrete positions as exchangeable within each record. Dinucleotide conditions additionally on each concrete run’s endpoints and adjacent-pair counts. Short runs and degenerate spaces may never change. Neither accounts for arbitrary repeats, regional composition, or longer-range dependence. Filters change the match view only; they do not recalculate statistics.</p></div></div><details><summary>Inputs, seed, and reproducibility details</summary><dl><dt>Master seed</dt><dd>2026101317</dd><dt>FASTA SHA-256</dt><dd>9383b86a2493732b07edb9159d83282e7287127f7c7a92e26ca17a651f13176a</dd><dt>Manifest SHA-256</dt><dd>f2466c5ca99ae629b384dfcd5dc52f7948cb0e95958ea35a83f6fa6d401322be</dd></dl><p>Full JSON includes normalized sequences, every control count, per-record control seeds, limits, and exact probability numerators and denominators. Inputs are local; this page makes no external requests. No Evo2 inference or experimental biological confirmation was performed.</p></details></section></main><footer>Motif background audit / v1.0.0 <span>Local data. Explicit assumptions. Complete results.</span></footer>
+<script id="analysis-data" type="application/json">{
+  "backgrounds": {
+    "dinucleotide": {
+      "control_seeds": [
+        [
+          "17141522512085007069",
+          "6387530863946972405",
+          "2655179571536597020"
+        ],
+        [
+          "4637932592161718020",
+          "14432778146039578903",
+          "6238131837270356028"
+        ],
+        [
+          "7192303400122066760",
+          "8625653908281204425",
+          "1887997250157228981"
+        ],
+        [
+          "11207953525109053990",
+          "13029790167357515787",
+          "6490657962032130684"
+        ],
+        [
+          "1651920063460260278",
+          "13776871920970377037",
+          "15998540916167241678"
+        ],
+        [
+          "7840569334788781506",
+          "2294060437505766233",
+          "185424630823774359"
+        ],
+        [
+          "10175101406239758901",
+          "11359091202758361507",
+          "1656249393953518812"
+        ],
+        [
+          "12990646568257293295",
+          "14947728181530378251",
+          "11131290148835061692"
+        ],
+        [
+          "10547600454901591252",
+          "8437894456784643152",
+          "12801583920948952021"
+        ],
+        [
+          "1893328998473556287",
+          "5127205742197091273",
+          "17757195625047294244"
+        ],
+        [
+          "951969327600022684",
+          "12785063036114585696",
+          "14050848445480923509"
+        ],
+        [
+          "1199540320070416867",
+          "17032005025887557018",
+          "911139799371680766"
+        ],
+        [
+          "16910979444404709743",
+          "11389158099310344522",
+          "13720569641704044786"
+        ],
+        [
+          "10763392035338987940",
+          "17095074511869266309",
+          "12350770541595183009"
+        ],
+        [
+          "13201147770399103069",
+          "12935949846251943094",
+          "18171353720197974335"
+        ],
+        [
+          "15350032189010798761",
+          "5219701645878063872",
+          "16309544472427928385"
+        ],
+        [
+          "11430958855156914010",
+          "4476916116957759854",
+          "11067420387275071563"
+        ],
+        [
+          "10849917906375163706",
+          "94858157665325956",
+          "11665881074157639296"
+        ],
+        [
+          "5648685177697574401",
+          "887299861967248167",
+          "16906957456845085742"
+        ],
+        [
+          "11492115737332529460",
+          "7793516050464305710",
+          "9870722949700756068"
+        ],
+        [
+          "4735361312464169089",
+          "12437995962663763080",
+          "2287816593457183265"
+        ],
+        [
+          "1409243778855908748",
+          "9877528042680421357",
+          "15131101328624763995"
+        ],
+        [
+          "9378134066668740283",
+          "6430045287179057418",
+          "2942583535647968201"
+        ],
+        [
+          "4764494859923837503",
+          "953926606454109854",
+          "17243907066498914278"
+        ],
+        [
+          "16592601260390570207",
+          "5575656056345127866",
+          "16891099665238270377"
+        ],
+        [
+          "5781897807441656690",
+          "17656073321909906168",
+          "8137230387842167263"
+        ],
+        [
+          "13097860798370039081",
+          "12012066814029889650",
+          "18318892649400467436"
+        ],
+        [
+          "960523496934745822",
+          "10606519463742762435",
+          "12463032968101620094"
+        ],
+        [
+          "8293609171447923561",
+          "15187591765504511199",
+          "10113696564863944724"
+        ],
+        [
+          "17501465981211985617",
+          "2631234454107192678",
+          "11706042922876994052"
+        ],
+        [
+          "4520217649646165690",
+          "10362686781689679506",
+          "10144554925752575011"
+        ],
+        [
+          "1887091877345014270",
+          "7395473125759813129",
+          "6631334208164493597"
+        ],
+        [
+          "13496260738450147553",
+          "16547009771045174422",
+          "17984956265707344536"
+        ],
+        [
+          "6894669968637547600",
+          "9957787062261348614",
+          "7587147842332018532"
+        ],
+        [
+          "6146297254772604360",
+          "10455828018671698365",
+          "1823621452422821786"
+        ],
+        [
+          "9433305448996661450",
+          "9211776398589185644",
+          "2231876425642782251"
+        ],
+        [
+          "15824714206996384735",
+          "3389676684554280038",
+          "13669117334999094480"
+        ],
+        [
+          "683964843492127462",
+          "16775103055485890128",
+          "11144897312688837328"
+        ],
+        [
+          "4494648274010482492",
+          "4903274951505079098",
+          "8203189992900468230"
+        ],
+        [
+          "5595650420272094803",
+          "16167116009453743692",
+          "13397381894158335576"
+        ],
+        [
+          "10111977524612985599",
+          "10927850102300511225",
+          "16273587543404163265"
+        ],
+        [
+          "348422049589007663",
+          "16459311000625411415",
+          "14907008980775043817"
+        ],
+        [
+          "3105393460048863592",
+          "3637027333402415829",
+          "6779526032491716997"
+        ],
+        [
+          "11396164661182174290",
+          "7757315190725899908",
+          "7786778803205218478"
+        ],
+        [
+          "3988858515239435121",
+          "3205282827122452289",
+          "4660851727840729089"
+        ],
+        [
+          "1395158867085027102",
+          "16529490508953973012",
+          "4463854741569508965"
+        ],
+        [
+          "59257272499401953",
+          "13169588499060013271",
+          "14698692037199522628"
+        ],
+        [
+          "5690442699695936403",
+          "3865468282360202982",
+          "9103006629135649724"
+        ],
+        [
+          "3073588738540370910",
+          "14665814068429720996",
+          "17496872673094014855"
+        ],
+        [
+          "14050611814025085927",
+          "15989637931621323650",
+          "8692719478287613232"
+        ],
+        [
+          "16315799407284653403",
+          "10346435866084265962",
+          "1533413468618812800"
+        ],
+        [
+          "13004084242533404669",
+          "11675281877130631923",
+          "540217442196808016"
+        ],
+        [
+          "14520866773330274382",
+          "2441212019760651516",
+          "7577563514300051751"
+        ],
+        [
+          "17395806422604020761",
+          "9739828186674674298",
+          "14837233195819640718"
+        ],
+        [
+          "6027497206439675479",
+          "2937089649845772553",
+          "10197137841553529344"
+        ],
+        [
+          "10671420633617831641",
+          "11220941196560040936",
+          "7406672213002503256"
+        ],
+        [
+          "12844087678863277748",
+          "1996576668844818202",
+          "13620909063781978946"
+        ],
+        [
+          "14980857891378696543",
+          "7149714542994412424",
+          "8212315508004613279"
+        ],
+        [
+          "16268749552457781257",
+          "18002306181121410877",
+          "1789838136339434639"
+        ],
+        [
+          "6370041484188448851",
+          "5116726179649944254",
+          "567886593757813658"
+        ],
+        [
+          "12724704152941444186",
+          "16399027813131929415",
+          "11782919094516002381"
+        ],
+        [
+          "15129099771241718724",
+          "16240619312864573238",
+          "18010996088283527818"
+        ],
+        [
+          "3895034003055940475",
+          "12960189116169487276",
+          "5913078078357422548"
+        ],
+        [
+          "15302934095933751394",
+          "17460600046656811953",
+          "7472348385574457355"
+        ],
+        [
+          "3921953817323890940",
+          "2085013533218345393",
+          "11860436903094688017"
+        ],
+        [
+          "13389749666084428558",
+          "18431891847538373737",
+          "6050373227062711747"
+        ],
+        [
+          "5760321661788758932",
+          "795067365309045588",
+          "10657732586672283909"
+        ],
+        [
+          "4283036075812315556",
+          "1500518352708058163",
+          "538165702930794644"
+        ],
+        [
+          "6407572292565018479",
+          "8203942715186981082",
+          "16295237088795272783"
+        ],
+        [
+          "2796259051128579031",
+          "11873297985656968596",
+          "13855377460969152412"
+        ],
+        [
+          "2683577545254018446",
+          "15699786178672346369",
+          "7013079555476383749"
+        ],
+        [
+          "16247683500685262808",
+          "11854369851846931448",
+          "7052688333677860881"
+        ],
+        [
+          "1644198987225871025",
+          "3168793657905722465",
+          "2256473460929982483"
+        ],
+        [
+          "7254113816131087576",
+          "6702164406972291220",
+          "14282791983465939896"
+        ],
+        [
+          "11979857111593848672",
+          "13239985511441974083",
+          "6068888174458313170"
+        ],
+        [
+          "9556319414765049391",
+          "15025236007014522274",
+          "9873637710302321934"
+        ],
+        [
+          "8256142694828575928",
+          "12212186160088395681",
+          "11373416933854606498"
+        ],
+        [
+          "11326526675001851972",
+          "12496053062384350386",
+          "8996656418831777396"
+        ],
+        [
+          "9694715268205631153",
+          "7047434680184821484",
+          "85393079928478028"
+        ],
+        [
+          "2752660335618894117",
+          "17550614559534489118",
+          "9129286217244026619"
+        ],
+        [
+          "16511549224834877366",
+          "6678251679936849092",
+          "18180930707204677501"
+        ],
+        [
+          "8057377229272591273",
+          "12711210858933308610",
+          "5416234111256386535"
+        ],
+        [
+          "14702279312337390110",
+          "12588098093187783545",
+          "6026676208426258548"
+        ],
+        [
+          "15749413322246135839",
+          "13696634242229085969",
+          "10427253124213196163"
+        ],
+        [
+          "3135011540424349243",
+          "5232033893707231814",
+          "12194310756676120569"
+        ],
+        [
+          "7383242609268916532",
+          "18098481675866320970",
+          "13828726317601930418"
+        ],
+        [
+          "3155616145761733521",
+          "7136286195418613761",
+          "15676063695795747071"
+        ],
+        [
+          "877086315441067427",
+          "1560159489487800668",
+          "11274439174553621450"
+        ],
+        [
+          "16448931947787071184",
+          "2227812713728629496",
+          "14984815150824071468"
+        ],
+        [
+          "16920628469518239303",
+          "1145073005521896625",
+          "3706362773663376008"
+        ],
+        [
+          "2554972938105136266",
+          "264517056920927046",
+          "4973962095361071085"
+        ],
+        [
+          "14176769358957927442",
+          "5051498643542942712",
+          "13945526004627259497"
+        ],
+        [
+          "11005173009704329443",
+          "10832624651691433674",
+          "16705159086738515082"
+        ],
+        [
+          "16048921630132748407",
+          "16951239238691908674",
+          "4020986415380872951"
+        ],
+        [
+          "12488715128362891648",
+          "32345657777412387",
+          "15045113373174214218"
+        ],
+        [
+          "6548659630196306885",
+          "16684640374717575297",
+          "4546422136520628003"
+        ],
+        [
+          "1311747212490466214",
+          "10548455535420470150",
+          "16595837611242108036"
+        ],
+        [
+          "16663844417969154945",
+          "3725390327978671295",
+          "8307313123861731834"
+        ],
+        [
+          "267811065615835542",
+          "7841607303032080160",
+          "8668704362182393117"
+        ],
+        [
+          "12657188273914413049",
+          "1513658949843609635",
+          "14519836434058830814"
+        ],
+        [
+          "9664046792850928538",
+          "12805389604964522585",
+          "7207574283136985908"
+        ],
+        [
+          "15574183450728990702",
+          "3818229386397980319",
+          "354649411811027152"
+        ],
+        [
+          "7911777910227214871",
+          "2089397711615319270",
+          "11035035504617086077"
+        ],
+        [
+          "15381202937277335318",
+          "4597790798832817841",
+          "5373991728126469631"
+        ],
+        [
+          "6088148945600021777",
+          "13095643736695579568",
+          "10099201549540248306"
+        ],
+        [
+          "464642215794040133",
+          "12726250917863365378",
+          "9209056876590137883"
+        ],
+        [
+          "6425873577874552368",
+          "501211523061935944",
+          "12702247632749962464"
+        ],
+        [
+          "9703158397937745552",
+          "10179046980678975205",
+          "14026104667258182082"
+        ],
+        [
+          "15928708134179569196",
+          "3326520480186853984",
+          "11523497911311496476"
+        ],
+        [
+          "4946846859642946381",
+          "13701829519309823027",
+          "5187474246398641611"
+        ],
+        [
+          "14686168743011558349",
+          "15264899611079225624",
+          "9449584031805299870"
+        ],
+        [
+          "13460364634513681851",
+          "17735766954107393930",
+          "6358332335473587784"
+        ],
+        [
+          "5203179422786827545",
+          "2573983279521477865",
+          "4067707217821067344"
+        ],
+        [
+          "7512862660771785628",
+          "8847344046664111304",
+          "2469254701764438522"
+        ],
+        [
+          "17584833775983012781",
+          "15368281573036042717",
+          "11009036209329161336"
+        ],
+        [
+          "6443700459246965660",
+          "7565276296754720491",
+          "1349847282237746173"
+        ],
+        [
+          "1081815822299474179",
+          "17966494391570346665",
+          "18361648852175207116"
+        ],
+        [
+          "2916342409379693113",
+          "14745145487991201294",
+          "9839422886840056973"
+        ],
+        [
+          "8705113323659892959",
+          "5569562597837986833",
+          "2770287361334210256"
+        ],
+        [
+          "1125736981020605595",
+          "16287513592105428046",
+          "13293572295694898090"
+        ],
+        [
+          "6782993123497921138",
+          "14070975404293727432",
+          "6188235896270671613"
+        ],
+        [
+          "6771713466786665292",
+          "9741599317717259415",
+          "13161182972502317927"
+        ],
+        [
+          "7667553591555202185",
+          "12924408492116358769",
+          "7650387350433102276"
+        ],
+        [
+          "12979679302999524522",
+          "1419426428959685298",
+          "10881792419490872414"
+        ],
+        [
+          "2309142097564086548",
+          "12589855335284583598",
+          "2555767569361959786"
+        ],
+        [
+          "15346779700945267160",
+          "11354851122714793819",
+          "3702445645105857956"
+        ],
+        [
+          "8751568142253012750",
+          "17097711279927870974",
+          "1767537044995827303"
+        ],
+        [
+          "9861193962808111455",
+          "15553248987671050213",
+          "546884525853081601"
+        ],
+        [
+          "18271338664861387600",
+          "2352778994117625549",
+          "11035485814020825131"
+        ],
+        [
+          "16026101363312534587",
+          "8724198805745838771",
+          "14284221898182527099"
+        ],
+        [
+          "11582367026209523567",
+          "15935082432322152587",
+          "16684932338119129522"
+        ],
+        [
+          "6572647616263862149",
+          "4789706473080054549",
+          "11229639360456482983"
+        ],
+        [
+          "3221418293434413585",
+          "18322363010640237520",
+          "16498854578536207849"
+        ],
+        [
+          "7511718291638134855",
+          "17070328266138888055",
+          "5102806146571920204"
+        ],
+        [
+          "13527543695465182788",
+          "8531437965780611",
+          "7217134430279039795"
+        ],
+        [
+          "9524448181128766287",
+          "11042571821576054229",
+          "15805066147157202321"
+        ],
+        [
+          "6850914142856710397",
+          "14049176944013934444",
+          "4493929915270274212"
+        ],
+        [
+          "4055279140411075102",
+          "16117273897973212054",
+          "10943266046416663904"
+        ],
+        [
+          "7813837641488445908",
+          "6285277898246753394",
+          "6284481938624912684"
+        ],
+        [
+          "1409251419277691412",
+          "16692975386618593376",
+          "2330123343358398613"
+        ],
+        [
+          "4605321862189137198",
+          "7072993941960858241",
+          "8014721371259932076"
+        ],
+        [
+          "10812073354333905400",
+          "4263204029254340024",
+          "3858697223922716132"
+        ],
+        [
+          "7115874035622641533",
+          "16136585510117252067",
+          "8626172791849723090"
+        ],
+        [
+          "7878940684459739226",
+          "18153235449976665890",
+          "8076561543936188220"
+        ],
+        [
+          "10513015984306159976",
+          "8920327354832173438",
+          "10802680784958199078"
+        ],
+        [
+          "17228608975759643071",
+          "7791130847094153855",
+          "11092726625128933739"
+        ],
+        [
+          "8496702461108689237",
+          "7157518443118760901",
+          "11664220445753560837"
+        ],
+        [
+          "5817170348217080691",
+          "16411401091419950853",
+          "15521085126659653408"
+        ],
+        [
+          "12838128039128062530",
+          "11319250453934167163",
+          "8836766963517790088"
+        ],
+        [
+          "14993265324775705262",
+          "15531475660483339121",
+          "5108217623477758122"
+        ],
+        [
+          "17320318647776730700",
+          "10313410382000874980",
+          "16206057870541759025"
+        ],
+        [
+          "6260266554205408399",
+          "2554379366954800906",
+          "12133781744107656165"
+        ],
+        [
+          "2220768675817257902",
+          "6542472864907396007",
+          "17400573410923532098"
+        ],
+        [
+          "7381909991980631747",
+          "14609737080209224009",
+          "1182006394200193991"
+        ],
+        [
+          "12327317754555133449",
+          "13865164277985610103",
+          "5772838027051481023"
+        ],
+        [
+          "5618379722402965471",
+          "12614146337372576343",
+          "17976568981157266940"
+        ],
+        [
+          "199029148511203350",
+          "11502666108794968106",
+          "10918487440262504875"
+        ],
+        [
+          "8751948684106132159",
+          "13194839558402396031",
+          "10237840692527727558"
+        ],
+        [
+          "16789886435110789979",
+          "4251005455924758806",
+          "4705973608077805338"
+        ],
+        [
+          "14877119958862955327",
+          "8860997276971932020",
+          "15447082161822050234"
+        ],
+        [
+          "2587165250097406192",
+          "15043822807756955813",
+          "199093769856509762"
+        ],
+        [
+          "5410519240481498660",
+          "10396617162928182697",
+          "13467098287494327001"
+        ],
+        [
+          "16244819509046799839",
+          "6632551168740637322",
+          "18411152515301428738"
+        ],
+        [
+          "16197312071934278945",
+          "10715660946946382457",
+          "12600909276528505003"
+        ],
+        [
+          "2408784560345900887",
+          "14397809514792979602",
+          "1080051969775002167"
+        ],
+        [
+          "17276400671511671754",
+          "10225022830017042456",
+          "17461790737273693817"
+        ],
+        [
+          "12675658596052624039",
+          "8385322370542913035",
+          "3747657128975564147"
+        ],
+        [
+          "17408633562171302186",
+          "3486436451069789529",
+          "11543377123477240420"
+        ],
+        [
+          "7837237305495182374",
+          "15988386696678104762",
+          "13512600358747004796"
+        ],
+        [
+          "17777613934116085830",
+          "11788096209081417840",
+          "12479197065124557910"
+        ],
+        [
+          "3307513581173598436",
+          "6191220102114117929",
+          "13293779162629671961"
+        ],
+        [
+          "11763369415922569916",
+          "8585008489595672745",
+          "1721336612430466672"
+        ],
+        [
+          "16438400826260768654",
+          "14841370656530554466",
+          "3559136986458462985"
+        ],
+        [
+          "18154018176431526873",
+          "16435561116279606442",
+          "69035631049983567"
+        ],
+        [
+          "10066497529033771457",
+          "16305487841479082745",
+          "414951697569151073"
+        ],
+        [
+          "13870613880388112530",
+          "8875165022135909762",
+          "2230575364672927688"
+        ],
+        [
+          "2953420603699417914",
+          "17375088849675465194",
+          "9422604735625022933"
+        ],
+        [
+          "1448331867151710417",
+          "16392573534912037855",
+          "2223293944101747679"
+        ],
+        [
+          "17318685097776401199",
+          "2065393988696776319",
+          "14401263848019772795"
+        ],
+        [
+          "1051026542603262578",
+          "668186981545914745",
+          "16861220961856043186"
+        ],
+        [
+          "10187318755838947120",
+          "18202085624051628766",
+          "769657786704135728"
+        ],
+        [
+          "17944241106443564940",
+          "16645502494752028577",
+          "10576418223550966799"
+        ],
+        [
+          "13531661957053644732",
+          "3590662926409467894",
+          "4876757636222450690"
+        ],
+        [
+          "4553445888574794803",
+          "7326740223381196857",
+          "1335111022025687608"
+        ],
+        [
+          "299897534666943308",
+          "7958981783918797313",
+          "16175072007441250578"
+        ],
+        [
+          "6874335978660225790",
+          "9761425344044223520",
+          "3327840922704009286"
+        ],
+        [
+          "487554525991962490",
+          "6953548887237036165",
+          "8142823433325987306"
+        ],
+        [
+          "15385300217030521913",
+          "11415202518585905155",
+          "5641371390839744797"
+        ],
+        [
+          "2123919091470112746",
+          "15995426099281203308",
+          "5295447036739483157"
+        ],
+        [
+          "11338344370669011243",
+          "13508153580858058730",
+          "195073831753881795"
+        ],
+        [
+          "10383246065792694236",
+          "9003955909987180214",
+          "12648975753202305920"
+        ],
+        [
+          "6644118949500545608",
+          "16796331512749322735",
+          "2269426047095970113"
+        ],
+        [
+          "9419840946638357225",
+          "12202098549189773574",
+          "152417101167391246"
+        ],
+        [
+          "11064569727643298591",
+          "7721349076345021376",
+          "14891679380889203352"
+        ],
+        [
+          "11498222742765914314",
+          "2922361588494975684",
+          "5491357292987550950"
+        ],
+        [
+          "1379789686689960236",
+          "8460840920776875344",
+          "15021643165620221280"
+        ],
+        [
+          "5448424368808087994",
+          "9197130243296918707",
+          "14047302707706757520"
+        ],
+        [
+          "609382936189712738",
+          "10949603867635834263",
+          "2134714269303814183"
+        ],
+        [
+          "4337741136762922061",
+          "3802484042238677848",
+          "10464754316438133563"
+        ]
+      ],
+      "settings": {
+        "background": "dinucleotide",
+        "coordinates": "0-based half-open, forward reference",
+        "estimated_work": 4117680,
+        "implementation": "wilson-dinucleotide-python/1",
+        "limits": {
+          "artifact_bytes": 8388608,
+          "input_bytes": 1048576,
+          "manifest_bytes": 65536,
+          "matches": 30000,
+          "motif_length": 64,
+          "motifs": 32,
+          "records": 1000,
+          "seconds": 120.0,
+          "sequence_length": 100000,
+          "shuffles": 999,
+          "total_bases": 200000,
+          "work": 120000000
+        },
+        "multiplicity": "Holm across all motifs in this analysis",
+        "null": "independent concrete runs; fixed endpoints, mono/dinucleotide counts and ambiguous positions",
+        "rng": "SHA256 record and run streams; Python MT19937 getrandbits rejection; Wilson last-exit tree v1",
+        "seed": "2026101317",
+        "shuffles": 199
+      },
+      "statistics": [
+        {
+          "control_counts": [
+            12,
+            15,
+            17,
+            11,
+            17,
+            17,
+            16,
+            15,
+            10,
+            23,
+            12,
+            17,
+            16,
+            18,
+            17,
+            13,
+            18,
+            17,
+            18,
+            15,
+            9,
+            21,
+            19,
+            18,
+            21,
+            10,
+            17,
+            15,
+            23,
+            19,
+            16,
+            16,
+            22,
+            15,
+            15,
+            16,
+            16,
+            22,
+            20,
+            14,
+            15,
+            16,
+            18,
+            21,
+            19,
+            19,
+            14,
+            23,
+            18,
+            16,
+            18,
+            16,
+            18,
+            13,
+            18,
+            14,
+            22,
+            20,
+            11,
+            19,
+            19,
+            14,
+            14,
+            20,
+            16,
+            9,
+            17,
+            16,
+            23,
+            18,
+            17,
+            14,
+            18,
+            16,
+            15,
+            19,
+            19,
+            19,
+            11,
+            15,
+            19,
+            9,
+            13,
+            20,
+            18,
+            12,
+            13,
+            18,
+            18,
+            14,
+            21,
+            15,
+            16,
+            13,
+            16,
+            17,
+            21,
+            15,
+            11,
+            14,
+            14,
+            19,
+            21,
+            20,
+            14,
+            18,
+            13,
+            20,
+            20,
+            18,
+            21,
+            21,
+            17,
+            13,
+            13,
+            14,
+            14,
+            16,
+            13,
+            13,
+            11,
+            14,
+            14,
+            20,
+            14,
+            20,
+            14,
+            18,
+            17,
+            15,
+            18,
+            16,
+            21,
+            13,
+            17,
+            22,
+            23,
+            19,
+            21,
+            15,
+            23,
+            17,
+            13,
+            16,
+            14,
+            14,
+            18,
+            14,
+            15,
+            19,
+            15,
+            18,
+            18,
+            16,
+            23,
+            12,
+            18,
+            14,
+            16,
+            19,
+            19,
+            20,
+            16,
+            13,
+            14,
+            18,
+            18,
+            17,
+            21,
+            16,
+            15,
+            15,
+            16,
+            16,
+            17,
+            16,
+            24,
+            21,
+            19,
+            14,
+            18,
+            14,
+            16,
+            19,
+            19,
+            17,
+            11,
+            15,
+            20,
+            17,
+            16,
+            14,
+            20,
+            11,
+            16,
+            15,
+            24,
+            15,
+            15
+          ],
+          "control_mean": 16.63819095477387,
+          "difference": -1.6381909547738687,
+          "exceedances": 146,
+          "fold": 0.9015403201449713,
+          "fold_note": null,
+          "observed": 15,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_comparison": 1.0,
+          "p_numerator": 147,
+          "p_upper": 0.735
+        },
+        {
+          "control_counts": [
+            35,
+            37,
+            29,
+            33,
+            38,
+            31,
+            34,
+            32,
+            34,
+            33,
+            38,
+            32,
+            41,
+            32,
+            31,
+            30,
+            39,
+            43,
+            42,
+            33,
+            34,
+            35,
+            31,
+            30,
+            36,
+            32,
+            29,
+            44,
+            33,
+            34,
+            33,
+            33,
+            31,
+            35,
+            39,
+            33,
+            34,
+            34,
+            36,
+            29,
+            29,
+            31,
+            41,
+            41,
+            36,
+            36,
+            36,
+            41,
+            40,
+            34,
+            31,
+            34,
+            34,
+            36,
+            32,
+            37,
+            38,
+            30,
+            32,
+            37,
+            38,
+            38,
+            35,
+            36,
+            31,
+            32,
+            32,
+            31,
+            32,
+            36,
+            34,
+            31,
+            33,
+            40,
+            34,
+            36,
+            40,
+            34,
+            39,
+            35,
+            36,
+            34,
+            34,
+            44,
+            37,
+            39,
+            30,
+            38,
+            39,
+            39,
+            36,
+            38,
+            37,
+            25,
+            28,
+            38,
+            33,
+            36,
+            36,
+            37,
+            27,
+            34,
+            36,
+            34,
+            46,
+            31,
+            36,
+            36,
+            39,
+            31,
+            35,
+            32,
+            35,
+            41,
+            41,
+            32,
+            30,
+            41,
+            35,
+            37,
+            36,
+            39,
+            35,
+            30,
+            30,
+            36,
+            28,
+            36,
+            34,
+            37,
+            36,
+            28,
+            31,
+            36,
+            32,
+            38,
+            33,
+            34,
+            30,
+            33,
+            27,
+            28,
+            33,
+            38,
+            33,
+            38,
+            39,
+            35,
+            41,
+            37,
+            34,
+            38,
+            37,
+            41,
+            27,
+            31,
+            36,
+            27,
+            27,
+            34,
+            44,
+            28,
+            33,
+            30,
+            36,
+            36,
+            37,
+            33,
+            30,
+            37,
+            38,
+            35,
+            32,
+            34,
+            34,
+            33,
+            35,
+            28,
+            37,
+            31,
+            37,
+            31,
+            29,
+            36,
+            41,
+            30,
+            27,
+            34,
+            36,
+            36,
+            32,
+            33,
+            38,
+            36,
+            48,
+            31,
+            38,
+            36,
+            30
+          ],
+          "control_mean": 34.62814070351759,
+          "difference": 12.371859296482413,
+          "exceedances": 1,
+          "fold": 1.3572776084748222,
+          "fold_note": null,
+          "observed": 47,
+          "p_denominator": 200,
+          "p_holm": 0.03,
+          "p_holm_comparison": 0.05,
+          "p_numerator": 2,
+          "p_upper": 0.01
+        },
+        {
+          "control_counts": [
+            2,
+            2,
+            0,
+            2,
+            4,
+            0,
+            2,
+            2,
+            2,
+            5,
+            2,
+            2,
+            3,
+            0,
+            1,
+            4,
+            2,
+            3,
+            0,
+            4,
+            3,
+            3,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            3,
+            3,
+            1,
+            3,
+            2,
+            2,
+            2,
+            0,
+            2,
+            1,
+            1,
+            1,
+            3,
+            1,
+            1,
+            0,
+            3,
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            4,
+            2,
+            5,
+            1,
+            1,
+            3,
+            4,
+            0,
+            0,
+            1,
+            4,
+            1,
+            3,
+            5,
+            1,
+            0,
+            0,
+            3,
+            3,
+            2,
+            3,
+            2,
+            5,
+            5,
+            1,
+            1,
+            2,
+            3,
+            2,
+            3,
+            4,
+            1,
+            1,
+            1,
+            1,
+            3,
+            0,
+            1,
+            0,
+            3,
+            3,
+            3,
+            4,
+            0,
+            4,
+            1,
+            0,
+            1,
+            2,
+            3,
+            5,
+            0,
+            1,
+            1,
+            3,
+            2,
+            4,
+            3,
+            1,
+            0,
+            3,
+            3,
+            3,
+            0,
+            1,
+            0,
+            0,
+            2,
+            1,
+            4,
+            2,
+            4,
+            1,
+            0,
+            0,
+            2,
+            2,
+            5,
+            5,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            0,
+            0,
+            2,
+            2,
+            1,
+            3,
+            1,
+            2,
+            4,
+            1,
+            0,
+            1,
+            3,
+            2,
+            3,
+            4,
+            2,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            0,
+            3,
+            3,
+            0,
+            3,
+            1,
+            2,
+            2,
+            0,
+            4,
+            6,
+            3,
+            1,
+            1,
+            1,
+            3,
+            2,
+            1,
+            0,
+            0,
+            5,
+            1,
+            1,
+            3,
+            0,
+            2,
+            3,
+            3,
+            1,
+            0,
+            3,
+            1,
+            2,
+            0,
+            1,
+            3,
+            2,
+            1,
+            1
+          ],
+          "control_mean": 1.9095477386934674,
+          "difference": -1.9095477386934674,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_comparison": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0
+        },
+        {
+          "control_counts": [
+            2,
+            1,
+            2,
+            1,
+            1,
+            3,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            4,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            2,
+            3,
+            4,
+            1,
+            2,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            3,
+            1,
+            0,
+            2,
+            1,
+            2,
+            4,
+            0,
+            3,
+            2,
+            2,
+            3,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            2,
+            0,
+            3,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0,
+            1,
+            3,
+            0,
+            1,
+            2,
+            0,
+            1,
+            2,
+            3,
+            2,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            3,
+            4,
+            0,
+            2,
+            0,
+            3,
+            3,
+            0,
+            6,
+            3,
+            4,
+            3,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            0,
+            2,
+            1,
+            1,
+            1,
+            3,
+            2,
+            3,
+            1,
+            1,
+            1,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            2,
+            0,
+            4,
+            0,
+            0,
+            0,
+            2,
+            3,
+            2,
+            1,
+            1,
+            2,
+            0,
+            2,
+            2,
+            0,
+            4,
+            0,
+            1,
+            3,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            4,
+            2,
+            2,
+            0,
+            4,
+            3,
+            1,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            3,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            0,
+            1
+          ],
+          "control_mean": 1.2512562814070352,
+          "difference": 14.748743718592966,
+          "exceedances": 0,
+          "fold": 12.787148594377511,
+          "fold_note": null,
+          "observed": 16,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_comparison": 0.04,
+          "p_numerator": 1,
+          "p_upper": 0.005
+        }
+      ]
+    },
+    "mononucleotide": {
+      "control_seeds": [
+        [
+          "17141522512085007069",
+          "6387530863946972405",
+          "2655179571536597020"
+        ],
+        [
+          "4637932592161718020",
+          "14432778146039578903",
+          "6238131837270356028"
+        ],
+        [
+          "7192303400122066760",
+          "8625653908281204425",
+          "1887997250157228981"
+        ],
+        [
+          "11207953525109053990",
+          "13029790167357515787",
+          "6490657962032130684"
+        ],
+        [
+          "1651920063460260278",
+          "13776871920970377037",
+          "15998540916167241678"
+        ],
+        [
+          "7840569334788781506",
+          "2294060437505766233",
+          "185424630823774359"
+        ],
+        [
+          "10175101406239758901",
+          "11359091202758361507",
+          "1656249393953518812"
+        ],
+        [
+          "12990646568257293295",
+          "14947728181530378251",
+          "11131290148835061692"
+        ],
+        [
+          "10547600454901591252",
+          "8437894456784643152",
+          "12801583920948952021"
+        ],
+        [
+          "1893328998473556287",
+          "5127205742197091273",
+          "17757195625047294244"
+        ],
+        [
+          "951969327600022684",
+          "12785063036114585696",
+          "14050848445480923509"
+        ],
+        [
+          "1199540320070416867",
+          "17032005025887557018",
+          "911139799371680766"
+        ],
+        [
+          "16910979444404709743",
+          "11389158099310344522",
+          "13720569641704044786"
+        ],
+        [
+          "10763392035338987940",
+          "17095074511869266309",
+          "12350770541595183009"
+        ],
+        [
+          "13201147770399103069",
+          "12935949846251943094",
+          "18171353720197974335"
+        ],
+        [
+          "15350032189010798761",
+          "5219701645878063872",
+          "16309544472427928385"
+        ],
+        [
+          "11430958855156914010",
+          "4476916116957759854",
+          "11067420387275071563"
+        ],
+        [
+          "10849917906375163706",
+          "94858157665325956",
+          "11665881074157639296"
+        ],
+        [
+          "5648685177697574401",
+          "887299861967248167",
+          "16906957456845085742"
+        ],
+        [
+          "11492115737332529460",
+          "7793516050464305710",
+          "9870722949700756068"
+        ],
+        [
+          "4735361312464169089",
+          "12437995962663763080",
+          "2287816593457183265"
+        ],
+        [
+          "1409243778855908748",
+          "9877528042680421357",
+          "15131101328624763995"
+        ],
+        [
+          "9378134066668740283",
+          "6430045287179057418",
+          "2942583535647968201"
+        ],
+        [
+          "4764494859923837503",
+          "953926606454109854",
+          "17243907066498914278"
+        ],
+        [
+          "16592601260390570207",
+          "5575656056345127866",
+          "16891099665238270377"
+        ],
+        [
+          "5781897807441656690",
+          "17656073321909906168",
+          "8137230387842167263"
+        ],
+        [
+          "13097860798370039081",
+          "12012066814029889650",
+          "18318892649400467436"
+        ],
+        [
+          "960523496934745822",
+          "10606519463742762435",
+          "12463032968101620094"
+        ],
+        [
+          "8293609171447923561",
+          "15187591765504511199",
+          "10113696564863944724"
+        ],
+        [
+          "17501465981211985617",
+          "2631234454107192678",
+          "11706042922876994052"
+        ],
+        [
+          "4520217649646165690",
+          "10362686781689679506",
+          "10144554925752575011"
+        ],
+        [
+          "1887091877345014270",
+          "7395473125759813129",
+          "6631334208164493597"
+        ],
+        [
+          "13496260738450147553",
+          "16547009771045174422",
+          "17984956265707344536"
+        ],
+        [
+          "6894669968637547600",
+          "9957787062261348614",
+          "7587147842332018532"
+        ],
+        [
+          "6146297254772604360",
+          "10455828018671698365",
+          "1823621452422821786"
+        ],
+        [
+          "9433305448996661450",
+          "9211776398589185644",
+          "2231876425642782251"
+        ],
+        [
+          "15824714206996384735",
+          "3389676684554280038",
+          "13669117334999094480"
+        ],
+        [
+          "683964843492127462",
+          "16775103055485890128",
+          "11144897312688837328"
+        ],
+        [
+          "4494648274010482492",
+          "4903274951505079098",
+          "8203189992900468230"
+        ],
+        [
+          "5595650420272094803",
+          "16167116009453743692",
+          "13397381894158335576"
+        ],
+        [
+          "10111977524612985599",
+          "10927850102300511225",
+          "16273587543404163265"
+        ],
+        [
+          "348422049589007663",
+          "16459311000625411415",
+          "14907008980775043817"
+        ],
+        [
+          "3105393460048863592",
+          "3637027333402415829",
+          "6779526032491716997"
+        ],
+        [
+          "11396164661182174290",
+          "7757315190725899908",
+          "7786778803205218478"
+        ],
+        [
+          "3988858515239435121",
+          "3205282827122452289",
+          "4660851727840729089"
+        ],
+        [
+          "1395158867085027102",
+          "16529490508953973012",
+          "4463854741569508965"
+        ],
+        [
+          "59257272499401953",
+          "13169588499060013271",
+          "14698692037199522628"
+        ],
+        [
+          "5690442699695936403",
+          "3865468282360202982",
+          "9103006629135649724"
+        ],
+        [
+          "3073588738540370910",
+          "14665814068429720996",
+          "17496872673094014855"
+        ],
+        [
+          "14050611814025085927",
+          "15989637931621323650",
+          "8692719478287613232"
+        ],
+        [
+          "16315799407284653403",
+          "10346435866084265962",
+          "1533413468618812800"
+        ],
+        [
+          "13004084242533404669",
+          "11675281877130631923",
+          "540217442196808016"
+        ],
+        [
+          "14520866773330274382",
+          "2441212019760651516",
+          "7577563514300051751"
+        ],
+        [
+          "17395806422604020761",
+          "9739828186674674298",
+          "14837233195819640718"
+        ],
+        [
+          "6027497206439675479",
+          "2937089649845772553",
+          "10197137841553529344"
+        ],
+        [
+          "10671420633617831641",
+          "11220941196560040936",
+          "7406672213002503256"
+        ],
+        [
+          "12844087678863277748",
+          "1996576668844818202",
+          "13620909063781978946"
+        ],
+        [
+          "14980857891378696543",
+          "7149714542994412424",
+          "8212315508004613279"
+        ],
+        [
+          "16268749552457781257",
+          "18002306181121410877",
+          "1789838136339434639"
+        ],
+        [
+          "6370041484188448851",
+          "5116726179649944254",
+          "567886593757813658"
+        ],
+        [
+          "12724704152941444186",
+          "16399027813131929415",
+          "11782919094516002381"
+        ],
+        [
+          "15129099771241718724",
+          "16240619312864573238",
+          "18010996088283527818"
+        ],
+        [
+          "3895034003055940475",
+          "12960189116169487276",
+          "5913078078357422548"
+        ],
+        [
+          "15302934095933751394",
+          "17460600046656811953",
+          "7472348385574457355"
+        ],
+        [
+          "3921953817323890940",
+          "2085013533218345393",
+          "11860436903094688017"
+        ],
+        [
+          "13389749666084428558",
+          "18431891847538373737",
+          "6050373227062711747"
+        ],
+        [
+          "5760321661788758932",
+          "795067365309045588",
+          "10657732586672283909"
+        ],
+        [
+          "4283036075812315556",
+          "1500518352708058163",
+          "538165702930794644"
+        ],
+        [
+          "6407572292565018479",
+          "8203942715186981082",
+          "16295237088795272783"
+        ],
+        [
+          "2796259051128579031",
+          "11873297985656968596",
+          "13855377460969152412"
+        ],
+        [
+          "2683577545254018446",
+          "15699786178672346369",
+          "7013079555476383749"
+        ],
+        [
+          "16247683500685262808",
+          "11854369851846931448",
+          "7052688333677860881"
+        ],
+        [
+          "1644198987225871025",
+          "3168793657905722465",
+          "2256473460929982483"
+        ],
+        [
+          "7254113816131087576",
+          "6702164406972291220",
+          "14282791983465939896"
+        ],
+        [
+          "11979857111593848672",
+          "13239985511441974083",
+          "6068888174458313170"
+        ],
+        [
+          "9556319414765049391",
+          "15025236007014522274",
+          "9873637710302321934"
+        ],
+        [
+          "8256142694828575928",
+          "12212186160088395681",
+          "11373416933854606498"
+        ],
+        [
+          "11326526675001851972",
+          "12496053062384350386",
+          "8996656418831777396"
+        ],
+        [
+          "9694715268205631153",
+          "7047434680184821484",
+          "85393079928478028"
+        ],
+        [
+          "2752660335618894117",
+          "17550614559534489118",
+          "9129286217244026619"
+        ],
+        [
+          "16511549224834877366",
+          "6678251679936849092",
+          "18180930707204677501"
+        ],
+        [
+          "8057377229272591273",
+          "12711210858933308610",
+          "5416234111256386535"
+        ],
+        [
+          "14702279312337390110",
+          "12588098093187783545",
+          "6026676208426258548"
+        ],
+        [
+          "15749413322246135839",
+          "13696634242229085969",
+          "10427253124213196163"
+        ],
+        [
+          "3135011540424349243",
+          "5232033893707231814",
+          "12194310756676120569"
+        ],
+        [
+          "7383242609268916532",
+          "18098481675866320970",
+          "13828726317601930418"
+        ],
+        [
+          "3155616145761733521",
+          "7136286195418613761",
+          "15676063695795747071"
+        ],
+        [
+          "877086315441067427",
+          "1560159489487800668",
+          "11274439174553621450"
+        ],
+        [
+          "16448931947787071184",
+          "2227812713728629496",
+          "14984815150824071468"
+        ],
+        [
+          "16920628469518239303",
+          "1145073005521896625",
+          "3706362773663376008"
+        ],
+        [
+          "2554972938105136266",
+          "264517056920927046",
+          "4973962095361071085"
+        ],
+        [
+          "14176769358957927442",
+          "5051498643542942712",
+          "13945526004627259497"
+        ],
+        [
+          "11005173009704329443",
+          "10832624651691433674",
+          "16705159086738515082"
+        ],
+        [
+          "16048921630132748407",
+          "16951239238691908674",
+          "4020986415380872951"
+        ],
+        [
+          "12488715128362891648",
+          "32345657777412387",
+          "15045113373174214218"
+        ],
+        [
+          "6548659630196306885",
+          "16684640374717575297",
+          "4546422136520628003"
+        ],
+        [
+          "1311747212490466214",
+          "10548455535420470150",
+          "16595837611242108036"
+        ],
+        [
+          "16663844417969154945",
+          "3725390327978671295",
+          "8307313123861731834"
+        ],
+        [
+          "267811065615835542",
+          "7841607303032080160",
+          "8668704362182393117"
+        ],
+        [
+          "12657188273914413049",
+          "1513658949843609635",
+          "14519836434058830814"
+        ],
+        [
+          "9664046792850928538",
+          "12805389604964522585",
+          "7207574283136985908"
+        ],
+        [
+          "15574183450728990702",
+          "3818229386397980319",
+          "354649411811027152"
+        ],
+        [
+          "7911777910227214871",
+          "2089397711615319270",
+          "11035035504617086077"
+        ],
+        [
+          "15381202937277335318",
+          "4597790798832817841",
+          "5373991728126469631"
+        ],
+        [
+          "6088148945600021777",
+          "13095643736695579568",
+          "10099201549540248306"
+        ],
+        [
+          "464642215794040133",
+          "12726250917863365378",
+          "9209056876590137883"
+        ],
+        [
+          "6425873577874552368",
+          "501211523061935944",
+          "12702247632749962464"
+        ],
+        [
+          "9703158397937745552",
+          "10179046980678975205",
+          "14026104667258182082"
+        ],
+        [
+          "15928708134179569196",
+          "3326520480186853984",
+          "11523497911311496476"
+        ],
+        [
+          "4946846859642946381",
+          "13701829519309823027",
+          "5187474246398641611"
+        ],
+        [
+          "14686168743011558349",
+          "15264899611079225624",
+          "9449584031805299870"
+        ],
+        [
+          "13460364634513681851",
+          "17735766954107393930",
+          "6358332335473587784"
+        ],
+        [
+          "5203179422786827545",
+          "2573983279521477865",
+          "4067707217821067344"
+        ],
+        [
+          "7512862660771785628",
+          "8847344046664111304",
+          "2469254701764438522"
+        ],
+        [
+          "17584833775983012781",
+          "15368281573036042717",
+          "11009036209329161336"
+        ],
+        [
+          "6443700459246965660",
+          "7565276296754720491",
+          "1349847282237746173"
+        ],
+        [
+          "1081815822299474179",
+          "17966494391570346665",
+          "18361648852175207116"
+        ],
+        [
+          "2916342409379693113",
+          "14745145487991201294",
+          "9839422886840056973"
+        ],
+        [
+          "8705113323659892959",
+          "5569562597837986833",
+          "2770287361334210256"
+        ],
+        [
+          "1125736981020605595",
+          "16287513592105428046",
+          "13293572295694898090"
+        ],
+        [
+          "6782993123497921138",
+          "14070975404293727432",
+          "6188235896270671613"
+        ],
+        [
+          "6771713466786665292",
+          "9741599317717259415",
+          "13161182972502317927"
+        ],
+        [
+          "7667553591555202185",
+          "12924408492116358769",
+          "7650387350433102276"
+        ],
+        [
+          "12979679302999524522",
+          "1419426428959685298",
+          "10881792419490872414"
+        ],
+        [
+          "2309142097564086548",
+          "12589855335284583598",
+          "2555767569361959786"
+        ],
+        [
+          "15346779700945267160",
+          "11354851122714793819",
+          "3702445645105857956"
+        ],
+        [
+          "8751568142253012750",
+          "17097711279927870974",
+          "1767537044995827303"
+        ],
+        [
+          "9861193962808111455",
+          "15553248987671050213",
+          "546884525853081601"
+        ],
+        [
+          "18271338664861387600",
+          "2352778994117625549",
+          "11035485814020825131"
+        ],
+        [
+          "16026101363312534587",
+          "8724198805745838771",
+          "14284221898182527099"
+        ],
+        [
+          "11582367026209523567",
+          "15935082432322152587",
+          "16684932338119129522"
+        ],
+        [
+          "6572647616263862149",
+          "4789706473080054549",
+          "11229639360456482983"
+        ],
+        [
+          "3221418293434413585",
+          "18322363010640237520",
+          "16498854578536207849"
+        ],
+        [
+          "7511718291638134855",
+          "17070328266138888055",
+          "5102806146571920204"
+        ],
+        [
+          "13527543695465182788",
+          "8531437965780611",
+          "7217134430279039795"
+        ],
+        [
+          "9524448181128766287",
+          "11042571821576054229",
+          "15805066147157202321"
+        ],
+        [
+          "6850914142856710397",
+          "14049176944013934444",
+          "4493929915270274212"
+        ],
+        [
+          "4055279140411075102",
+          "16117273897973212054",
+          "10943266046416663904"
+        ],
+        [
+          "7813837641488445908",
+          "6285277898246753394",
+          "6284481938624912684"
+        ],
+        [
+          "1409251419277691412",
+          "16692975386618593376",
+          "2330123343358398613"
+        ],
+        [
+          "4605321862189137198",
+          "7072993941960858241",
+          "8014721371259932076"
+        ],
+        [
+          "10812073354333905400",
+          "4263204029254340024",
+          "3858697223922716132"
+        ],
+        [
+          "7115874035622641533",
+          "16136585510117252067",
+          "8626172791849723090"
+        ],
+        [
+          "7878940684459739226",
+          "18153235449976665890",
+          "8076561543936188220"
+        ],
+        [
+          "10513015984306159976",
+          "8920327354832173438",
+          "10802680784958199078"
+        ],
+        [
+          "17228608975759643071",
+          "7791130847094153855",
+          "11092726625128933739"
+        ],
+        [
+          "8496702461108689237",
+          "7157518443118760901",
+          "11664220445753560837"
+        ],
+        [
+          "5817170348217080691",
+          "16411401091419950853",
+          "15521085126659653408"
+        ],
+        [
+          "12838128039128062530",
+          "11319250453934167163",
+          "8836766963517790088"
+        ],
+        [
+          "14993265324775705262",
+          "15531475660483339121",
+          "5108217623477758122"
+        ],
+        [
+          "17320318647776730700",
+          "10313410382000874980",
+          "16206057870541759025"
+        ],
+        [
+          "6260266554205408399",
+          "2554379366954800906",
+          "12133781744107656165"
+        ],
+        [
+          "2220768675817257902",
+          "6542472864907396007",
+          "17400573410923532098"
+        ],
+        [
+          "7381909991980631747",
+          "14609737080209224009",
+          "1182006394200193991"
+        ],
+        [
+          "12327317754555133449",
+          "13865164277985610103",
+          "5772838027051481023"
+        ],
+        [
+          "5618379722402965471",
+          "12614146337372576343",
+          "17976568981157266940"
+        ],
+        [
+          "199029148511203350",
+          "11502666108794968106",
+          "10918487440262504875"
+        ],
+        [
+          "8751948684106132159",
+          "13194839558402396031",
+          "10237840692527727558"
+        ],
+        [
+          "16789886435110789979",
+          "4251005455924758806",
+          "4705973608077805338"
+        ],
+        [
+          "14877119958862955327",
+          "8860997276971932020",
+          "15447082161822050234"
+        ],
+        [
+          "2587165250097406192",
+          "15043822807756955813",
+          "199093769856509762"
+        ],
+        [
+          "5410519240481498660",
+          "10396617162928182697",
+          "13467098287494327001"
+        ],
+        [
+          "16244819509046799839",
+          "6632551168740637322",
+          "18411152515301428738"
+        ],
+        [
+          "16197312071934278945",
+          "10715660946946382457",
+          "12600909276528505003"
+        ],
+        [
+          "2408784560345900887",
+          "14397809514792979602",
+          "1080051969775002167"
+        ],
+        [
+          "17276400671511671754",
+          "10225022830017042456",
+          "17461790737273693817"
+        ],
+        [
+          "12675658596052624039",
+          "8385322370542913035",
+          "3747657128975564147"
+        ],
+        [
+          "17408633562171302186",
+          "3486436451069789529",
+          "11543377123477240420"
+        ],
+        [
+          "7837237305495182374",
+          "15988386696678104762",
+          "13512600358747004796"
+        ],
+        [
+          "17777613934116085830",
+          "11788096209081417840",
+          "12479197065124557910"
+        ],
+        [
+          "3307513581173598436",
+          "6191220102114117929",
+          "13293779162629671961"
+        ],
+        [
+          "11763369415922569916",
+          "8585008489595672745",
+          "1721336612430466672"
+        ],
+        [
+          "16438400826260768654",
+          "14841370656530554466",
+          "3559136986458462985"
+        ],
+        [
+          "18154018176431526873",
+          "16435561116279606442",
+          "69035631049983567"
+        ],
+        [
+          "10066497529033771457",
+          "16305487841479082745",
+          "414951697569151073"
+        ],
+        [
+          "13870613880388112530",
+          "8875165022135909762",
+          "2230575364672927688"
+        ],
+        [
+          "2953420603699417914",
+          "17375088849675465194",
+          "9422604735625022933"
+        ],
+        [
+          "1448331867151710417",
+          "16392573534912037855",
+          "2223293944101747679"
+        ],
+        [
+          "17318685097776401199",
+          "2065393988696776319",
+          "14401263848019772795"
+        ],
+        [
+          "1051026542603262578",
+          "668186981545914745",
+          "16861220961856043186"
+        ],
+        [
+          "10187318755838947120",
+          "18202085624051628766",
+          "769657786704135728"
+        ],
+        [
+          "17944241106443564940",
+          "16645502494752028577",
+          "10576418223550966799"
+        ],
+        [
+          "13531661957053644732",
+          "3590662926409467894",
+          "4876757636222450690"
+        ],
+        [
+          "4553445888574794803",
+          "7326740223381196857",
+          "1335111022025687608"
+        ],
+        [
+          "299897534666943308",
+          "7958981783918797313",
+          "16175072007441250578"
+        ],
+        [
+          "6874335978660225790",
+          "9761425344044223520",
+          "3327840922704009286"
+        ],
+        [
+          "487554525991962490",
+          "6953548887237036165",
+          "8142823433325987306"
+        ],
+        [
+          "15385300217030521913",
+          "11415202518585905155",
+          "5641371390839744797"
+        ],
+        [
+          "2123919091470112746",
+          "15995426099281203308",
+          "5295447036739483157"
+        ],
+        [
+          "11338344370669011243",
+          "13508153580858058730",
+          "195073831753881795"
+        ],
+        [
+          "10383246065792694236",
+          "9003955909987180214",
+          "12648975753202305920"
+        ],
+        [
+          "6644118949500545608",
+          "16796331512749322735",
+          "2269426047095970113"
+        ],
+        [
+          "9419840946638357225",
+          "12202098549189773574",
+          "152417101167391246"
+        ],
+        [
+          "11064569727643298591",
+          "7721349076345021376",
+          "14891679380889203352"
+        ],
+        [
+          "11498222742765914314",
+          "2922361588494975684",
+          "5491357292987550950"
+        ],
+        [
+          "1379789686689960236",
+          "8460840920776875344",
+          "15021643165620221280"
+        ],
+        [
+          "5448424368808087994",
+          "9197130243296918707",
+          "14047302707706757520"
+        ],
+        [
+          "609382936189712738",
+          "10949603867635834263",
+          "2134714269303814183"
+        ],
+        [
+          "4337741136762922061",
+          "3802484042238677848",
+          "10464754316438133563"
+        ]
+      ],
+      "settings": {
+        "coordinates": "0-based half-open, forward reference",
+        "estimated_work": 4117680,
+        "limits": {
+          "artifact_bytes": 8388608,
+          "input_bytes": 1048576,
+          "manifest_bytes": 65536,
+          "matches": 30000,
+          "motif_length": 64,
+          "motifs": 32,
+          "records": 1000,
+          "seconds": 120.0,
+          "sequence_length": 100000,
+          "shuffles": 999,
+          "total_bases": 200000,
+          "work": 120000000
+        },
+        "multiplicity": "Holm across all motifs in this analysis",
+        "null": "within-record concrete-base permutation; ambiguous positions fixed",
+        "rng": "SHA256-derived uint64 streams; Python MT19937 getrandbits Fisher-Yates v1",
+        "seed": "2026101317",
+        "shuffles": 199
+      },
+      "statistics": [
+        {
+          "control_counts": [
+            22,
+            31,
+            19,
+            21,
+            21,
+            16,
+            21,
+            17,
+            24,
+            19,
+            20,
+            24,
+            16,
+            27,
+            24,
+            27,
+            22,
+            24,
+            31,
+            26,
+            24,
+            12,
+            19,
+            26,
+            14,
+            16,
+            20,
+            22,
+            17,
+            22,
+            22,
+            29,
+            18,
+            24,
+            25,
+            23,
+            22,
+            22,
+            22,
+            29,
+            22,
+            26,
+            18,
+            35,
+            16,
+            20,
+            19,
+            22,
+            27,
+            16,
+            26,
+            15,
+            19,
+            18,
+            28,
+            21,
+            19,
+            19,
+            24,
+            22,
+            23,
+            19,
+            18,
+            20,
+            23,
+            27,
+            19,
+            30,
+            18,
+            21,
+            21,
+            19,
+            28,
+            26,
+            20,
+            21,
+            20,
+            15,
+            21,
+            25,
+            15,
+            26,
+            25,
+            21,
+            25,
+            18,
+            23,
+            18,
+            15,
+            13,
+            19,
+            18,
+            24,
+            18,
+            17,
+            16,
+            25,
+            16,
+            25,
+            21,
+            19,
+            27,
+            17,
+            27,
+            15,
+            18,
+            22,
+            21,
+            26,
+            22,
+            25,
+            18,
+            17,
+            23,
+            27,
+            17,
+            25,
+            22,
+            23,
+            26,
+            24,
+            27,
+            22,
+            16,
+            26,
+            30,
+            14,
+            25,
+            21,
+            24,
+            26,
+            18,
+            29,
+            27,
+            18,
+            25,
+            18,
+            19,
+            24,
+            19,
+            25,
+            18,
+            19,
+            32,
+            21,
+            20,
+            13,
+            23,
+            22,
+            19,
+            21,
+            23,
+            20,
+            19,
+            22,
+            21,
+            15,
+            30,
+            14,
+            23,
+            24,
+            24,
+            14,
+            26,
+            18,
+            21,
+            21,
+            31,
+            22,
+            18,
+            21,
+            18,
+            20,
+            28,
+            29,
+            20,
+            27,
+            21,
+            16,
+            30,
+            24,
+            16,
+            31,
+            14,
+            24,
+            23,
+            24,
+            11,
+            21,
+            35,
+            31,
+            19,
+            19,
+            19,
+            27,
+            24,
+            25,
+            24,
+            18
+          ],
+          "control_mean": 21.763819095477388,
+          "difference": -6.763819095477388,
+          "exceedances": 190,
+          "fold": 0.6892172708381435,
+          "fold_note": null,
+          "observed": 15,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_comparison": 1.0,
+          "p_numerator": 191,
+          "p_upper": 0.955
+        },
+        {
+          "control_counts": [
+            17,
+            30,
+            24,
+            18,
+            12,
+            25,
+            19,
+            28,
+            23,
+            22,
+            25,
+            18,
+            27,
+            21,
+            28,
+            19,
+            21,
+            24,
+            21,
+            17,
+            28,
+            22,
+            28,
+            23,
+            20,
+            25,
+            11,
+            28,
+            26,
+            24,
+            22,
+            15,
+            22,
+            23,
+            23,
+            26,
+            24,
+            23,
+            19,
+            23,
+            27,
+            30,
+            28,
+            22,
+            29,
+            29,
+            27,
+            21,
+            31,
+            21,
+            23,
+            24,
+            27,
+            19,
+            20,
+            23,
+            26,
+            29,
+            24,
+            20,
+            23,
+            21,
+            20,
+            21,
+            19,
+            27,
+            20,
+            25,
+            19,
+            25,
+            31,
+            18,
+            32,
+            15,
+            25,
+            8,
+            21,
+            21,
+            22,
+            21,
+            23,
+            29,
+            29,
+            31,
+            13,
+            26,
+            24,
+            18,
+            16,
+            19,
+            23,
+            12,
+            26,
+            22,
+            30,
+            21,
+            22,
+            26,
+            26,
+            24,
+            23,
+            26,
+            18,
+            30,
+            27,
+            28,
+            28,
+            21,
+            27,
+            21,
+            21,
+            27,
+            19,
+            16,
+            20,
+            18,
+            23,
+            32,
+            20,
+            17,
+            22,
+            19,
+            28,
+            21,
+            14,
+            23,
+            29,
+            23,
+            23,
+            16,
+            19,
+            26,
+            25,
+            23,
+            21,
+            22,
+            22,
+            21,
+            29,
+            15,
+            27,
+            19,
+            29,
+            21,
+            21,
+            26,
+            26,
+            22,
+            24,
+            23,
+            30,
+            27,
+            30,
+            23,
+            27,
+            19,
+            24,
+            27,
+            21,
+            28,
+            23,
+            19,
+            17,
+            23,
+            30,
+            20,
+            27,
+            36,
+            24,
+            26,
+            21,
+            23,
+            20,
+            28,
+            20,
+            15,
+            33,
+            26,
+            24,
+            29,
+            24,
+            24,
+            25,
+            17,
+            30,
+            22,
+            31,
+            26,
+            25,
+            19,
+            21,
+            15,
+            21,
+            23,
+            27,
+            27,
+            23,
+            15,
+            24
+          ],
+          "control_mean": 23.155778894472363,
+          "difference": 23.844221105527637,
+          "exceedances": 0,
+          "fold": 2.0297309027777777,
+          "fold_note": null,
+          "observed": 47,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_comparison": 0.04,
+          "p_numerator": 1,
+          "p_upper": 0.005
+        },
+        {
+          "control_counts": [
+            3,
+            0,
+            1,
+            3,
+            2,
+            3,
+            3,
+            3,
+            4,
+            1,
+            3,
+            2,
+            2,
+            3,
+            1,
+            1,
+            2,
+            4,
+            5,
+            1,
+            1,
+            2,
+            7,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            1,
+            3,
+            1,
+            5,
+            5,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            2,
+            2,
+            2,
+            1,
+            4,
+            2,
+            3,
+            1,
+            2,
+            3,
+            3,
+            9,
+            3,
+            1,
+            2,
+            1,
+            6,
+            3,
+            1,
+            2,
+            6,
+            1,
+            3,
+            4,
+            1,
+            1,
+            2,
+            6,
+            2,
+            5,
+            3,
+            5,
+            2,
+            4,
+            2,
+            6,
+            1,
+            2,
+            2,
+            3,
+            2,
+            1,
+            1,
+            2,
+            6,
+            1,
+            3,
+            6,
+            4,
+            3,
+            4,
+            6,
+            4,
+            1,
+            1,
+            8,
+            4,
+            2,
+            2,
+            4,
+            8,
+            1,
+            2,
+            3,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            3,
+            3,
+            4,
+            2,
+            3,
+            1,
+            2,
+            2,
+            2,
+            6,
+            1,
+            1,
+            4,
+            1,
+            6,
+            0,
+            3,
+            2,
+            3,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            4,
+            2,
+            2,
+            3,
+            4,
+            3,
+            2,
+            2,
+            3,
+            0,
+            4,
+            4,
+            2,
+            2,
+            1,
+            3,
+            5,
+            4,
+            2,
+            2,
+            4,
+            3,
+            3,
+            2,
+            6,
+            5,
+            1,
+            1,
+            3,
+            5,
+            3,
+            4,
+            1,
+            3,
+            1,
+            2,
+            2,
+            2,
+            3,
+            1,
+            1,
+            0,
+            2,
+            4,
+            6,
+            2,
+            2,
+            2,
+            4,
+            3,
+            7,
+            4,
+            4,
+            3,
+            1,
+            5,
+            1,
+            2,
+            3,
+            3,
+            2,
+            3,
+            3,
+            2
+          ],
+          "control_mean": 2.6030150753768844,
+          "difference": -2.6030150753768844,
+          "exceedances": 199,
+          "fold": 0.0,
+          "fold_note": null,
+          "observed": 0,
+          "p_denominator": 200,
+          "p_holm": 1.0,
+          "p_holm_comparison": 1.0,
+          "p_numerator": 200,
+          "p_upper": 1.0
+        },
+        {
+          "control_counts": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            1,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            5,
+            1,
+            2,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            0
+          ],
+          "control_mean": 0.3969849246231156,
+          "difference": 15.603015075376884,
+          "exceedances": 0,
+          "fold": 40.30379746835443,
+          "fold_note": null,
+          "observed": 16,
+          "p_denominator": 200,
+          "p_holm": 0.02,
+          "p_holm_comparison": 0.04,
+          "p_numerator": 1,
+          "p_upper": 0.005
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "background_selection": "prespecified; never select by significance",
+    "estimated_work": 8235360,
+    "multiplicity": "Holm across both backgrounds and all motifs"
+  },
+  "complete": true,
+  "control_seeds": [
+    [
+      "17141522512085007069",
+      "6387530863946972405",
+      "2655179571536597020"
+    ],
+    [
+      "4637932592161718020",
+      "14432778146039578903",
+      "6238131837270356028"
+    ],
+    [
+      "7192303400122066760",
+      "8625653908281204425",
+      "1887997250157228981"
+    ],
+    [
+      "11207953525109053990",
+      "13029790167357515787",
+      "6490657962032130684"
+    ],
+    [
+      "1651920063460260278",
+      "13776871920970377037",
+      "15998540916167241678"
+    ],
+    [
+      "7840569334788781506",
+      "2294060437505766233",
+      "185424630823774359"
+    ],
+    [
+      "10175101406239758901",
+      "11359091202758361507",
+      "1656249393953518812"
+    ],
+    [
+      "12990646568257293295",
+      "14947728181530378251",
+      "11131290148835061692"
+    ],
+    [
+      "10547600454901591252",
+      "8437894456784643152",
+      "12801583920948952021"
+    ],
+    [
+      "1893328998473556287",
+      "5127205742197091273",
+      "17757195625047294244"
+    ],
+    [
+      "951969327600022684",
+      "12785063036114585696",
+      "14050848445480923509"
+    ],
+    [
+      "1199540320070416867",
+      "17032005025887557018",
+      "911139799371680766"
+    ],
+    [
+      "16910979444404709743",
+      "11389158099310344522",
+      "13720569641704044786"
+    ],
+    [
+      "10763392035338987940",
+      "17095074511869266309",
+      "12350770541595183009"
+    ],
+    [
+      "13201147770399103069",
+      "12935949846251943094",
+      "18171353720197974335"
+    ],
+    [
+      "15350032189010798761",
+      "5219701645878063872",
+      "16309544472427928385"
+    ],
+    [
+      "11430958855156914010",
+      "4476916116957759854",
+      "11067420387275071563"
+    ],
+    [
+      "10849917906375163706",
+      "94858157665325956",
+      "11665881074157639296"
+    ],
+    [
+      "5648685177697574401",
+      "887299861967248167",
+      "16906957456845085742"
+    ],
+    [
+      "11492115737332529460",
+      "7793516050464305710",
+      "9870722949700756068"
+    ],
+    [
+      "4735361312464169089",
+      "12437995962663763080",
+      "2287816593457183265"
+    ],
+    [
+      "1409243778855908748",
+      "9877528042680421357",
+      "15131101328624763995"
+    ],
+    [
+      "9378134066668740283",
+      "6430045287179057418",
+      "2942583535647968201"
+    ],
+    [
+      "4764494859923837503",
+      "953926606454109854",
+      "17243907066498914278"
+    ],
+    [
+      "16592601260390570207",
+      "5575656056345127866",
+      "16891099665238270377"
+    ],
+    [
+      "5781897807441656690",
+      "17656073321909906168",
+      "8137230387842167263"
+    ],
+    [
+      "13097860798370039081",
+      "12012066814029889650",
+      "18318892649400467436"
+    ],
+    [
+      "960523496934745822",
+      "10606519463742762435",
+      "12463032968101620094"
+    ],
+    [
+      "8293609171447923561",
+      "15187591765504511199",
+      "10113696564863944724"
+    ],
+    [
+      "17501465981211985617",
+      "2631234454107192678",
+      "11706042922876994052"
+    ],
+    [
+      "4520217649646165690",
+      "10362686781689679506",
+      "10144554925752575011"
+    ],
+    [
+      "1887091877345014270",
+      "7395473125759813129",
+      "6631334208164493597"
+    ],
+    [
+      "13496260738450147553",
+      "16547009771045174422",
+      "17984956265707344536"
+    ],
+    [
+      "6894669968637547600",
+      "9957787062261348614",
+      "7587147842332018532"
+    ],
+    [
+      "6146297254772604360",
+      "10455828018671698365",
+      "1823621452422821786"
+    ],
+    [
+      "9433305448996661450",
+      "9211776398589185644",
+      "2231876425642782251"
+    ],
+    [
+      "15824714206996384735",
+      "3389676684554280038",
+      "13669117334999094480"
+    ],
+    [
+      "683964843492127462",
+      "16775103055485890128",
+      "11144897312688837328"
+    ],
+    [
+      "4494648274010482492",
+      "4903274951505079098",
+      "8203189992900468230"
+    ],
+    [
+      "5595650420272094803",
+      "16167116009453743692",
+      "13397381894158335576"
+    ],
+    [
+      "10111977524612985599",
+      "10927850102300511225",
+      "16273587543404163265"
+    ],
+    [
+      "348422049589007663",
+      "16459311000625411415",
+      "14907008980775043817"
+    ],
+    [
+      "3105393460048863592",
+      "3637027333402415829",
+      "6779526032491716997"
+    ],
+    [
+      "11396164661182174290",
+      "7757315190725899908",
+      "7786778803205218478"
+    ],
+    [
+      "3988858515239435121",
+      "3205282827122452289",
+      "4660851727840729089"
+    ],
+    [
+      "1395158867085027102",
+      "16529490508953973012",
+      "4463854741569508965"
+    ],
+    [
+      "59257272499401953",
+      "13169588499060013271",
+      "14698692037199522628"
+    ],
+    [
+      "5690442699695936403",
+      "3865468282360202982",
+      "9103006629135649724"
+    ],
+    [
+      "3073588738540370910",
+      "14665814068429720996",
+      "17496872673094014855"
+    ],
+    [
+      "14050611814025085927",
+      "15989637931621323650",
+      "8692719478287613232"
+    ],
+    [
+      "16315799407284653403",
+      "10346435866084265962",
+      "1533413468618812800"
+    ],
+    [
+      "13004084242533404669",
+      "11675281877130631923",
+      "540217442196808016"
+    ],
+    [
+      "14520866773330274382",
+      "2441212019760651516",
+      "7577563514300051751"
+    ],
+    [
+      "17395806422604020761",
+      "9739828186674674298",
+      "14837233195819640718"
+    ],
+    [
+      "6027497206439675479",
+      "2937089649845772553",
+      "10197137841553529344"
+    ],
+    [
+      "10671420633617831641",
+      "11220941196560040936",
+      "7406672213002503256"
+    ],
+    [
+      "12844087678863277748",
+      "1996576668844818202",
+      "13620909063781978946"
+    ],
+    [
+      "14980857891378696543",
+      "7149714542994412424",
+      "8212315508004613279"
+    ],
+    [
+      "16268749552457781257",
+      "18002306181121410877",
+      "1789838136339434639"
+    ],
+    [
+      "6370041484188448851",
+      "5116726179649944254",
+      "567886593757813658"
+    ],
+    [
+      "12724704152941444186",
+      "16399027813131929415",
+      "11782919094516002381"
+    ],
+    [
+      "15129099771241718724",
+      "16240619312864573238",
+      "18010996088283527818"
+    ],
+    [
+      "3895034003055940475",
+      "12960189116169487276",
+      "5913078078357422548"
+    ],
+    [
+      "15302934095933751394",
+      "17460600046656811953",
+      "7472348385574457355"
+    ],
+    [
+      "3921953817323890940",
+      "2085013533218345393",
+      "11860436903094688017"
+    ],
+    [
+      "13389749666084428558",
+      "18431891847538373737",
+      "6050373227062711747"
+    ],
+    [
+      "5760321661788758932",
+      "795067365309045588",
+      "10657732586672283909"
+    ],
+    [
+      "4283036075812315556",
+      "1500518352708058163",
+      "538165702930794644"
+    ],
+    [
+      "6407572292565018479",
+      "8203942715186981082",
+      "16295237088795272783"
+    ],
+    [
+      "2796259051128579031",
+      "11873297985656968596",
+      "13855377460969152412"
+    ],
+    [
+      "2683577545254018446",
+      "15699786178672346369",
+      "7013079555476383749"
+    ],
+    [
+      "16247683500685262808",
+      "11854369851846931448",
+      "7052688333677860881"
+    ],
+    [
+      "1644198987225871025",
+      "3168793657905722465",
+      "2256473460929982483"
+    ],
+    [
+      "7254113816131087576",
+      "6702164406972291220",
+      "14282791983465939896"
+    ],
+    [
+      "11979857111593848672",
+      "13239985511441974083",
+      "6068888174458313170"
+    ],
+    [
+      "9556319414765049391",
+      "15025236007014522274",
+      "9873637710302321934"
+    ],
+    [
+      "8256142694828575928",
+      "12212186160088395681",
+      "11373416933854606498"
+    ],
+    [
+      "11326526675001851972",
+      "12496053062384350386",
+      "8996656418831777396"
+    ],
+    [
+      "9694715268205631153",
+      "7047434680184821484",
+      "85393079928478028"
+    ],
+    [
+      "2752660335618894117",
+      "17550614559534489118",
+      "9129286217244026619"
+    ],
+    [
+      "16511549224834877366",
+      "6678251679936849092",
+      "18180930707204677501"
+    ],
+    [
+      "8057377229272591273",
+      "12711210858933308610",
+      "5416234111256386535"
+    ],
+    [
+      "14702279312337390110",
+      "12588098093187783545",
+      "6026676208426258548"
+    ],
+    [
+      "15749413322246135839",
+      "13696634242229085969",
+      "10427253124213196163"
+    ],
+    [
+      "3135011540424349243",
+      "5232033893707231814",
+      "12194310756676120569"
+    ],
+    [
+      "7383242609268916532",
+      "18098481675866320970",
+      "13828726317601930418"
+    ],
+    [
+      "3155616145761733521",
+      "7136286195418613761",
+      "15676063695795747071"
+    ],
+    [
+      "877086315441067427",
+      "1560159489487800668",
+      "11274439174553621450"
+    ],
+    [
+      "16448931947787071184",
+      "2227812713728629496",
+      "14984815150824071468"
+    ],
+    [
+      "16920628469518239303",
+      "1145073005521896625",
+      "3706362773663376008"
+    ],
+    [
+      "2554972938105136266",
+      "264517056920927046",
+      "4973962095361071085"
+    ],
+    [
+      "14176769358957927442",
+      "5051498643542942712",
+      "13945526004627259497"
+    ],
+    [
+      "11005173009704329443",
+      "10832624651691433674",
+      "16705159086738515082"
+    ],
+    [
+      "16048921630132748407",
+      "16951239238691908674",
+      "4020986415380872951"
+    ],
+    [
+      "12488715128362891648",
+      "32345657777412387",
+      "15045113373174214218"
+    ],
+    [
+      "6548659630196306885",
+      "16684640374717575297",
+      "4546422136520628003"
+    ],
+    [
+      "1311747212490466214",
+      "10548455535420470150",
+      "16595837611242108036"
+    ],
+    [
+      "16663844417969154945",
+      "3725390327978671295",
+      "8307313123861731834"
+    ],
+    [
+      "267811065615835542",
+      "7841607303032080160",
+      "8668704362182393117"
+    ],
+    [
+      "12657188273914413049",
+      "1513658949843609635",
+      "14519836434058830814"
+    ],
+    [
+      "9664046792850928538",
+      "12805389604964522585",
+      "7207574283136985908"
+    ],
+    [
+      "15574183450728990702",
+      "3818229386397980319",
+      "354649411811027152"
+    ],
+    [
+      "7911777910227214871",
+      "2089397711615319270",
+      "11035035504617086077"
+    ],
+    [
+      "15381202937277335318",
+      "4597790798832817841",
+      "5373991728126469631"
+    ],
+    [
+      "6088148945600021777",
+      "13095643736695579568",
+      "10099201549540248306"
+    ],
+    [
+      "464642215794040133",
+      "12726250917863365378",
+      "9209056876590137883"
+    ],
+    [
+      "6425873577874552368",
+      "501211523061935944",
+      "12702247632749962464"
+    ],
+    [
+      "9703158397937745552",
+      "10179046980678975205",
+      "14026104667258182082"
+    ],
+    [
+      "15928708134179569196",
+      "3326520480186853984",
+      "11523497911311496476"
+    ],
+    [
+      "4946846859642946381",
+      "13701829519309823027",
+      "5187474246398641611"
+    ],
+    [
+      "14686168743011558349",
+      "15264899611079225624",
+      "9449584031805299870"
+    ],
+    [
+      "13460364634513681851",
+      "17735766954107393930",
+      "6358332335473587784"
+    ],
+    [
+      "5203179422786827545",
+      "2573983279521477865",
+      "4067707217821067344"
+    ],
+    [
+      "7512862660771785628",
+      "8847344046664111304",
+      "2469254701764438522"
+    ],
+    [
+      "17584833775983012781",
+      "15368281573036042717",
+      "11009036209329161336"
+    ],
+    [
+      "6443700459246965660",
+      "7565276296754720491",
+      "1349847282237746173"
+    ],
+    [
+      "1081815822299474179",
+      "17966494391570346665",
+      "18361648852175207116"
+    ],
+    [
+      "2916342409379693113",
+      "14745145487991201294",
+      "9839422886840056973"
+    ],
+    [
+      "8705113323659892959",
+      "5569562597837986833",
+      "2770287361334210256"
+    ],
+    [
+      "1125736981020605595",
+      "16287513592105428046",
+      "13293572295694898090"
+    ],
+    [
+      "6782993123497921138",
+      "14070975404293727432",
+      "6188235896270671613"
+    ],
+    [
+      "6771713466786665292",
+      "9741599317717259415",
+      "13161182972502317927"
+    ],
+    [
+      "7667553591555202185",
+      "12924408492116358769",
+      "7650387350433102276"
+    ],
+    [
+      "12979679302999524522",
+      "1419426428959685298",
+      "10881792419490872414"
+    ],
+    [
+      "2309142097564086548",
+      "12589855335284583598",
+      "2555767569361959786"
+    ],
+    [
+      "15346779700945267160",
+      "11354851122714793819",
+      "3702445645105857956"
+    ],
+    [
+      "8751568142253012750",
+      "17097711279927870974",
+      "1767537044995827303"
+    ],
+    [
+      "9861193962808111455",
+      "15553248987671050213",
+      "546884525853081601"
+    ],
+    [
+      "18271338664861387600",
+      "2352778994117625549",
+      "11035485814020825131"
+    ],
+    [
+      "16026101363312534587",
+      "8724198805745838771",
+      "14284221898182527099"
+    ],
+    [
+      "11582367026209523567",
+      "15935082432322152587",
+      "16684932338119129522"
+    ],
+    [
+      "6572647616263862149",
+      "4789706473080054549",
+      "11229639360456482983"
+    ],
+    [
+      "3221418293434413585",
+      "18322363010640237520",
+      "16498854578536207849"
+    ],
+    [
+      "7511718291638134855",
+      "17070328266138888055",
+      "5102806146571920204"
+    ],
+    [
+      "13527543695465182788",
+      "8531437965780611",
+      "7217134430279039795"
+    ],
+    [
+      "9524448181128766287",
+      "11042571821576054229",
+      "15805066147157202321"
+    ],
+    [
+      "6850914142856710397",
+      "14049176944013934444",
+      "4493929915270274212"
+    ],
+    [
+      "4055279140411075102",
+      "16117273897973212054",
+      "10943266046416663904"
+    ],
+    [
+      "7813837641488445908",
+      "6285277898246753394",
+      "6284481938624912684"
+    ],
+    [
+      "1409251419277691412",
+      "16692975386618593376",
+      "2330123343358398613"
+    ],
+    [
+      "4605321862189137198",
+      "7072993941960858241",
+      "8014721371259932076"
+    ],
+    [
+      "10812073354333905400",
+      "4263204029254340024",
+      "3858697223922716132"
+    ],
+    [
+      "7115874035622641533",
+      "16136585510117252067",
+      "8626172791849723090"
+    ],
+    [
+      "7878940684459739226",
+      "18153235449976665890",
+      "8076561543936188220"
+    ],
+    [
+      "10513015984306159976",
+      "8920327354832173438",
+      "10802680784958199078"
+    ],
+    [
+      "17228608975759643071",
+      "7791130847094153855",
+      "11092726625128933739"
+    ],
+    [
+      "8496702461108689237",
+      "7157518443118760901",
+      "11664220445753560837"
+    ],
+    [
+      "5817170348217080691",
+      "16411401091419950853",
+      "15521085126659653408"
+    ],
+    [
+      "12838128039128062530",
+      "11319250453934167163",
+      "8836766963517790088"
+    ],
+    [
+      "14993265324775705262",
+      "15531475660483339121",
+      "5108217623477758122"
+    ],
+    [
+      "17320318647776730700",
+      "10313410382000874980",
+      "16206057870541759025"
+    ],
+    [
+      "6260266554205408399",
+      "2554379366954800906",
+      "12133781744107656165"
+    ],
+    [
+      "2220768675817257902",
+      "6542472864907396007",
+      "17400573410923532098"
+    ],
+    [
+      "7381909991980631747",
+      "14609737080209224009",
+      "1182006394200193991"
+    ],
+    [
+      "12327317754555133449",
+      "13865164277985610103",
+      "5772838027051481023"
+    ],
+    [
+      "5618379722402965471",
+      "12614146337372576343",
+      "17976568981157266940"
+    ],
+    [
+      "199029148511203350",
+      "11502666108794968106",
+      "10918487440262504875"
+    ],
+    [
+      "8751948684106132159",
+      "13194839558402396031",
+      "10237840692527727558"
+    ],
+    [
+      "16789886435110789979",
+      "4251005455924758806",
+      "4705973608077805338"
+    ],
+    [
+      "14877119958862955327",
+      "8860997276971932020",
+      "15447082161822050234"
+    ],
+    [
+      "2587165250097406192",
+      "15043822807756955813",
+      "199093769856509762"
+    ],
+    [
+      "5410519240481498660",
+      "10396617162928182697",
+      "13467098287494327001"
+    ],
+    [
+      "16244819509046799839",
+      "6632551168740637322",
+      "18411152515301428738"
+    ],
+    [
+      "16197312071934278945",
+      "10715660946946382457",
+      "12600909276528505003"
+    ],
+    [
+      "2408784560345900887",
+      "14397809514792979602",
+      "1080051969775002167"
+    ],
+    [
+      "17276400671511671754",
+      "10225022830017042456",
+      "17461790737273693817"
+    ],
+    [
+      "12675658596052624039",
+      "8385322370542913035",
+      "3747657128975564147"
+    ],
+    [
+      "17408633562171302186",
+      "3486436451069789529",
+      "11543377123477240420"
+    ],
+    [
+      "7837237305495182374",
+      "15988386696678104762",
+      "13512600358747004796"
+    ],
+    [
+      "17777613934116085830",
+      "11788096209081417840",
+      "12479197065124557910"
+    ],
+    [
+      "3307513581173598436",
+      "6191220102114117929",
+      "13293779162629671961"
+    ],
+    [
+      "11763369415922569916",
+      "8585008489595672745",
+      "1721336612430466672"
+    ],
+    [
+      "16438400826260768654",
+      "14841370656530554466",
+      "3559136986458462985"
+    ],
+    [
+      "18154018176431526873",
+      "16435561116279606442",
+      "69035631049983567"
+    ],
+    [
+      "10066497529033771457",
+      "16305487841479082745",
+      "414951697569151073"
+    ],
+    [
+      "13870613880388112530",
+      "8875165022135909762",
+      "2230575364672927688"
+    ],
+    [
+      "2953420603699417914",
+      "17375088849675465194",
+      "9422604735625022933"
+    ],
+    [
+      "1448331867151710417",
+      "16392573534912037855",
+      "2223293944101747679"
+    ],
+    [
+      "17318685097776401199",
+      "2065393988696776319",
+      "14401263848019772795"
+    ],
+    [
+      "1051026542603262578",
+      "668186981545914745",
+      "16861220961856043186"
+    ],
+    [
+      "10187318755838947120",
+      "18202085624051628766",
+      "769657786704135728"
+    ],
+    [
+      "17944241106443564940",
+      "16645502494752028577",
+      "10576418223550966799"
+    ],
+    [
+      "13531661957053644732",
+      "3590662926409467894",
+      "4876757636222450690"
+    ],
+    [
+      "4553445888574794803",
+      "7326740223381196857",
+      "1335111022025687608"
+    ],
+    [
+      "299897534666943308",
+      "7958981783918797313",
+      "16175072007441250578"
+    ],
+    [
+      "6874335978660225790",
+      "9761425344044223520",
+      "3327840922704009286"
+    ],
+    [
+      "487554525991962490",
+      "6953548887237036165",
+      "8142823433325987306"
+    ],
+    [
+      "15385300217030521913",
+      "11415202518585905155",
+      "5641371390839744797"
+    ],
+    [
+      "2123919091470112746",
+      "15995426099281203308",
+      "5295447036739483157"
+    ],
+    [
+      "11338344370669011243",
+      "13508153580858058730",
+      "195073831753881795"
+    ],
+    [
+      "10383246065792694236",
+      "9003955909987180214",
+      "12648975753202305920"
+    ],
+    [
+      "6644118949500545608",
+      "16796331512749322735",
+      "2269426047095970113"
+    ],
+    [
+      "9419840946638357225",
+      "12202098549189773574",
+      "152417101167391246"
+    ],
+    [
+      "11064569727643298591",
+      "7721349076345021376",
+      "14891679380889203352"
+    ],
+    [
+      "11498222742765914314",
+      "2922361588494975684",
+      "5491357292987550950"
+    ],
+    [
+      "1379789686689960236",
+      "8460840920776875344",
+      "15021643165620221280"
+    ],
+    [
+      "5448424368808087994",
+      "9197130243296918707",
+      "14047302707706757520"
+    ],
+    [
+      "609382936189712738",
+      "10949603867635834263",
+      "2134714269303814183"
+    ],
+    [
+      "4337741136762922061",
+      "3802484042238677848",
+      "10464754316438133563"
+    ]
+  ],
+  "input_sha256": {
+    "fasta": "9383b86a2493732b07edb9159d83282e7287127f7c7a92e26ca17a651f13176a",
+    "manifest": "f2466c5ca99ae629b384dfcd5dc52f7948cb0e95958ea35a83f6fa6d401322be"
+  },
+  "matches": [
+    {
+      "end": 15,
+      "motif": 1,
+      "record": 0,
+      "start": 12,
+      "strand": "-"
+    },
+    {
+      "end": 23,
+      "motif": 1,
+      "record": 0,
+      "start": 20,
+      "strand": "+"
+    },
+    {
+      "end": 26,
+      "motif": 3,
+      "record": 0,
+      "start": 20,
+      "strand": "+"
+    },
+    {
+      "end": 24,
+      "motif": 1,
+      "record": 0,
+      "start": 21,
+      "strand": "-"
+    },
+    {
+      "end": 60,
+      "motif": 1,
+      "record": 0,
+      "start": 57,
+      "strand": "-"
+    },
+    {
+      "end": 73,
+      "motif": 1,
+      "record": 0,
+      "start": 70,
+      "strand": "+"
+    },
+    {
+      "end": 76,
+      "motif": 3,
+      "record": 0,
+      "start": 70,
+      "strand": "+"
+    },
+    {
+      "end": 74,
+      "motif": 1,
+      "record": 0,
+      "start": 71,
+      "strand": "-"
+    },
+    {
+      "end": 90,
+      "motif": 1,
+      "record": 0,
+      "start": 87,
+      "strand": "+"
+    },
+    {
+      "end": 91,
+      "motif": 1,
+      "record": 0,
+      "start": 88,
+      "strand": "-"
+    },
+    {
+      "end": 103,
+      "motif": 0,
+      "record": 0,
+      "start": 100,
+      "strand": "-"
+    },
+    {
+      "end": 104,
+      "motif": 0,
+      "record": 0,
+      "start": 101,
+      "strand": "-"
+    },
+    {
+      "end": 105,
+      "motif": 0,
+      "record": 0,
+      "start": 102,
+      "strand": "-"
+    },
+    {
+      "end": 108,
+      "motif": 0,
+      "record": 0,
+      "start": 105,
+      "strand": "+"
+    },
+    {
+      "end": 123,
+      "motif": 1,
+      "record": 0,
+      "start": 120,
+      "strand": "+"
+    },
+    {
+      "end": 126,
+      "motif": 3,
+      "record": 0,
+      "start": 120,
+      "strand": "+"
+    },
+    {
+      "end": 124,
+      "motif": 1,
+      "record": 0,
+      "start": 121,
+      "strand": "-"
+    },
+    {
+      "end": 129,
+      "motif": 0,
+      "record": 0,
+      "start": 126,
+      "strand": "+"
+    },
+    {
+      "end": 133,
+      "motif": 0,
+      "record": 0,
+      "start": 130,
+      "strand": "+"
+    },
+    {
+      "end": 140,
+      "motif": 0,
+      "record": 0,
+      "start": 137,
+      "strand": "+"
+    },
+    {
+      "end": 162,
+      "motif": 1,
+      "record": 0,
+      "start": 159,
+      "strand": "-"
+    },
+    {
+      "end": 173,
+      "motif": 1,
+      "record": 0,
+      "start": 170,
+      "strand": "+"
+    },
+    {
+      "end": 176,
+      "motif": 3,
+      "record": 0,
+      "start": 170,
+      "strand": "+"
+    },
+    {
+      "end": 174,
+      "motif": 1,
+      "record": 0,
+      "start": 171,
+      "strand": "-"
+    },
+    {
+      "end": 223,
+      "motif": 1,
+      "record": 0,
+      "start": 220,
+      "strand": "+"
+    },
+    {
+      "end": 226,
+      "motif": 3,
+      "record": 0,
+      "start": 220,
+      "strand": "+"
+    },
+    {
+      "end": 224,
+      "motif": 1,
+      "record": 0,
+      "start": 221,
+      "strand": "-"
+    },
+    {
+      "end": 4,
+      "motif": 0,
+      "record": 1,
+      "start": 1,
+      "strand": "-"
+    },
+    {
+      "end": 19,
+      "motif": 1,
+      "record": 1,
+      "start": 16,
+      "strand": "-"
+    },
+    {
+      "end": 23,
+      "motif": 1,
+      "record": 1,
+      "start": 20,
+      "strand": "+"
+    },
+    {
+      "end": 26,
+      "motif": 3,
+      "record": 1,
+      "start": 20,
+      "strand": "+"
+    },
+    {
+      "end": 24,
+      "motif": 1,
+      "record": 1,
+      "start": 21,
+      "strand": "-"
+    },
+    {
+      "end": 38,
+      "motif": 0,
+      "record": 1,
+      "start": 35,
+      "strand": "-"
+    },
+    {
+      "end": 46,
+      "motif": 0,
+      "record": 1,
+      "start": 43,
+      "strand": "+"
+    },
+    {
+      "end": 73,
+      "motif": 1,
+      "record": 1,
+      "start": 70,
+      "strand": "+"
+    },
+    {
+      "end": 76,
+      "motif": 3,
+      "record": 1,
+      "start": 70,
+      "strand": "+"
+    },
+    {
+      "end": 74,
+      "motif": 1,
+      "record": 1,
+      "start": 71,
+      "strand": "-"
+    },
+    {
+      "end": 82,
+      "motif": 1,
+      "record": 1,
+      "start": 79,
+      "strand": "-"
+    },
+    {
+      "end": 84,
+      "motif": 0,
+      "record": 1,
+      "start": 81,
+      "strand": "-"
+    },
+    {
+      "end": 124,
+      "motif": 3,
+      "record": 1,
+      "start": 118,
+      "strand": "-"
+    },
+    {
+      "end": 123,
+      "motif": 1,
+      "record": 1,
+      "start": 120,
+      "strand": "+"
+    },
+    {
+      "end": 126,
+      "motif": 3,
+      "record": 1,
+      "start": 120,
+      "strand": "+"
+    },
+    {
+      "end": 124,
+      "motif": 1,
+      "record": 1,
+      "start": 121,
+      "strand": "-"
+    },
+    {
+      "end": 133,
+      "motif": 0,
+      "record": 1,
+      "start": 130,
+      "strand": "-"
+    },
+    {
+      "end": 153,
+      "motif": 1,
+      "record": 1,
+      "start": 150,
+      "strand": "+"
+    },
+    {
+      "end": 154,
+      "motif": 1,
+      "record": 1,
+      "start": 151,
+      "strand": "-"
+    },
+    {
+      "end": 173,
+      "motif": 1,
+      "record": 1,
+      "start": 170,
+      "strand": "+"
+    },
+    {
+      "end": 176,
+      "motif": 3,
+      "record": 1,
+      "start": 170,
+      "strand": "+"
+    },
+    {
+      "end": 174,
+      "motif": 1,
+      "record": 1,
+      "start": 171,
+      "strand": "-"
+    },
+    {
+      "end": 195,
+      "motif": 1,
+      "record": 1,
+      "start": 192,
+      "strand": "+"
+    },
+    {
+      "end": 223,
+      "motif": 1,
+      "record": 1,
+      "start": 220,
+      "strand": "+"
+    },
+    {
+      "end": 226,
+      "motif": 3,
+      "record": 1,
+      "start": 220,
+      "strand": "+"
+    },
+    {
+      "end": 224,
+      "motif": 1,
+      "record": 1,
+      "start": 221,
+      "strand": "-"
+    },
+    {
+      "end": 23,
+      "motif": 1,
+      "record": 2,
+      "start": 20,
+      "strand": "+"
+    },
+    {
+      "end": 26,
+      "motif": 3,
+      "record": 2,
+      "start": 20,
+      "strand": "+"
+    },
+    {
+      "end": 24,
+      "motif": 1,
+      "record": 2,
+      "start": 21,
+      "strand": "-"
+    },
+    {
+      "end": 29,
+      "motif": 1,
+      "record": 2,
+      "start": 26,
+      "strand": "+"
+    },
+    {
+      "end": 43,
+      "motif": 0,
+      "record": 2,
+      "start": 40,
+      "strand": "+"
+    },
+    {
+      "end": 48,
+      "motif": 1,
+      "record": 2,
+      "start": 45,
+      "strand": "-"
+    },
+    {
+      "end": 73,
+      "motif": 1,
+      "record": 2,
+      "start": 70,
+      "strand": "+"
+    },
+    {
+      "end": 76,
+      "motif": 3,
+      "record": 2,
+      "start": 70,
+      "strand": "+"
+    },
+    {
+      "end": 74,
+      "motif": 1,
+      "record": 2,
+      "start": 71,
+      "strand": "-"
+    },
+    {
+      "end": 85,
+      "motif": 1,
+      "record": 2,
+      "start": 82,
+      "strand": "-"
+    },
+    {
+      "end": 109,
+      "motif": 1,
+      "record": 2,
+      "start": 106,
+      "strand": "-"
+    },
+    {
+      "end": 123,
+      "motif": 1,
+      "record": 2,
+      "start": 120,
+      "strand": "+"
+    },
+    {
+      "end": 126,
+      "motif": 3,
+      "record": 2,
+      "start": 120,
+      "strand": "+"
+    },
+    {
+      "end": 124,
+      "motif": 1,
+      "record": 2,
+      "start": 121,
+      "strand": "-"
+    },
+    {
+      "end": 132,
+      "motif": 1,
+      "record": 2,
+      "start": 129,
+      "strand": "+"
+    },
+    {
+      "end": 148,
+      "motif": 1,
+      "record": 2,
+      "start": 145,
+      "strand": "+"
+    },
+    {
+      "end": 152,
+      "motif": 0,
+      "record": 2,
+      "start": 149,
+      "strand": "-"
+    },
+    {
+      "end": 173,
+      "motif": 1,
+      "record": 2,
+      "start": 170,
+      "strand": "+"
+    },
+    {
+      "end": 176,
+      "motif": 3,
+      "record": 2,
+      "start": 170,
+      "strand": "+"
+    },
+    {
+      "end": 174,
+      "motif": 1,
+      "record": 2,
+      "start": 171,
+      "strand": "-"
+    },
+    {
+      "end": 183,
+      "motif": 1,
+      "record": 2,
+      "start": 180,
+      "strand": "+"
+    },
+    {
+      "end": 195,
+      "motif": 0,
+      "record": 2,
+      "start": 192,
+      "strand": "+"
+    },
+    {
+      "end": 223,
+      "motif": 1,
+      "record": 2,
+      "start": 220,
+      "strand": "+"
+    },
+    {
+      "end": 226,
+      "motif": 3,
+      "record": 2,
+      "start": 220,
+      "strand": "+"
+    },
+    {
+      "end": 224,
+      "motif": 1,
+      "record": 2,
+      "start": 221,
+      "strand": "-"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "AAA",
+      "palindrome": false,
+      "pattern": "AAA",
+      "reverse_complement": "TTT"
+    },
+    {
+      "id": "ACG",
+      "palindrome": false,
+      "pattern": "ACG",
+      "reverse_complement": "CGT"
+    },
+    {
+      "id": "ATAT",
+      "palindrome": true,
+      "pattern": "ATAT",
+      "reverse_complement": "ATAT"
+    },
+    {
+      "id": "ACGTAC",
+      "palindrome": false,
+      "pattern": "ACGTAC",
+      "reverse_complement": "GTACGT"
+    }
+  ],
+  "records": [
+    {
+      "counts": {
+        "A": 68,
+        "C": 63,
+        "G": 50,
+        "T": 59
+      },
+      "description": "synthetic only",
+      "id": "planted_3_0",
+      "length": 240,
+      "sequence": "GAGGTCGCTTGTCGTACAGGACGTACAACTACTACTCCCAGTTCTGCTTGAGAGCGCCGTAGTGCTATGAACGTACACTGACTTGAGACGTTGGCTCGAATTTTTAAAGACTCCTCTTCTACGTACAAATAAAGGCTAAAGGAAGCGGATCTACATCCGCGTACATAATAACGTACCCATTACCCGATCTGCCATCCCTACAGTTAATGAATCCCTAGGAACGTACCACAGTTGGCCAGA"
+    },
+    {
+      "counts": {
+        "A": 52,
+        "C": 71,
+        "G": 57,
+        "T": 60
+      },
+      "description": "synthetic only",
+      "id": "planted_3_1",
+      "length": 240,
+      "sequence": "GTTTGGTGAACTTGGGCGTGACGTACCGCTTGTCCTTTGGTACAAACAATACATACAGTATGAGTGCCATACGTACCTTCGTTTAGCTTAATACTCCCAACCACATGATGTTGTTCCGGTACGTACCCTCTTTGCCAGCCCCACCCTTGGACGTGCGGGGATGGTCTCACACGTACAGGGCCCCGGGGTCGAACGCGAATGTTATCGGCGCCACTGAACAACGTACAATGCTCCCCCCAT"
+    },
+    {
+      "counts": {
+        "A": 65,
+        "C": 66,
+        "G": 55,
+        "T": 54
+      },
+      "description": "synthetic only",
+      "id": "planted_3_2",
+      "length": 240,
+      "sequence": "TTGCACCTGCGATAGAACTTACGTACACGCACCTCCTAGCAAATCCGTGAGACATACACACTCAGCTTGAACGTACAGCCTTCGTATAGTGTATAGGCCGATTAATCGTCTAATCGCTGGACGTACCTTACGAGTTGGCGCATGTACGGTTTGTCCCCAGTCTCACCTACACGTACATACACGGGCGGCTTGAAAGAACACAAGGTGAGCTGCCTTACAGACGTACACCGAGGCAATGGA"
+    }
+  ],
+  "schema": "motif-background-audit/comparison/1",
+  "settings": {
+    "coordinates": "0-based half-open, forward reference",
+    "estimated_work": 4117680,
+    "limits": {
+      "artifact_bytes": 8388608,
+      "input_bytes": 1048576,
+      "manifest_bytes": 65536,
+      "matches": 30000,
+      "motif_length": 64,
+      "motifs": 32,
+      "records": 1000,
+      "seconds": 120.0,
+      "sequence_length": 100000,
+      "shuffles": 999,
+      "total_bases": 200000,
+      "work": 120000000
+    },
+    "multiplicity": "Holm across all motifs in this analysis",
+    "null": "within-record concrete-base permutation; ambiguous positions fixed",
+    "rng": "SHA256-derived uint64 streams; Python MT19937 getrandbits Fisher-Yates v1",
+    "seed": "2026101317",
+    "shuffles": 199
+  },
+  "software_version": "1.0.0",
+  "statistics": [
+    {
+      "control_counts": [
+        22,
+        31,
+        19,
+        21,
+        21,
+        16,
+        21,
+        17,
+        24,
+        19,
+        20,
+        24,
+        16,
+        27,
+        24,
+        27,
+        22,
+        24,
+        31,
+        26,
+        24,
+        12,
+        19,
+        26,
+        14,
+        16,
+        20,
+        22,
+        17,
+        22,
+        22,
+        29,
+        18,
+        24,
+        25,
+        23,
+        22,
+        22,
+        22,
+        29,
+        22,
+        26,
+        18,
+        35,
+        16,
+        20,
+        19,
+        22,
+        27,
+        16,
+        26,
+        15,
+        19,
+        18,
+        28,
+        21,
+        19,
+        19,
+        24,
+        22,
+        23,
+        19,
+        18,
+        20,
+        23,
+        27,
+        19,
+        30,
+        18,
+        21,
+        21,
+        19,
+        28,
+        26,
+        20,
+        21,
+        20,
+        15,
+        21,
+        25,
+        15,
+        26,
+        25,
+        21,
+        25,
+        18,
+        23,
+        18,
+        15,
+        13,
+        19,
+        18,
+        24,
+        18,
+        17,
+        16,
+        25,
+        16,
+        25,
+        21,
+        19,
+        27,
+        17,
+        27,
+        15,
+        18,
+        22,
+        21,
+        26,
+        22,
+        25,
+        18,
+        17,
+        23,
+        27,
+        17,
+        25,
+        22,
+        23,
+        26,
+        24,
+        27,
+        22,
+        16,
+        26,
+        30,
+        14,
+        25,
+        21,
+        24,
+        26,
+        18,
+        29,
+        27,
+        18,
+        25,
+        18,
+        19,
+        24,
+        19,
+        25,
+        18,
+        19,
+        32,
+        21,
+        20,
+        13,
+        23,
+        22,
+        19,
+        21,
+        23,
+        20,
+        19,
+        22,
+        21,
+        15,
+        30,
+        14,
+        23,
+        24,
+        24,
+        14,
+        26,
+        18,
+        21,
+        21,
+        31,
+        22,
+        18,
+        21,
+        18,
+        20,
+        28,
+        29,
+        20,
+        27,
+        21,
+        16,
+        30,
+        24,
+        16,
+        31,
+        14,
+        24,
+        23,
+        24,
+        11,
+        21,
+        35,
+        31,
+        19,
+        19,
+        19,
+        27,
+        24,
+        25,
+        24,
+        18
+      ],
+      "control_mean": 21.763819095477388,
+      "difference": -6.763819095477388,
+      "exceedances": 190,
+      "fold": 0.6892172708381435,
+      "fold_note": null,
+      "observed": 15,
+      "p_denominator": 200,
+      "p_holm": 1.0,
+      "p_holm_comparison": 1.0,
+      "p_numerator": 191,
+      "p_upper": 0.955
+    },
+    {
+      "control_counts": [
+        17,
+        30,
+        24,
+        18,
+        12,
+        25,
+        19,
+        28,
+        23,
+        22,
+        25,
+        18,
+        27,
+        21,
+        28,
+        19,
+        21,
+        24,
+        21,
+        17,
+        28,
+        22,
+        28,
+        23,
+        20,
+        25,
+        11,
+        28,
+        26,
+        24,
+        22,
+        15,
+        22,
+        23,
+        23,
+        26,
+        24,
+        23,
+        19,
+        23,
+        27,
+        30,
+        28,
+        22,
+        29,
+        29,
+        27,
+        21,
+        31,
+        21,
+        23,
+        24,
+        27,
+        19,
+        20,
+        23,
+        26,
+        29,
+        24,
+        20,
+        23,
+        21,
+        20,
+        21,
+        19,
+        27,
+        20,
+        25,
+        19,
+        25,
+        31,
+        18,
+        32,
+        15,
+        25,
+        8,
+        21,
+        21,
+        22,
+        21,
+        23,
+        29,
+        29,
+        31,
+        13,
+        26,
+        24,
+        18,
+        16,
+        19,
+        23,
+        12,
+        26,
+        22,
+        30,
+        21,
+        22,
+        26,
+        26,
+        24,
+        23,
+        26,
+        18,
+        30,
+        27,
+        28,
+        28,
+        21,
+        27,
+        21,
+        21,
+        27,
+        19,
+        16,
+        20,
+        18,
+        23,
+        32,
+        20,
+        17,
+        22,
+        19,
+        28,
+        21,
+        14,
+        23,
+        29,
+        23,
+        23,
+        16,
+        19,
+        26,
+        25,
+        23,
+        21,
+        22,
+        22,
+        21,
+        29,
+        15,
+        27,
+        19,
+        29,
+        21,
+        21,
+        26,
+        26,
+        22,
+        24,
+        23,
+        30,
+        27,
+        30,
+        23,
+        27,
+        19,
+        24,
+        27,
+        21,
+        28,
+        23,
+        19,
+        17,
+        23,
+        30,
+        20,
+        27,
+        36,
+        24,
+        26,
+        21,
+        23,
+        20,
+        28,
+        20,
+        15,
+        33,
+        26,
+        24,
+        29,
+        24,
+        24,
+        25,
+        17,
+        30,
+        22,
+        31,
+        26,
+        25,
+        19,
+        21,
+        15,
+        21,
+        23,
+        27,
+        27,
+        23,
+        15,
+        24
+      ],
+      "control_mean": 23.155778894472363,
+      "difference": 23.844221105527637,
+      "exceedances": 0,
+      "fold": 2.0297309027777777,
+      "fold_note": null,
+      "observed": 47,
+      "p_denominator": 200,
+      "p_holm": 0.02,
+      "p_holm_comparison": 0.04,
+      "p_numerator": 1,
+      "p_upper": 0.005
+    },
+    {
+      "control_counts": [
+        3,
+        0,
+        1,
+        3,
+        2,
+        3,
+        3,
+        3,
+        4,
+        1,
+        3,
+        2,
+        2,
+        3,
+        1,
+        1,
+        2,
+        4,
+        5,
+        1,
+        1,
+        2,
+        7,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        3,
+        1,
+        5,
+        5,
+        1,
+        1,
+        1,
+        1,
+        2,
+        3,
+        2,
+        2,
+        2,
+        1,
+        4,
+        2,
+        3,
+        1,
+        2,
+        3,
+        3,
+        9,
+        3,
+        1,
+        2,
+        1,
+        6,
+        3,
+        1,
+        2,
+        6,
+        1,
+        3,
+        4,
+        1,
+        1,
+        2,
+        6,
+        2,
+        5,
+        3,
+        5,
+        2,
+        4,
+        2,
+        6,
+        1,
+        2,
+        2,
+        3,
+        2,
+        1,
+        1,
+        2,
+        6,
+        1,
+        3,
+        6,
+        4,
+        3,
+        4,
+        6,
+        4,
+        1,
+        1,
+        8,
+        4,
+        2,
+        2,
+        4,
+        8,
+        1,
+        2,
+        3,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        3,
+        4,
+        2,
+        3,
+        1,
+        2,
+        2,
+        2,
+        6,
+        1,
+        1,
+        4,
+        1,
+        6,
+        0,
+        3,
+        2,
+        3,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        4,
+        2,
+        2,
+        3,
+        4,
+        3,
+        2,
+        2,
+        3,
+        0,
+        4,
+        4,
+        2,
+        2,
+        1,
+        3,
+        5,
+        4,
+        2,
+        2,
+        4,
+        3,
+        3,
+        2,
+        6,
+        5,
+        1,
+        1,
+        3,
+        5,
+        3,
+        4,
+        1,
+        3,
+        1,
+        2,
+        2,
+        2,
+        3,
+        1,
+        1,
+        0,
+        2,
+        4,
+        6,
+        2,
+        2,
+        2,
+        4,
+        3,
+        7,
+        4,
+        4,
+        3,
+        1,
+        5,
+        1,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        2
+      ],
+      "control_mean": 2.6030150753768844,
+      "difference": -2.6030150753768844,
+      "exceedances": 199,
+      "fold": 0.0,
+      "fold_note": null,
+      "observed": 0,
+      "p_denominator": 200,
+      "p_holm": 1.0,
+      "p_holm_comparison": 1.0,
+      "p_numerator": 200,
+      "p_upper": 1.0
+    },
+    {
+      "control_counts": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        1,
+        0,
+        0
+      ],
+      "control_mean": 0.3969849246231156,
+      "difference": 15.603015075376884,
+      "exceedances": 0,
+      "fold": 40.30379746835443,
+      "fold_note": null,
+      "observed": 16,
+      "p_denominator": 200,
+      "p_holm": 0.02,
+      "p_holm_comparison": 0.04,
+      "p_numerator": 1,
+      "p_upper": 0.005
+    }
+  ]
+}
+</script><script>"use strict";
+(() => {
+  const data = JSON.parse(document.getElementById("analysis-data").textContent);
+  const byId = id => document.getElementById(id);
+  const pageSize = 75;
+  let filtered = [], page = 0, selected = -1;
+  for (const [key, items] of [["sequence", data.records], ["motif", data.motifs]]) {
+    items.forEach((item, i) => {
+      const option = document.createElement("option");
+      option.value = String(i); option.textContent = item.id;
+      byId(key + "-filter").append(option);
+    });
+  }
+  function cell(row, value) {
+    const td = document.createElement("td"); td.textContent = String(value); row.append(td); return td;
+  }
+  function clearContext() {
+    selected = -1;
+    byId("context-info").textContent = "Choose a match to inspect 24 flanking bases on each side.";
+    for (const id of ["context-bases", "oriented", "description"]) byId(id).textContent = "";
+    byId("context-previous").disabled = byId("context-next").disabled = true;
+  }
+  function render() {
+    const pages = Math.max(1, Math.ceil(filtered.length / pageSize));
+    page = Math.max(0, Math.min(pages - 1, page));
+    const start = page * pageSize;
+    byId("match-rows").replaceChildren();
+    for (let i = start; i < Math.min(start + pageSize, filtered.length); i++) {
+      const m = filtered[i], row = document.createElement("tr");
+      cell(row, data.records[m.record].id); cell(row, data.motifs[m.motif].id);
+      cell(row, m.start); cell(row, m.end); cell(row, m.strand === "both" ? "both · palindrome" : m.strand);
+      const button = document.createElement("button"); button.type = "button"; button.textContent = "Context";
+      button.setAttribute("aria-label", `Context: ${data.records[m.record].id}, ${data.motifs[m.motif].id}, ${m.start}, ${m.strand}`);
+      button.addEventListener("click", () => context(i)); cell(row, "").append(button);
+      byId("match-rows").append(row);
+    }
+    if (!filtered.length) {
+      const row = document.createElement("tr"), td = cell(row, "No matches for these filters.");
+      td.colSpan = 6; td.className = "empty"; byId("match-rows").append(row);
+    }
+    byId("match-status").textContent = `${filtered.length.toLocaleString()} of ${data.matches.length.toLocaleString()} occurrences · showing ${filtered.length ? start + 1 : 0}–${Math.min(start + pageSize, filtered.length)}. Statistics above remain unchanged.`;
+    byId("page-number").value = page + 1; byId("page-number").max = pages;
+    byId("pages").textContent = `of ${pages}`;
+    byId("first").disabled = byId("previous").disabled = page === 0;
+    byId("last").disabled = byId("next").disabled = page === pages - 1;
+  }
+  function filter() {
+    const r = byId("sequence-filter").value, m = byId("motif-filter").value, s = byId("strand-filter").value;
+    filtered = data.matches.filter(x => (r === "" || x.record === Number(r)) && (m === "" || x.motif === Number(m)) && (s === "" || x.strand === s));
+    page = 0; clearContext(); render();
+  }
+  function reverseComplement(s) {return s.split("").reverse().map(c => ({A:"T",C:"G",G:"C",T:"A"})[c]).join("");}
+  function context(i) {
+    if (i < 0 || i >= filtered.length) return;
+    selected = i;
+    const m = filtered[i], r = data.records[m.record], motif = data.motifs[m.motif];
+    const left = Math.max(0, m.start - 24), right = Math.min(r.length, m.end + 24);
+    const fragment = r.sequence.slice(m.start, m.end);
+    byId("context-info").textContent = `${r.id} · ${motif.id} (${motif.pattern}) · [${m.start}, ${m.end}) · strand ${m.strand} · context [${left}, ${right}) · filtered match ${i+1}/${filtered.length}`;
+    const mark = document.createElement("mark"); mark.textContent = fragment;
+    byId("context-bases").replaceChildren(document.createTextNode(r.sequence.slice(left, m.start)), mark, document.createTextNode(r.sequence.slice(m.end, right)));
+    byId("oriented").textContent = `Forward-reference context above. Motif-oriented match: ${m.strand === "-" ? reverseComplement(fragment) : fragment}`;
+    byId("description").textContent = r.description;
+    byId("context-previous").disabled = i === 0; byId("context-next").disabled = i === filtered.length - 1;
+    const targetPage = Math.floor(i / pageSize);
+    if (page !== targetPage) {page = targetPage; render();}
+  }
+  for (const id of ["sequence-filter", "motif-filter", "strand-filter"]) byId(id).addEventListener("change", filter);
+  byId("reset").addEventListener("click", () => {for (const id of ["sequence-filter", "motif-filter", "strand-filter"]) byId(id).value = ""; filter();});
+  for (const [id, action] of [["first", () => 0], ["previous", () => page-1], ["next", () => page+1], ["last", () => Math.ceil(filtered.length/pageSize)-1]]) byId(id).addEventListener("click", () => {page = action(); render();});
+  byId("page-number").addEventListener("change", () => {const n = Number(byId("page-number").value); page = Number.isFinite(n) ? Math.floor(n)-1 : 0; render();});
+  document.addEventListener("keydown", e => {if (e.altKey && ["ArrowLeft", "ArrowRight"].includes(e.key)) {e.preventDefault(); page += e.key === "ArrowLeft" ? -1 : 1; render();}});
+  byId("context-previous").addEventListener("click", () => context(selected - 1));
+  byId("context-next").addEventListener("click", () => context(selected + 1));
+  function download(name, content, mime) {
+    const url = URL.createObjectURL(new Blob([content], {type:mime}));
+    const link = document.createElement("a"); link.href = url; link.download = name;
+    document.body.append(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+    byId("export-status").textContent = `Exported ${name}`;
+  }
+  function safeCell(x) {let s = String(x).replaceAll("\t", "\\t").replaceAll("\r", "\\r").replaceAll("\n", "\\n"); return /^[=+\-@]/.test(s) ? "'"+s : s;}
+  byId("export-tsv").addEventListener("click", () => {
+    const rows = [["sequence_id", "motif_id", "start", "end", "strand", "forward_match", "oriented_match"].join("\t")];
+    for (const m of filtered) {
+      const r = data.records[m.record], fragment = r.sequence.slice(m.start, m.end);
+      rows.push([r.id, data.motifs[m.motif].id, m.start, m.end, m.strand, fragment, m.strand === "-" ? reverseComplement(fragment) : fragment].map(safeCell).join("\t"));
+    }
+    download("filtered-matches.tsv", rows.join("\n")+"\n", "text/tab-separated-values;charset=utf-8");
+  });
+  byId("export-json").addEventListener("click", () => download("analysis.json", JSON.stringify(data, null, 2)+"\n", "application/json"));
+  const backgrounds = data.backgrounds || {[data.settings.background || "mononucleotide"]: data};
+  data.motifs.forEach((m, i) => {
+    const option = document.createElement("option"); option.value = String(i); option.textContent = m.id;
+    byId("distribution-motif").append(option);
+  });
+  function distribution() {
+    const stats = backgrounds[byId("background-select").value].statistics;
+    const s = stats[Number(byId("distribution-motif").value)];
+    const lo = Math.min(...s.control_counts), hi = Math.max(...s.control_counts);
+    const width = Math.max(1, Math.ceil((hi-lo+1)/40));
+    const bins = Array(Math.floor((hi-lo)/width)+1).fill(0);
+    s.control_counts.forEach(n => bins[Math.floor((n-lo)/width)]++);
+    byId("distribution-rows").replaceChildren();
+    bins.forEach((n, i) => {
+      const row = document.createElement("tr"), a = lo+i*width, b = Math.min(hi,a+width-1);
+      cell(row, a===b ? a : `${a}–${b}`); cell(row,n); byId("distribution-rows").append(row);
+    });
+    byId("distribution-description").textContent = `Observed: ${s.observed}; ${s.control_counts.length} controls; range ${lo}–${hi}. Identity and repeated controls are retained.`;
+  }
+  function background() {
+    const name = byId("background-select").value, analysis = backgrounds[name];
+    byId("background-description").textContent = `${name}: ${analysis.settings.null}. Background choice is an assumption, not a significance filter.`;
+    const body = byId("summary").querySelector("tbody"); body.replaceChildren();
+    analysis.statistics.forEach((s,i) => {
+      const row = document.createElement("tr"), motif = data.motifs[i];
+      const th = document.createElement("th"); th.scope = "row"; th.textContent = motif.id; row.append(th);
+      [motif.pattern,s.observed,s.control_mean.toFixed(3),s.difference.toFixed(3),s.fold===null ? "undefined" : s.fold.toFixed(3),
+       `${s.p_numerator}/${s.p_denominator}`,s.p_upper.toFixed(4),s.p_holm.toFixed(4),
+       s.p_holm_comparison===undefined ? "—" : s.p_holm_comparison.toFixed(4)].forEach(v => cell(row,v));
+      body.append(row);
+    });
+    distribution();
+  }
+  byId("background-select").addEventListener("change", background);
+  byId("distribution-motif").addEventListener("change", distribution);
+  background();
+  filter();
+})();
+</script></body></html>

@@ -242,7 +242,9 @@ def estimated_work(records, motifs, shuffles):
     return (shuffles + 1) * scan_work + shuffles * sum(len(r["sequence"]) for r in records)
 
 
-def analyze(fasta, manifest, *, seed=1729, shuffles=199, limits=DEFAULT_LIMITS, budget=None):
+def analyze(fasta, manifest, *, seed=1729, shuffles=199, limits=DEFAULT_LIMITS, budget=None, background="mononucleotide"):
+    if background not in ("mononucleotide", "dinucleotide"):
+        raise AuditError("unknown background")
     if type(seed) is not int or not 0 <= seed < 2**64:
         raise AuditError("seed must be an unsigned 64-bit integer")
     if type(shuffles) is not int or not 1 <= shuffles <= limits.shuffles:
@@ -260,7 +262,12 @@ def analyze(fasta, manifest, *, seed=1729, shuffles=199, limits=DEFAULT_LIMITS, 
         budget.check()
         row = [control_seed(seed, b, ri) for ri in range(len(records))]
         seeds.append([str(s) for s in row])  # JS cannot exactly represent uint64 numbers.
-        shuffled = [{**r, "sequence": shuffle_sequence(r["sequence"], row[ri])}
+        if background == "dinucleotide":
+            from .dinucleotide import shuffle_dinucleotide
+            shuffle = lambda sequence, seed: shuffle_dinucleotide(sequence, seed, budget)
+        else:
+            shuffle = shuffle_sequence
+        shuffled = [{**r, "sequence": shuffle(r["sequence"], row[ri])}
                     for ri, r in enumerate(records)]
         counts, _ = scan(shuffled, motifs, keep=False, limits=limits, budget=budget)
         for bucket, count in zip(controls, counts):
@@ -269,7 +276,7 @@ def analyze(fasta, manifest, *, seed=1729, shuffles=199, limits=DEFAULT_LIMITS, 
     for stat, adjusted in zip(stats, holm([s["p_upper"] for s in stats])):
         stat["p_holm"] = adjusted
     budget.check()
-    return {"schema": "motif-background-audit/1", "complete": True,
+    result = {"schema": "motif-background-audit/1", "complete": True,
             "software_version": "1.0.0", "input_sha256": {"fasta": digest(fasta), "manifest": digest(manifest)},
             "settings": {"seed": str(seed), "shuffles": shuffles, "estimated_work": work,
                          "limits": asdict(limits), "coordinates": "0-based half-open, forward reference",
@@ -279,3 +286,31 @@ def analyze(fasta, manifest, *, seed=1729, shuffles=199, limits=DEFAULT_LIMITS, 
             "records": [{**r, "length": len(r["sequence"]), "counts": dict(sorted(Counter(r["sequence"]).items()))}
                         for r in records],
             "motifs": motifs, "matches": matches, "statistics": stats, "control_seeds": seeds}
+
+    if background == "dinucleotide":
+        from .dinucleotide import VERSION
+        result["settings"].update(background=background, implementation=VERSION,
+            null="independent concrete runs; fixed endpoints, mono/dinucleotide counts and ambiguous positions",
+            rng="SHA256 record and run streams; Python MT19937 getrandbits rejection; Wilson last-exit tree v1")
+    return result
+
+
+def compare(fasta, manifest, *, seed=1729, shuffles=199, limits=DEFAULT_LIMITS, budget=None):
+    """Both prespecified backgrounds; one shared deadline and combined work limit."""
+    budget = budget or Budget(limits.seconds)
+    records, motifs = parse_fasta(fasta, limits), parse_manifest(manifest, limits)
+    if 2 * estimated_work(records, motifs, shuffles) > limits.work:
+        raise AuditError("combined shuffle-work limit exceeded")
+    mono = analyze(fasta, manifest, seed=seed, shuffles=shuffles, limits=limits, budget=budget)
+    di = analyze(fasta, manifest, seed=seed, shuffles=shuffles, limits=limits, budget=budget,
+                 background="dinucleotide")
+    mono["schema"] = "motif-background-audit/comparison/1"
+    mono["backgrounds"] = {"mononucleotide": {k: mono[k] for k in ("statistics", "settings", "control_seeds")},
+                           "dinucleotide": {k: di[k] for k in ("statistics", "settings", "control_seeds")}}
+    all_stats = [s for b in mono["backgrounds"].values() for s in b["statistics"]]
+    for stat, adjusted in zip(all_stats, holm([s["p_upper"] for s in all_stats])):
+        stat["p_holm_comparison"] = adjusted
+    mono["comparison"] = {"background_selection": "prespecified; never select by significance",
+                          "multiplicity": "Holm across both backgrounds and all motifs",
+                          "estimated_work": 2 * mono["settings"]["estimated_work"]}
+    return mono

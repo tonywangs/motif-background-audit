@@ -1,0 +1,521 @@
+{
+  "datasets": [
+    {
+      "condition": "independent",
+      "control_seed": 2026101302,
+      "generation_seed": 2026101301,
+      "name": "independent-00",
+      "planted_sites": [],
+      "repetition": 0,
+      "sha256": "2e1af7de0c2d2d29a180ba95f395c6a21368b487318bf8a45199f034c6a82011"
+    },
+    {
+      "condition": "independent",
+      "control_seed": 2026101303,
+      "generation_seed": 2026101302,
+      "name": "independent-01",
+      "planted_sites": [],
+      "repetition": 1,
+      "sha256": "4d8259591809e6272192c3caf673e2b7200c864d22cc3717af1ef439ce304f1b"
+    },
+    {
+      "condition": "independent",
+      "control_seed": 2026101304,
+      "generation_seed": 2026101303,
+      "name": "independent-02",
+      "planted_sites": [],
+      "repetition": 2,
+      "sha256": "bafbf4788c8f43ae06c4c0ab9ca6a65f9ce066dacbddc1135dd320e490a5d374"
+    },
+    {
+      "condition": "independent",
+      "control_seed": 2026101305,
+      "generation_seed": 2026101304,
+      "name": "independent-03",
+      "planted_sites": [],
+      "repetition": 3,
+      "sha256": "ebcb8990d0f3b8b10cf25b740eafc93678d7745510d26808201383b758d41f94"
+    },
+    {
+      "condition": "first_order",
+      "control_seed": 2026101306,
+      "generation_seed": 2026101401,
+      "name": "first_order-00",
+      "planted_sites": [],
+      "repetition": 0,
+      "sha256": "4e6fe414ba828639a44547c46efb6715b9f677aaca23bc2d38348cb9b27319fe"
+    },
+    {
+      "condition": "first_order",
+      "control_seed": 2026101307,
+      "generation_seed": 2026101402,
+      "name": "first_order-01",
+      "planted_sites": [],
+      "repetition": 1,
+      "sha256": "84bac6eb3c63b6b061e58c50eed698ca5e91c9ea49aeed4912f24b0172ad28a6"
+    },
+    {
+      "condition": "first_order",
+      "control_seed": 2026101308,
+      "generation_seed": 2026101403,
+      "name": "first_order-02",
+      "planted_sites": [],
+      "repetition": 2,
+      "sha256": "e331311e3f04d5caa436c6e5285a14a432eab93c586d3b8fbd78a74b9e975b42"
+    },
+    {
+      "condition": "first_order",
+      "control_seed": 2026101309,
+      "generation_seed": 2026101404,
+      "name": "first_order-03",
+      "planted_sites": [],
+      "repetition": 3,
+      "sha256": "16840f60b8aac40eafae56b7f3509ba9030b2d0bd3c2f6013416fad24236e13e"
+    },
+    {
+      "condition": "longer_range",
+      "control_seed": 2026101310,
+      "generation_seed": 2026101501,
+      "name": "longer_range-00",
+      "planted_sites": [],
+      "repetition": 0,
+      "sha256": "a3fe553db5ee0561a28f3db72a648f8c8ddeff3e7aca380dcbf524e97e6178cc"
+    },
+    {
+      "condition": "longer_range",
+      "control_seed": 2026101311,
+      "generation_seed": 2026101502,
+      "name": "longer_range-01",
+      "planted_sites": [],
+      "repetition": 1,
+      "sha256": "53052ec1e43a085ad36dd4b68f78d9057d7e82015e4f3deb8a2bc5c4c7963ec8"
+    },
+    {
+      "condition": "longer_range",
+      "control_seed": 2026101312,
+      "generation_seed": 2026101503,
+      "name": "longer_range-02",
+      "planted_sites": [],
+      "repetition": 2,
+      "sha256": "b9d316eeede1a14308fa60bb8f59ebcfec8d224068ddcf9935849c5a7a9f2d43"
+    },
+    {
+      "condition": "longer_range",
+      "control_seed": 2026101313,
+      "generation_seed": 2026101504,
+      "name": "longer_range-03",
+      "planted_sites": [],
+      "repetition": 3,
+      "sha256": "b30ea347f0047d1e4c17664ea396b6cf82cf41e137e48cad56d290dd5d5f5f6c"
+    },
+    {
+      "condition": "planted",
+      "control_seed": 2026101314,
+      "generation_seed": 2026101601,
+      "name": "planted-00",
+      "planted_sites": [
+        {
+          "end": 26,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 20
+        },
+        {
+          "end": 76,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 70
+        },
+        {
+          "end": 126,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 120
+        },
+        {
+          "end": 176,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 170
+        },
+        {
+          "end": 226,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 220
+        },
+        {
+          "end": 26,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 20
+        },
+        {
+          "end": 76,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 70
+        },
+        {
+          "end": 126,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 120
+        },
+        {
+          "end": 176,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 170
+        },
+        {
+          "end": 226,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 220
+        },
+        {
+          "end": 26,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 20
+        },
+        {
+          "end": 76,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 70
+        },
+        {
+          "end": 126,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 120
+        },
+        {
+          "end": 176,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 170
+        },
+        {
+          "end": 226,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 220
+        }
+      ],
+      "repetition": 0,
+      "sha256": "2dccd7d5e42c5f3b11cc93b1257386125422986ca4086ac8c589f25e097eb11a"
+    },
+    {
+      "condition": "planted",
+      "control_seed": 2026101315,
+      "generation_seed": 2026101602,
+      "name": "planted-01",
+      "planted_sites": [
+        {
+          "end": 26,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 20
+        },
+        {
+          "end": 76,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 70
+        },
+        {
+          "end": 126,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 120
+        },
+        {
+          "end": 176,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 170
+        },
+        {
+          "end": 226,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 220
+        },
+        {
+          "end": 26,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 20
+        },
+        {
+          "end": 76,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 70
+        },
+        {
+          "end": 126,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 120
+        },
+        {
+          "end": 176,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 170
+        },
+        {
+          "end": 226,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 220
+        },
+        {
+          "end": 26,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 20
+        },
+        {
+          "end": 76,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 70
+        },
+        {
+          "end": 126,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 120
+        },
+        {
+          "end": 176,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 170
+        },
+        {
+          "end": 226,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 220
+        }
+      ],
+      "repetition": 1,
+      "sha256": "1ea89f08c882c2097798fc1e395b072abc0aa6f96070d960c661f94c245363cf"
+    },
+    {
+      "condition": "planted",
+      "control_seed": 2026101316,
+      "generation_seed": 2026101603,
+      "name": "planted-02",
+      "planted_sites": [
+        {
+          "end": 26,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 20
+        },
+        {
+          "end": 76,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 70
+        },
+        {
+          "end": 126,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 120
+        },
+        {
+          "end": 176,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 170
+        },
+        {
+          "end": 226,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 220
+        },
+        {
+          "end": 26,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 20
+        },
+        {
+          "end": 76,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 70
+        },
+        {
+          "end": 126,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 120
+        },
+        {
+          "end": 176,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 170
+        },
+        {
+          "end": 226,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 220
+        },
+        {
+          "end": 26,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 20
+        },
+        {
+          "end": 76,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 70
+        },
+        {
+          "end": 126,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 120
+        },
+        {
+          "end": 176,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 170
+        },
+        {
+          "end": 226,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 220
+        }
+      ],
+      "repetition": 2,
+      "sha256": "a048e73b128f4dd65a0ea941b50c5be427203cb7957cee00d70fcc2c07381e93"
+    },
+    {
+      "condition": "planted",
+      "control_seed": 2026101317,
+      "generation_seed": 2026101604,
+      "name": "planted-03",
+      "planted_sites": [
+        {
+          "end": 26,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 20
+        },
+        {
+          "end": 76,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 70
+        },
+        {
+          "end": 126,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 120
+        },
+        {
+          "end": 176,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 170
+        },
+        {
+          "end": 226,
+          "pattern": "ACGTAC",
+          "record": 0,
+          "start": 220
+        },
+        {
+          "end": 26,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 20
+        },
+        {
+          "end": 76,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 70
+        },
+        {
+          "end": 126,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 120
+        },
+        {
+          "end": 176,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 170
+        },
+        {
+          "end": 226,
+          "pattern": "ACGTAC",
+          "record": 1,
+          "start": 220
+        },
+        {
+          "end": 26,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 20
+        },
+        {
+          "end": 76,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 70
+        },
+        {
+          "end": 126,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 120
+        },
+        {
+          "end": 176,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 170
+        },
+        {
+          "end": 226,
+          "pattern": "ACGTAC",
+          "record": 2,
+          "start": 220
+        }
+      ],
+      "repetition": 3,
+      "sha256": "9383b86a2493732b07edb9159d83282e7287127f7c7a92e26ca17a651f13176a"
+    }
+  ],
+  "manifest_sha256": "f2466c5ca99ae629b384dfcd5dc52f7948cb0e95958ea35a83f6fa6d401322be",
+  "schema": "motif-background-audit/freeze/1",
+  "source_sha256": {
+    "experiments/dinucleotide-protocol.json": "ded2ae267fa02776bd24ae425575624b2e88fe999349f18af6e716083725eb76",
+    "motif_audit/core.py": "826804139dc3b6bb4bc3ef82704e72672ea0eacb3637775710057236e2174fc7",
+    "motif_audit/dinucleotide.py": "11c78a6613ac22db44dbcdb085bb1f76e9d8cc7c02f07d550dc3626aad09283e",
+    "scripts/comparison.py": "aa1ae37898ac34712c25d39e6790a815f9a27adddb954cc6463ba059298776cd",
+    "scripts/comparison_inputs.py": "ef3c4df514e0274531d9b6fa4cbe91850606137ad73d2abc4958f7910df70859"
+  }
+}

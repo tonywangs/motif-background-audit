@@ -1,0 +1,20 @@
+{
+  "motifs": [
+    {
+      "id": "AAA",
+      "pattern": "AAA"
+    },
+    {
+      "id": "ACG",
+      "pattern": "ACG"
+    },
+    {
+      "id": "ATAT",
+      "pattern": "ATAT"
+    },
+    {
+      "id": "ACGTAC",
+      "pattern": "ACGTAC"
+    }
+  ]
+}
